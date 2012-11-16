@@ -1,0 +1,41 @@
+{
+	"homepage_link_label": {
+		"message": "Почетна страница"
+	},
+	"search_results_title": {
+		"message": "Резултати претраге: $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "Пребаците додатак"
+	},
+	"upload_page_link_label": {
+		"message": "Пребаци"
+	},
+	"api_docs_page_title": {
+		"message": "Документација програмског интерфејса"
+	},
+	"api_parameter_description_extension_id": {
+		"message": "Идентификација додатка, као што се види на страници додатка у галерији."
+	},
+	"api_parameter_description_name": {
+		"message": "Назив поруке која се преводи."
+	},
+	"api_parameter_description_message": {
+		"message": "Преведена порука."
+	},
+	"api_return_values_header": {
+		"message": "Примери враћених резултата"
+	},
+	"api_documentation": {
+		"message": "Документација програмског интерфејса"
+	},
+	"extension": {
+		"message": "Додатак"
+	},
+	"call_to_action_select": {
+		"message": "(означи)"
+	}
+}

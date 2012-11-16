@@ -1,0 +1,391 @@
+{
+	"name": {
+		"message": "Interpr.it ウェブサイト"
+	},
+	"homepage_title": {
+		"message": "Chrome拡張機能の翻訳"
+	},
+	"homepage_link_label": {
+		"message": "ホーム"
+	},
+	"search_results_title": {
+		"message": "検索結果: $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "拡張機能をアップロード"
+	},
+	"upload_page_link_label": {
+		"message": "アップロード"
+	},
+	"api_docs_page_title": {
+		"message": "APIドキュメント"
+	},
+	"api_docs_page_header": {
+		"message": "Interpr.it API"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
+	},
+	"api_parameter_description_message": {
+		"message": "翻訳されたメッセージ"
+	},
+	"api_return_format_zip": {
+		"message": ".zipファイル"
+	},
+	"dashboard_page_title": {
+		"message": "ダッシュボード"
+	},
+	"dashboard_header_extensions": {
+		"message": "アップロードされた拡張機能"
+	},
+	"dashboard_api_key_header": {
+		"message": "あなたのAPIキー"
+	},
+	"api_documentation": {
+		"message": "APIドキュメント"
+	},
+	"action_upload_update": {
+		"message": "新しいバージョンをアップロード"
+	},
+	"extension": {
+		"message": "拡張機能"
+	},
+	"header_progress": {
+		"message": "翻訳の進捗状況"
+	},
+	"progress": {
+		"message": "進捗状況"
+	},
+	"label_version": {
+		"message": "バージョン: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_updated": {
+		"message": "アップデート: $date$",
+		"placeholders": {
+			"date": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_message_limit": {
+		"message": "翻訳可能なフレーズ: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_translation_progress": {
+		"message": "翻訳の進捗状況: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_upload": {
+		"message": "ファイルのアップロード中にエラーが発生しました (コード $error_code$)",
+		"placeholders": {
+			"error_code": {
+				"content": "$1",
+				"example": "123"
+			}
+		}
+	},
+	"api_error_upload_auth": {
+		"message": "拡張機能のアップロードにはログインが必要です。"
+	},
+	"api_error_upload_invalid_zip": {
+		"message": "あなたがアップロードしたファイルは、有効なZIPファイルではありませんでした。 ファイルを調べて、再試行してください。"
+	},
+	"api_error_noauth_translate": {
+		"message": "翻訳するにはログインする必要があります。"
+	},
+	"api_error_missing_placeholder": {
+		"message": "$placeholder_name$が抜けています。",
+		"placeholders": {
+			"placeholder_name": {
+				"content": "<em>$1<\/em>"
+			}
+		}
+	},
+	"api": {
+		"message": "API"
+	},
+	"action_signin": {
+		"message": "Googleアカウントでサインイン"
+	},
+	"action_signout": {
+		"message": "サインアウト"
+	},
+	"header_developers": {
+		"message": "開発者"
+	},
+	"action_signin_to_upload": {
+		"message": "拡張機能をアップロードするにはサインインが必要です。"
+	},
+	"header_translators": {
+		"message": "翻訳者"
+	},
+	"header_extension_search": {
+		"message": "翻訳する拡張機能の検索。"
+	},
+	"header_latest_updates": {
+		"message": "最近の更新"
+	},
+	"header_top_translators": {
+		"message": "最も活発な翻訳者"
+	},
+	"header_newest_extensions": {
+		"message": "最新の拡張機能"
+	},
+	"header_locale_page": {
+		"message": "$locale$の翻訳",
+		"placeholders": {
+			"locale": {
+				"content": "$1",
+				"example": "French"
+			}
+		}
+	},
+	"hide_completed": {
+		"message": "完了のメッセージを表示しない"
+	},
+	"show_all": {
+		"message": "すべてのメッセージを表示する"
+	},
+	"save_changes_button": {
+		"message": "変更を保存"
+	},
+	"saving_notification": {
+		"message": "保存中..."
+	},
+	"saved_notification": {
+		"message": "保存完了!"
+	},
+	"header_search_results": {
+		"message": "検索結果"
+	},
+	"translate_call_to_action": {
+		"message": "$extension$を$locale$に翻訳する",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"label_your_locale": {
+		"message": "言語:"
+	},
+	"label_keywords": {
+		"message": "キーワード：（オプション）"
+	},
+	"label_search": {
+		"message": "検索"
+	},
+	"header_upload": {
+		"message": "拡張機能をアップロード(.zipファイル)"
+	},
+	"action_reset_api_key": {
+		"message": "APIキーをリセット"
+	},
+	"action_message_history": {
+		"message": "過去の翻訳"
+	},
+	"action_revert": {
+		"message": "戻す"
+	},
+	"column_header_message_version": {
+		"message": "メッセージ"
+	},
+	"terms_of_use": {
+		"message": "使用するにあたって"
+	},
+	"link_extension_homepage": {
+		"message": "ホームページ"
+	},
+	"locale_name_am": {
+		"message": "アムハラ語"
+	},
+	"locale_name_ar": {
+		"message": "アラビア語"
+	},
+	"locale_name_bg": {
+		"message": "ブルガリア語"
+	},
+	"locale_name_bn": {
+		"message": "ベンガル語"
+	},
+	"locale_name_ca": {
+		"message": "カタロニア語"
+	},
+	"locale_name_cs": {
+		"message": "チェコ語"
+	},
+	"locale_name_da": {
+		"message": "デンマーク語"
+	},
+	"locale_name_de": {
+		"message": "ドイツ語"
+	},
+	"locale_name_el": {
+		"message": "ギリシャ語"
+	},
+	"locale_name_en": {
+		"message": "英語"
+	},
+	"locale_name_en_GB": {
+		"message": "英語（イギリス）"
+	},
+	"locale_name_en_US": {
+		"message": "英語（米国）"
+	},
+	"locale_name_es": {
+		"message": "スペイン語"
+	},
+	"locale_name_es_419": {
+		"message": "スペイン語（ラテンアメリカ）"
+	},
+	"locale_name_et": {
+		"message": "エストニア語"
+	},
+	"locale_name_fi": {
+		"message": "フィンランド語"
+	},
+	"locale_name_fil": {
+		"message": "フィリピン語"
+	},
+	"locale_name_fr": {
+		"message": "フランス語"
+	},
+	"locale_name_gu": {
+		"message": "グジャラート語"
+	},
+	"locale_name_he": {
+		"message": "ヘブライ語"
+	},
+	"locale_name_hi": {
+		"message": "ヒンディー語"
+	},
+	"locale_name_hr": {
+		"message": "クロアチア語"
+	},
+	"locale_name_hu": {
+		"message": "ハンガリー語"
+	},
+	"locale_name_id": {
+		"message": "インドネシア語"
+	},
+	"locale_name_it": {
+		"message": "イタリア語"
+	},
+	"locale_name_ja": {
+		"message": "日本語"
+	},
+	"locale_name_kn": {
+		"message": "カンナダ語"
+	},
+	"locale_name_ko": {
+		"message": "韓国語"
+	},
+	"locale_name_lt": {
+		"message": "リトアニア語"
+	},
+	"locale_name_lv": {
+		"message": "ラトビア語"
+	},
+	"locale_name_ml": {
+		"message": "マラヤーラム語"
+	},
+	"locale_name_mr": {
+		"message": "マラーティー語"
+	},
+	"locale_name_nl": {
+		"message": "オランダ語"
+	},
+	"locale_name_or": {
+		"message": "オリヤー語"
+	},
+	"locale_name_pl": {
+		"message": "ポーランド語"
+	},
+	"locale_name_pt": {
+		"message": "ポルトガル語"
+	},
+	"locale_name_pt_BR": {
+		"message": "ポルトガル語（ブラジル）"
+	},
+	"locale_name_pt_PT": {
+		"message": "ポルトガル語（ポルトガル）"
+	},
+	"locale_name_ro": {
+		"message": "ルーマニア語"
+	},
+	"locale_name_ru": {
+		"message": "ロシア語"
+	},
+	"locale_name_sk": {
+		"message": "スロバキア語"
+	},
+	"locale_name_sl": {
+		"message": "スロベニア語"
+	},
+	"locale_name_sr": {
+		"message": "セルビア語（キリル）"
+	},
+	"locale_name_sv": {
+		"message": "スウェーデン語"
+	},
+	"locale_name_sw": {
+		"message": "スワヒリ語"
+	},
+	"locale_name_ta": {
+		"message": "タミル語"
+	},
+	"locale_name_te": {
+		"message": "テルグ語"
+	},
+	"locale_name_th": {
+		"message": "タイ語"
+	},
+	"locale_name_tr": {
+		"message": "トルコ語"
+	},
+	"locale_name_vi": {
+		"message": "ベトナム語"
+	},
+	"locale_name_zh": {
+		"message": "中国語"
+	},
+	"locale_name_zh_CN": {
+		"message": "中国語（中国）"
+	},
+	"locale_name_zh_TW": {
+		"message": "中国語（台湾）"
+	},
+	"email_preference_header": {
+		"message": "メール通知のタイミング..."
+	}
+}

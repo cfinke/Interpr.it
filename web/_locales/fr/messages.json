@@ -1,0 +1,136 @@
+{
+	"description": {
+		"message": "Les fichiers de localisation qui propulsent le site http:\/\/interpr.it\/ ."
+	},
+	"name": {
+		"message": "Le site Web d'Interpr.it"
+	},
+	"homepage_link_label": {
+		"message": "Accueil"
+	},
+	"search_results_title": {
+		"message": "Résultats de recherche : $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "Soumettre votre extension"
+	},
+	"upload_page_link_label": {
+		"message": "Envoyer"
+	},
+	"api_docs_page_title": {
+		"message": "Documentation API"
+	},
+	"api_docs_page_header": {
+		"message": "API Interpr.it"
+	},
+	"api_get_parameters_header": {
+		"message": "Paramètres GET"
+	},
+	"api_post_parameters_header": {
+		"message": "Paramètres POST"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
+	},
+	"api_parameter_description_name": {
+		"message": "Le nom du message à traduire"
+	},
+	"api_parameter_description_message": {
+		"message": "Le message traduit."
+	},
+	"api_description_upload": {
+		"message": "Crée un fichier .zip avec votre extension et enregistre tous les changements de vos locales"
+	},
+	"api_description_translate": {
+		"message": "Enregistre la traduction d'un message d'une extension."
+	},
+	"dashboard_page_title": {
+		"message": "Tableau de bord"
+	},
+	"dashboard_header_extensions": {
+		"message": "Vos extensions"
+	},
+	"dashboard_api_key_header": {
+		"message": "Votre clé d'API"
+	},
+	"api_documentation": {
+		"message": "Documentation API"
+	},
+	"action_download_locales": {
+		"message": "Télécharger les dernières locales"
+	},
+	"action_upload_update": {
+		"message": "Soumettre une nouvelle version"
+	},
+	"extension": {
+		"message": "Extension"
+	},
+	"locale": {
+		"message": "Locale"
+	},
+	"header_progress": {
+		"message": "Avancement de la traduction"
+	},
+	"progress": {
+		"message": "Avancement"
+	},
+	"label_version": {
+		"message": "Version: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_updated": {
+		"message": "Mise à jour : $date$",
+		"placeholders": {
+			"date": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_upload_auth": {
+		"message": "Vous devez vous enregistrer au préalable pour soumettre une extension"
+	},
+	"api_error_upload_invalid_zip": {
+		"message": "Le fichier que vous avez envoyé n'est pas un fichier .zip valide. Veuillez vérifier le fichier et recommencer."
+	},
+	"action_contact": {
+		"message": "Communiquer avec nous"
+	},
+	"action_signin": {
+		"message": "Connecter avec votre compte de Google"
+	},
+	"action_signout": {
+		"message": "Déconnecter"
+	},
+	"header_developers": {
+		"message": "Développeurs"
+	},
+	"header_translators": {
+		"message": "Traducteurs"
+	},
+	"hide_completed": {
+		"message": "Cacher les messages remplis"
+	},
+	"call_to_action_select": {
+		"message": "(choisir)"
+	},
+	"terms_of_use": {
+		"message": "Conditions d'utilisation"
+	}
+}

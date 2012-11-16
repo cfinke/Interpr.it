@@ -1,0 +1,83 @@
+{
+	"homepage_link_label": {
+		"message": "Hjem"
+	},
+	"search_results_title": {
+		"message": "Søgeresultat: $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "Upload din udvidelse"
+	},
+	"upload_page_link_label": {
+		"message": "Upload"
+	},
+	"api_docs_page_title": {
+		"message": "API Dokumentation"
+	},
+	"api_docs_page_header": {
+		"message": "Interpr.it API"
+	},
+	"api_docs_page_summary": {
+		"message": "Alle API URL'er er på $url$-domænet. Du skal inkludere $api_key_link_open$din API-nøgle$api_key_link_end$ som POST- eller GET-parameteren $code_start$api_key$code_end$ ved hver forespørgsel.",
+		"placeholders": {
+			"url": {
+				"content": "http:\/\/interpr.it\/",
+				"example": "http:\/\/interpr.it\/"
+			},
+			"api_key_link_open": {
+				"content": "<a href=\"\/dashboard#api_key\">"
+			},
+			"api_key_link_end": {
+				"content": "<\/a>"
+			},
+			"code_start": {
+				"content": "<code>"
+			},
+			"code_end": {
+				"content": "<\/code>"
+			}
+		}
+	},
+	"api_docs_page_contact": {
+		"message": "Hvis du ønsker at flere API-metoder bliver tilgængelige kan de sende en mail: $email_address$.",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	},
+	"api_get_parameters_header": {
+		"message": "GET-parametre"
+	},
+	"api_post_parameters_header": {
+		"message": "POST-parametre"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
+	},
+	"api_parameter_description_extension_id": {
+		"message": "ID'et af udvidelsen (som vist i URL'en på udvidelsens side)."
+	},
+	"api_parameter_description_name": {
+		"message": "Navnet på den besked der bliver oversat."
+	},
+	"api_parameter_description_message": {
+		"message": "Den oversatte budskab."
+	},
+	"api_documentation": {
+		"message": "API Dokumentation"
+	}
+}

@@ -1,0 +1,48 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{QUERY_STRING} ^(%2d|-)[^=]+$ [NC]
+RewriteRule ^(.*) $1? [L]
+
+#RewriteCond %{HTTP_HOST} !^interpr\.it$
+#RewriteCond %{HTTP_HOST} !^interpr\.local$
+#RewriteRule ^(.*) http://interpr.it/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www\.interpr\.it$
+RewriteRule ^(.*) http://interpr.it/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^en-us\.interpr\.it$
+RewriteRule ^(.*) http://interpr.it/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^en-us\.interpr\.local$
+RewriteRule ^(.*) http://interpr.local/$1 [R=301,L]
+
+RewriteRule ^$ /index.php?a=home [QSA,NC,L]
+
+# No trailing slashes.
+RewriteRule ^(.*)/$ /$1 [R=301,QSA,L]
+
+RewriteRule ^api$ /index.php?a=api-docs [QSA,NC,L]
+RewriteRule ^signin$ /index.php?a=signin [QSA,NC,L]
+RewriteRule ^signin-return$ /index.php?a=signin-return [QSA,NC,L]
+RewriteRule ^signout$ /index.php?a=signout [QSA,NC,L]
+RewriteRule ^search$ /index.php?a=search [QSA,NC,L]
+RewriteRule ^upload$ /index.php?a=upload [QSA,NC,L]
+RewriteRule ^dashboard$ /index.php?a=dashboard [QSA,NC,L]
+RewriteRule ^terms$ /index.php?a=terms [QSA,NC,L]
+RewriteRule ^member/([0-9]+)$ /index.php?a=dashboard&user_id=$1 [QSA,NC,L]
+
+# Extension permalink
+RewriteRule ^extension/([0-9]+)/?$ /index.php?a=extension&extension_id=$1 [QSA,NC,L]
+
+# Extension icon permalink
+RewriteRule ^extension/([0-9]+)/icon/?$ /index.php?a=extension-icon&extension_id=$1&format=image [QSA,NC,L]
+
+# Extension locale permalink
+RewriteRule ^extension/([0-9]+)/([a-z0-9_]+)/?$ /index.php?a=locale&extension_id=$1&locale_code=$2 [QSA,NC,L]
+
+# Special URL for downloading zip of locales
+RewriteRule ^api/download$ /index.php?a=api&sa=download&format=zip [QSA,NC,L]
+
+# All-encompassing API rule.
+RewriteRule ^api/([^\.]+)(\.json)?$ /index.php?a=api&sa=$1&format=json [QSA,NC,L]

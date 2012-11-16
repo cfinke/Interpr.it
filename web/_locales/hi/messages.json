@@ -1,0 +1,20 @@
+{
+	"name": {
+		"message": "Interpr.it हिंदी वेबसाइट"
+	},
+	"homepage_title": {
+		"message": "Chrome Extension अनुवादक"
+	},
+	"homepage_link_label": {
+		"message": "मुख्य पृष्ठ"
+	},
+	"search_results_title": {
+		"message": "खोज परिणाम:$query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "अपने"
+	}
+}

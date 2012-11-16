@@ -1,0 +1,461 @@
+{
+	"description": {
+		"message": "http:\/\/interpr.it\/ జాలస్థలి ఉపయోగించే స్ధానికత దస్త్రాలు."
+	},
+	"name": {
+		"message": "Interpr.it వెబ్ సైటు"
+	},
+	"homepage_title": {
+		"message": "విహారిణి పొడగింతల అనువాదం"
+	},
+	"homepage_link_label": {
+		"message": "ముంగిలి"
+	},
+	"search_results_title": {
+		"message": "వెతుకులాట ఫలితాలు: $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "మీ పొడగింతని ఎక్కించండి"
+	},
+	"upload_page_link_label": {
+		"message": "ఎక్కించు"
+	},
+	"api_docs_page_title": {
+		"message": "API పత్రావళి"
+	},
+	"api_docs_page_header": {
+		"message": "Interpr.it API"
+	},
+	"api_get_parameters_header": {
+		"message": "GET పరామితులు"
+	},
+	"api_post_parameters_header": {
+		"message": "POST పరామితులు"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
+	},
+	"api_parameter_description_name": {
+		"message": "అనువదించే సందేశం యొక్క పేరు."
+	},
+	"api_parameter_description_message": {
+		"message": "అనువదించిన సందేశం"
+	},
+	"api_return_format_zip": {
+		"message": ".zip లేదా .xpi దస్త్రం"
+	},
+	"dashboard_page_title": {
+		"message": "నిర్వహణ కేంద్రం"
+	},
+	"dashboard_header_extensions": {
+		"message": "ఎక్కించిన పొడగింతలు"
+	},
+	"dashboard_api_key_header": {
+		"message": "మీ API తాళంచెవి"
+	},
+	"api_documentation": {
+		"message": "API పత్రావళి"
+	},
+	"action_upload_update": {
+		"message": "కొత్త సంచికని ఎక్కించండి"
+	},
+	"extension": {
+		"message": "పొడగింత"
+	},
+	"header_progress": {
+		"message": "అనువాద ప్రగతి"
+	},
+	"progress": {
+		"message": "ప్రగతి"
+	},
+	"header_developer_actions": {
+		"message": "వికాసకుల చర్యలు"
+	},
+	"header_translator_actions": {
+		"message": "అనువాదకుల చర్యలు"
+	},
+	"label_version": {
+		"message": "సంచిక: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_updated": {
+		"message": "తాజాకరణ: $date$",
+		"placeholders": {
+			"date": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_message_limit": {
+		"message": "అనువదించదగ్గ పదబంధాలు: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_translation_progress": {
+		"message": "అనువాద ప్రగతి: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_upload_auth": {
+		"message": "పొడగింతలను ఎక్కించడానికి మీరు ప్రవేశించి ఉండాలి."
+	},
+	"api_error_noauth_translate": {
+		"message": "అనువదించడానికి మీరు ప్రవేశించి ఉండాలి."
+	},
+	"api": {
+		"message": "API"
+	},
+	"action_contact": {
+		"message": "సంప్రదించండి"
+	},
+	"action_signin": {
+		"message": "మీ గూగుల్ ఖాతాతో ప్రవేశించండి"
+	},
+	"action_signout": {
+		"message": "నిష్క్రమించండి"
+	},
+	"header_developers": {
+		"message": "వికాసకులు"
+	},
+	"action_signin_to_upload": {
+		"message": "మీ పొడగింతను ఎక్కించడానికి ప్రవేశించండి."
+	},
+	"header_translators": {
+		"message": "అనువాదకులు"
+	},
+	"header_extension_search": {
+		"message": "అనువదించడానికి పొడగింతలను వెతకండి."
+	},
+	"header_latest_updates": {
+		"message": "ఇటీవలి తాజాకరణలు"
+	},
+	"header_top_translators": {
+		"message": "అత్యంత క్రియాశీల అనువాదకులు"
+	},
+	"header_newest_extensions": {
+		"message": "కొత్త పొడగింతలు"
+	},
+	"header_locale_page": {
+		"message": "$locale$ అనువాదం",
+		"placeholders": {
+			"locale": {
+				"content": "$1",
+				"example": "French"
+			}
+		}
+	},
+	"hide_completed": {
+		"message": "పూర్తయిన సందేశాలను దాచు"
+	},
+	"show_all": {
+		"message": "అన్ని సందేశాలనూ చూపించు"
+	},
+	"save_changes_button": {
+		"message": "మార్పులను భద్రపరచు"
+	},
+	"saving_notification": {
+		"message": "భద్రమవుతూంది..."
+	},
+	"saved_notification": {
+		"message": "భద్రమయ్యంది!"
+	},
+	"header_search_details": {
+		"message": "శోధన వివరాలు"
+	},
+	"header_search_results": {
+		"message": "శోధన ఫలితాలు"
+	},
+	"text_no_results_for_query": {
+		"message": "$query$కి ఫలితాలేమీ లేవు.",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results": {
+		"message": "ఫలితాలు లేవు."
+	},
+	"translate_call_to_action": {
+		"message": "$extension$ను $locale$ లోనికి అనువదించండి",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"label_your_locale": {
+		"message": "మీ భాష:"
+	},
+	"call_to_action_select": {
+		"message": "(ఎంచుకోండి)"
+	},
+	"label_keywords": {
+		"message": "కీపదాలు: (ఐచ్చికం)"
+	},
+	"label_search": {
+		"message": "వెతుకు"
+	},
+	"action_message_history": {
+		"message": "అనువాద చరిత్ర"
+	},
+	"column_header_message_version": {
+		"message": "సందేశం"
+	},
+	"column_header_changed_by": {
+		"message": "మార్చినవారు"
+	},
+	"terms_of_use": {
+		"message": "నియమావళి"
+	},
+	"link_extension_homepage": {
+		"message": "ముంగిలి పేజీ"
+	},
+	"locale_name_am": {
+		"message": "అమ్హారిక్"
+	},
+	"locale_name_ar": {
+		"message": "అరబిక్"
+	},
+	"locale_name_bg": {
+		"message": "బల్గేరియన్"
+	},
+	"locale_name_bn": {
+		"message": "బెంగాలీ"
+	},
+	"locale_name_ca": {
+		"message": "కాటలాన్"
+	},
+	"locale_name_cs": {
+		"message": "ఛెక్"
+	},
+	"locale_name_da": {
+		"message": "డానిష్"
+	},
+	"locale_name_de": {
+		"message": "జర్మన్"
+	},
+	"locale_name_el": {
+		"message": "గ్రీకు"
+	},
+	"locale_name_en": {
+		"message": "ఆంగ్లం"
+	},
+	"locale_name_en_GB": {
+		"message": "ఆంగ్లం (గ్రేట్ బ్రిటన్)"
+	},
+	"locale_name_en_US": {
+		"message": "ఆంగ్లం (అమెరికా)"
+	},
+	"locale_name_es": {
+		"message": "స్పానిష్"
+	},
+	"locale_name_es_419": {
+		"message": "స్పానిష్ (లాటిన్ అమెరికా)"
+	},
+	"locale_name_et": {
+		"message": "ఎస్టోనియన్"
+	},
+	"locale_name_fi": {
+		"message": "ఫిన్నిష్"
+	},
+	"locale_name_fil": {
+		"message": "ఫిలిపినో"
+	},
+	"locale_name_fr": {
+		"message": "ఫ్రెంచి"
+	},
+	"locale_name_gu": {
+		"message": "గుజరాతీ"
+	},
+	"locale_name_he": {
+		"message": "హీబ్రూ"
+	},
+	"locale_name_hi": {
+		"message": "హిందీ"
+	},
+	"locale_name_hr": {
+		"message": "క్రొయేషియన్"
+	},
+	"locale_name_hu": {
+		"message": "హంగేరియన్"
+	},
+	"locale_name_id": {
+		"message": "ఇండోనేషియన్"
+	},
+	"locale_name_it": {
+		"message": "ఇటాలియన్"
+	},
+	"locale_name_ja": {
+		"message": "జపనీ"
+	},
+	"locale_name_kn": {
+		"message": "కన్నడ"
+	},
+	"locale_name_ko": {
+		"message": "కొరియన్"
+	},
+	"locale_name_lt": {
+		"message": "లిథుయేనియన్"
+	},
+	"locale_name_lv": {
+		"message": "లాత్వియన్"
+	},
+	"locale_name_ml": {
+		"message": "మలయాళం"
+	},
+	"locale_name_mr": {
+		"message": "మరాఠీ"
+	},
+	"locale_name_nb": {
+		"message": "నార్వేజియన్ (బోక్మి)"
+	},
+	"locale_name_nl": {
+		"message": "డచ్"
+	},
+	"locale_name_or": {
+		"message": "ఒరియా"
+	},
+	"locale_name_pl": {
+		"message": "పోలిష్"
+	},
+	"locale_name_pt": {
+		"message": "పోర్చుగిస్"
+	},
+	"locale_name_pt_BR": {
+		"message": "పోర్చుగీస్ (బ్రెజిల్)"
+	},
+	"locale_name_pt_PT": {
+		"message": "పోర్చుగీస్ (పోర్చుగల్)"
+	},
+	"locale_name_ro": {
+		"message": "రొమేనియన్"
+	},
+	"locale_name_ru": {
+		"message": "రష్యన్"
+	},
+	"locale_name_sk": {
+		"message": "స్లొవాక్"
+	},
+	"locale_name_sl": {
+		"message": "స్లొవేనియన్"
+	},
+	"locale_name_sr": {
+		"message": "సెర్బియన్ (సిరిలిక్)"
+	},
+	"locale_name_sv": {
+		"message": "స్వీడిష్"
+	},
+	"locale_name_sw": {
+		"message": "స్వాహిలీ"
+	},
+	"locale_name_ta": {
+		"message": "తమిళం"
+	},
+	"locale_name_te": {
+		"message": "తెలుగు"
+	},
+	"locale_name_th": {
+		"message": "థాయి"
+	},
+	"locale_name_tr": {
+		"message": "టర్కిష్"
+	},
+	"locale_name_uk": {
+		"message": "ఉక్రేనియన్"
+	},
+	"locale_name_vi": {
+		"message": "వియెత్నామీ"
+	},
+	"locale_name_zh": {
+		"message": "చైనీ"
+	},
+	"locale_name_zh_CN": {
+		"message": "చైనీ (చైనా)"
+	},
+	"locale_name_zh_TW": {
+		"message": "చైనీ (తైవాన్)"
+	},
+	"email_preference_header": {
+		"message": "ఈ క్రింది సందర్భాలలో నాకు ఈమెయిలు పంపించు..."
+	},
+	"email_preference_extension_updates": {
+		"message": "నేను అనువదించిన పొడగింత తాజాకరించబడినప్పుడు."
+	},
+	"email_preference_message_changed": {
+		"message": "నేను అనువదంచిన సందేశాన్ని ఇతరులు మార్చినప్పుడు."
+	},
+	"email_preference_extension_created": {
+		"message": "కొత్త పొడగింతలు చేరినపుడు."
+	},
+	"email_notification_subject": {
+		"message": "Interpr.it కార్యకలాపం"
+	},
+	"email_notification_header_extension_new": {
+		"message": "కొత్త పొడగింతలు"
+	},
+	"email_notification_header_extension_update": {
+		"message": "తాజాకరించిన పొడగింతలు"
+	},
+	"email_notification_header_locale_complete": {
+		"message": "పూర్తయిన భాషలు"
+	},
+	"email_notification_header_message_modified": {
+		"message": "మార్చిన సందేశాలు"
+	},
+	"action_change_email_preferences": {
+		"message": "మీ ఈమెయిలు గమనింపు అమరికలను మార్చుకోండి"
+	},
+	"action_send_feedback": {
+		"message": "ప్రతిస్పందనను పంపించు"
+	},
+	"email_welcome_subject": {
+		"message": "Interpr.itకు స్వాగతం"
+	},
+	"email_welcome_text_3": {
+		"message": "మీరు అనువాదకులా? అనువాదం కోరుతున్న పొడగింతలను వెతకడానికి $link_open$Interpr.it$link_close$ను సందర్శించండి.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"http:\/\/interpr.it\/\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"email_welcome_text_4": {
+		"message": "మీ అభిప్రాయాలను, సందేహాలనూ $email_address$ అన్న చిరునామాకు పంపించండి.",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	}
+}

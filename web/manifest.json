@@ -1,0 +1,7 @@
+{
+	"name" : "__MSG_name__",
+	"version" : "20110103",
+	"default_locale" : "en_US",
+	"homepage_url" : "http://interpr.it/",
+	"description": "__MSG_description__"
+}

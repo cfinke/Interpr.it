@@ -1,0 +1,23 @@
+{
+	"name": {
+		"message": "Strona Interpr.it"
+	},
+	"homepage_title": {
+		"message": "Tłumaczenie rozszerzeń przeglądarkowych"
+	},
+	"homepage_link_label": {
+		"message": "Początek"
+	},
+	"search_results_title": {
+		"message": "Wynik wyszukiwania: $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "Aktualizuj Swoje rozszerzenie"
+	},
+	"upload_page_link_label": {
+		"message": "Aktualizuj"
+	}
+}

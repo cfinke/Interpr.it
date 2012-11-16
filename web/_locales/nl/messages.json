@@ -1,0 +1,479 @@
+{
+	"name": {
+		"message": "Interpr.it Website"
+	},
+	"homepage_title": {
+		"message": "Browserextensie Vertaling"
+	},
+	"homepage_link_label": {
+		"message": "Home"
+	},
+	"search_results_title": {
+		"message": "Zoekresultaten: $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "Upload Jouw Extensie"
+	},
+	"upload_page_link_label": {
+		"message": "Upload"
+	},
+	"api_docs_page_title": {
+		"message": "API Documentatie"
+	},
+	"api_docs_page_header": {
+		"message": "Interpr.it API"
+	},
+	"api_docs_page_contact": {
+		"message": "Als je meer API-mogelijkheden toegankelijk wilt zien, email je $email_address$.",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	},
+	"api_get_parameters_header": {
+		"message": "GET Parameters"
+	},
+	"api_post_parameters_header": {
+		"message": "POST Parameters"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
+	},
+	"api_parameter_description_message": {
+		"message": "Het vertaalde bericht"
+	},
+	"api_return_format_zip": {
+		"message": ".zip of .xpi bestand"
+	},
+	"api_description_translate": {
+		"message": "Slaat een vertaling van een bericht van een extensie op."
+	},
+	"dashboard_page_title": {
+		"message": "Dashboard"
+	},
+	"dashboard_api_key_header": {
+		"message": "Jouw API-sleutel"
+	},
+	"api_documentation": {
+		"message": "API documentatie"
+	},
+	"action_download_locales": {
+		"message": "Download Laatste Localebestanden"
+	},
+	"action_upload_update": {
+		"message": "Upload Nieuwe Versie"
+	},
+	"extension": {
+		"message": "Extensie"
+	},
+	"locale": {
+		"message": "Locale"
+	},
+	"header_progress": {
+		"message": "Vertaalvoortgang"
+	},
+	"progress": {
+		"message": "Voortgang"
+	},
+	"header_translator_actions": {
+		"message": "Vertaleracties"
+	},
+	"label_version": {
+		"message": "Versie: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_updated": {
+		"message": "Geüpdated: $date$",
+		"placeholders": {
+			"date": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_translation_progress": {
+		"message": "Vertaalvoortgang: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_page_title": {
+		"message": "$extension_name$ :: $locale_name$ Locale",
+		"placeholders": {
+			"extension_name": {
+				"content": "$1",
+				"example": "ScribeFire"
+			},
+			"locale_name": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"api_error_upload": {
+		"message": "Er heeft zich een fout voorgedaan tijdens het uploaden van je bestand (code $error_code$)",
+		"placeholders": {
+			"error_code": {
+				"content": "$1",
+				"example": "123"
+			}
+		}
+	},
+	"api_error_upload_auth": {
+		"message": "Je moet ingelogd zijn om een extensie te uploaden."
+	},
+	"api_error_upload_invalid_zip": {
+		"message": "Het bestand dat je hebt geüpload was geen geldig zipbestand. Controleer het bestand en probeer het opnieuw."
+	},
+	"api_error_upload_invalid_default_locale": {
+		"message": "Ongeldige standaardlocale: $locale_code$",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1",
+				"example": "en_XX"
+			}
+		}
+	},
+	"api_error_upload_missing_locales_directory": {
+		"message": "Kon de _locales map niet vinden."
+	},
+	"api_error_upload_invalid_messages": {
+		"message": "Ongeldig messages.json in de $locale_code$ locale.",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1",
+				"example": "fr_FR"
+			}
+		}
+	},
+	"api_error_upload_missing_default_messages": {
+		"message": "Kon jouw standaardlocale's messages.json niet vinden."
+	},
+	"api_error_upload_empty_default_messages": {
+		"message": "Jouw standaardlocale bevatte geen berichten."
+	},
+	"api_error_upload_missing_default_locale_message": {
+		"message": "Kon het '$message_key$'bericht niet vinden in jouw standaardlocale.",
+		"placeholders": {
+			"message_key": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_default_locale_modification": {
+		"message": "Alleen de ontwikkelaar van een extensie kan een bericht in de standaardlocale veranderen."
+	},
+	"api_error_message_not_in_default_locale": {
+		"message": "Dat bericht bestaat niet in de standaardlocale."
+	},
+	"api_error_noauth_translate": {
+		"message": "Je moet ingelogd zijn om te vertalen."
+	},
+	"api_error_invalid_parameter": {
+		"message": "Ongeldige $parameter_name$ parameter.",
+		"placeholders": {
+			"parameter_name": {
+				"content": "<em>$1<\/em>"
+			}
+		}
+	},
+	"api_error_missing_placeholder": {
+		"message": "Missende plaatshouder $placeholder_name$.",
+		"placeholders": {
+			"placeholder_name": {
+				"content": "<em>$1<\/em>"
+			}
+		}
+	},
+	"api_error_missing_default_locale_message": {
+		"message": "De standaardlocale mist het bericht $message_name$.",
+		"placeholders": {
+			"message_name": {
+				"content": "'$1'"
+			}
+		}
+	},
+	"footer_google_affiliation": {
+		"message": "Interpr.it is niet officieel verwant aan Google of Mozilla."
+	},
+	"api": {
+		"message": "API"
+	},
+	"action_contact": {
+		"message": "Contact"
+	},
+	"action_signin": {
+		"message": "Log in met je Google Account"
+	},
+	"action_signout": {
+		"message": "Uitloggen"
+	},
+	"header_developers": {
+		"message": "Ontwikkelaars"
+	},
+	"action_signin_to_upload": {
+		"message": "Log in om je extensie te uploaden"
+	},
+	"header_translators": {
+		"message": "Vertalers"
+	},
+	"header_extension_search": {
+		"message": "Zoek voor extensies om te vertalen."
+	},
+	"header_latest_updates": {
+		"message": "Laatste Updates"
+	},
+	"header_top_translators": {
+		"message": "Meest Actieve Vertalers"
+	},
+	"header_newest_extensions": {
+		"message": "Nieuwste Extensies"
+	},
+	"header_locale_page": {
+		"message": "$locale$ Vertaling",
+		"placeholders": {
+			"locale": {
+				"content": "$1",
+				"example": "French"
+			}
+		}
+	},
+	"translate_error_signin": {
+		"message": "Je moet eerst $link_start$inloggen$link_end$ om te helpen een extensie te vertalen.",
+		"placeholders": {
+			"link_start": {
+				"content": "$1"
+			},
+			"link_end": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"developer_explanation": {
+		"message": "Beschrijving van ontwikkelaar: '$explanation$'",
+		"placeholders": {
+			"explanation": {
+				"content": "$1"
+			}
+		}
+	},
+	"header_placeholder_examples": {
+		"message": "Plaatshouder Voorbeelden"
+	},
+	"hide_completed": {
+		"message": "Verberg Vertaalde Berichten"
+	},
+	"show_all": {
+		"message": "Toon Alle Berichten"
+	},
+	"save_changes_button": {
+		"message": "Bewaar Wijzigingen"
+	},
+	"saving_notification": {
+		"message": "Opslaan..."
+	},
+	"saved_notification": {
+		"message": "Opgeslagen!"
+	},
+	"header_search_details": {
+		"message": "Zoekdetails"
+	},
+	"header_search_results": {
+		"message": "Zoekresultaten"
+	},
+	"text_no_results_for_query": {
+		"message": "Geen resultaten voor $query$.",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results_for_query_and_locale": {
+		"message": "Geen resultaten voor $query$ voor extensies die vertaling naar het $locale_code$ nodig hebben.",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			},
+			"locale_code": {
+				"content": "$2"
+			}
+		}
+	},
+	"text_no_results_for_locale": {
+		"message": "Geen resultaten voor extensies die vertaling naar het $locale_code$ nodig hebben.",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results": {
+		"message": "Geen resultaten."
+	},
+	"translate_call_to_action": {
+		"message": "Vertaal $extension$ naar het $locale$",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"label_your_locale": {
+		"message": "Jouw locale:"
+	},
+	"call_to_action_select": {
+		"message": "(select)"
+	},
+	"label_keywords": {
+		"message": "Trefwoorden: (optioneel)"
+	},
+	"label_search": {
+		"message": "Zoek"
+	},
+	"header_upload": {
+		"message": "Upload een extensie (.zip of .xpi bestand)"
+	},
+	"upload_instructions_1": {
+		"message": "Upload een XPI (mozilla) of een ZIP bestand (Chrome) van jouw extensiemap, niet een verpakt CRX bestand."
+	},
+	"action_reset_api_key": {
+		"message": "Reset API-sleutel"
+	},
+	"api_error_noauth_reset_key": {
+		"message": "Je moet ingelogd zijn om je API-sleutel te resetten."
+	},
+	"action_message_history": {
+		"message": "Vertaalgeschiedenis"
+	},
+	"action_revert": {
+		"message": "Terugzetten"
+	},
+	"column_header_message_version": {
+		"message": "Bericht"
+	},
+	"column_header_changed_by": {
+		"message": "Veranderd door"
+	},
+	"terms_of_use": {
+		"message": "Gebruikersvoorwaarden"
+	},
+	"link_extension_homepage": {
+		"message": "Homepagina"
+	},
+	"locale_name_da": {
+		"message": "Deens"
+	},
+	"locale_name_de": {
+		"message": "Duits"
+	},
+	"locale_name_el": {
+		"message": "Grieks"
+	},
+	"locale_name_en": {
+		"message": "Engels"
+	},
+	"locale_name_en_GB": {
+		"message": "Engels (Groot Brittannië)"
+	},
+	"locale_name_en_US": {
+		"message": "Engels (Verenigde Naties)"
+	},
+	"locale_name_es": {
+		"message": "Spaans"
+	},
+	"locale_name_es_419": {
+		"message": "Spaans (Latijns Amerika)"
+	},
+	"locale_name_fi": {
+		"message": "Fins"
+	},
+	"locale_name_fr": {
+		"message": "Frans"
+	},
+	"locale_name_id": {
+		"message": "Indonesisch"
+	},
+	"locale_name_it": {
+		"message": "Italiaans"
+	},
+	"locale_name_ja": {
+		"message": "Japans"
+	},
+	"locale_name_kn": {
+		"message": "Canadees"
+	},
+	"locale_name_ko": {
+		"message": "Koreaans"
+	},
+	"locale_name_nl": {
+		"message": "Nederlands"
+	},
+	"locale_name_pl": {
+		"message": "Pools"
+	},
+	"locale_name_pt": {
+		"message": "Portugees"
+	},
+	"locale_name_pt_BR": {
+		"message": "Portugees (Brazilië)"
+	},
+	"locale_name_pt_PT": {
+		"message": "Portugees (Portugal)"
+	},
+	"locale_name_ru": {
+		"message": "Russisch"
+	},
+	"locale_name_sv": {
+		"message": "Zweeds"
+	},
+	"locale_name_tr": {
+		"message": "Turks"
+	},
+	"locale_name_vi": {
+		"message": "Vietnamees"
+	},
+	"locale_name_zh": {
+		"message": "Chinees"
+	},
+	"locale_name_zh_CN": {
+		"message": "Chinees (China)"
+	},
+	"locale_name_zh_TW": {
+		"message": "Chinees (Taiwan)"
+	},
+	"email_preference_header": {
+		"message": "Email mij wanneer..."
+	},
+	"email_welcome_text_4": {
+		"message": "Vragen? Commentaar? Zorgen? Email $email_address$ met jouw reacties.",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	}
+}

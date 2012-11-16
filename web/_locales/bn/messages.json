@@ -1,0 +1,43 @@
+{
+	"locale_name_th": {
+		"message": "থাই"
+	},
+	"locale_name_tr": {
+		"message": "তুর্কিস"
+	},
+	"locale_name_uk": {
+		"message": "ইউক্রেইন"
+	},
+	"locale_name_vi": {
+		"message": "ভিয়েতনামিজ"
+	},
+	"locale_name_zh": {
+		"message": "চাইনিজ"
+	},
+	"locale_name_zh_CN": {
+		"message": "চাইনিজ (চীন)"
+	},
+	"locale_name_zh_TW": {
+		"message": "চাইনিজ (তাইওয়ান)"
+	},
+	"email_preference_header": {
+		"message": "আমাকে ইমেইল করুন যখন.."
+	},
+	"email_notification_subject": {
+		"message": "Interpr.it সক্রিয়তা"
+	},
+	"action_send_feedback": {
+		"message": "আপনার প্রতিক্রিয়া পাঠান"
+	},
+	"email_welcome_subject": {
+		"message": "Interpr.it এ স্বাগতম"
+	},
+	"email_welcome_text_4": {
+		"message": "প্রশ্ন? মন্তব্য? উদ্যোগ? আপনার প্রতিক্রিয়া $email_address$ ইমেইল করুন।",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	}
+}

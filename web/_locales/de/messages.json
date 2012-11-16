@@ -1,0 +1,835 @@
+{
+	"description": {
+		"message": "Die Lokalisierungsdateien, die Interpr.it am Laufen halten."
+	},
+	"name": {
+		"message": "Interpr.it Website"
+	},
+	"homepage_title": {
+		"message": "Browser Erweiterungen Übersetzer"
+	},
+	"homepage_link_label": {
+		"message": "Home"
+	},
+	"search_results_title": {
+		"message": "Suchergebnisse: $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "Lade deine Erweiterung hoch"
+	},
+	"upload_page_link_label": {
+		"message": "Upload"
+	},
+	"api_docs_page_title": {
+		"message": "API-Dokumentation"
+	},
+	"api_docs_page_header": {
+		"message": "Interpr.it API"
+	},
+	"api_docs_page_summary": {
+		"message": "Alle API URLs befinden sich auf $url$. Jede deiner Anfragen sollte $api_key_link_open$deinen API-Key$api_key_link_end$ als POST- oder GET-Parameter $code_start$api_key$code_end$ enhalten.",
+		"placeholders": {
+			"url": {
+				"content": "http:\/\/interpr.it\/",
+				"example": "http:\/\/interpr.it\/"
+			},
+			"api_key_link_open": {
+				"content": "<a href=\"\/dashboard#api_key\">"
+			},
+			"api_key_link_end": {
+				"content": "<\/a>"
+			},
+			"code_start": {
+				"content": "<code>"
+			},
+			"code_end": {
+				"content": "<\/code>"
+			}
+		}
+	},
+	"api_docs_page_contact": {
+		"message": "Wenn du gerne noch mehr API-Methoden zur Verfügung hättest, sende eine Email an $email_address$.",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	},
+	"api_get_parameters_header": {
+		"message": "GET-Parameter"
+	},
+	"api_post_parameters_header": {
+		"message": "POST-Parameter"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
+	},
+	"api_parameter_description_extension_id": {
+		"message": "Die ID der Erweiterung, wie sie in der URL des Permalinks der Erweiterungsseite angezeigt wird."
+	},
+	"api_parameter_description_locale_code": {
+		"message": "Die Lokalisierungskennung für die übersetzte Nachricht. (Eine Liste aller gültigen Kennungen (engl. locale codes) findet sich in $link_start$Googles i18n-Dokumentation$link_end$. z.B. \"en_US\" für amerikanisches Englisch.)",
+		"placeholders": {
+			"link_start": {
+				"content": "<a href=\"http:\/\/code.google.com\/chrome\/extensions\/i18n.html#locales-supported\">"
+			},
+			"link_end": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"api_parameter_description_name": {
+		"message": "Der Name der Nachricht, die übersetzt werden soll."
+	},
+	"api_parameter_description_message": {
+		"message": "Die übersetzte Nachricht."
+	},
+	"api_parameter_description_history_id": {
+		"message": "Die ID des History-Eintrags, so wie sie von $history_api_url$ zurückgegeben wird.",
+		"placeholders": {
+			"history_api_url": {
+				"content": "\/api\/history",
+				"example": "\/api\/history"
+			}
+		}
+	},
+	"api_parameter_description_package": {
+		"message": "Eine .zip-Datei mit deiner Erweiterung (oder nur ihr $locale_directory_name$-Verzeichnis und die $manifest_file_name$-Datei), kodiert wie beim Upload über ein HTML-Formular. Eine Möglichkeit, wie das bewerkstelligt werden kann: $code_example$",
+		"placeholders": {
+			"locale_directory_name": {
+				"content": "_locales\/",
+				"example": "_locales\/"
+			},
+			"manifest_file_name": {
+				"content": "manifest.json",
+				"example": "manifest.json"
+			},
+			"code_example": {
+				"content": "<code>curl -F \"package=@myextension.zip\" -F \"api_key=ABCDEFG123\" http:\/\/interpr.it\/api\/upload<\/code>",
+				"example": "<code>curl -F \"package=@myextension.zip\" http:\/\/interpr.it\/api\/upload<\/code>"
+			}
+		}
+	},
+	"api_return_format_header": {
+		"message": "Rückgabeformat"
+	},
+	"api_return_format_zip": {
+		"message": ".zip oder .xpi Datei"
+	},
+	"api_return_values_header": {
+		"message": "Beispiel-Rückgabewerte"
+	},
+	"api_description_upload": {
+		"message": "Verarbeitet eine .zip-Datei mit deiner Erweiterung und nimmt die notwendigen Änderungen an den Lokalisierungen vor."
+	},
+	"api_description_translate": {
+		"message": "Speichert die Übersetzung einer Nachricht aus einer Erweiterung."
+	},
+	"api_description_history": {
+		"message": "Gibt die Liste aller Änderungen an der Übersetzung einer Nachricht zurück."
+	},
+	"api_description_revert": {
+		"message": "Stellt eine frühere Version einer übersetzten Nachricht wieder her."
+	},
+	"dashboard_page_title": {
+		"message": "Übersicht"
+	},
+	"dashboard_header_extensions": {
+		"message": "Hochgeladene Erweiterungen"
+	},
+	"dashboard_api_key_header": {
+		"message": "Dein API-Schlüssel"
+	},
+	"api_documentation": {
+		"message": "API-Dokumentation"
+	},
+	"action_download_locales": {
+		"message": "Die neuesten Lokalisierungen herunterladen"
+	},
+	"action_upload_update": {
+		"message": "Lade eine neue Version hoch"
+	},
+	"dashboard_header_locales": {
+		"message": "Beiträge zu Lokalisierungen"
+	},
+	"extension": {
+		"message": "Erweiterung"
+	},
+	"locale": {
+		"message": "Lokalisierung"
+	},
+	"header_progress": {
+		"message": "Fortschritt der Übersetzung"
+	},
+	"progress": {
+		"message": "Fortschritt"
+	},
+	"header_developer_actions": {
+		"message": "Entwickleraktionen"
+	},
+	"header_translator_actions": {
+		"message": "Übersetzeraktionen"
+	},
+	"label_version": {
+		"message": "Version: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_updated": {
+		"message": "Aktualisiert: $date$",
+		"placeholders": {
+			"date": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_message_limit": {
+		"message": "Sätze zu übersetzen: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_translation_progress": {
+		"message": "Fortschritt der Übersetzung: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_page_title": {
+		"message": "$extension_name$ :: $locale_name$-Lokalisierung",
+		"placeholders": {
+			"extension_name": {
+				"content": "$1",
+				"example": "ScribeFire"
+			},
+			"locale_name": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"api_error_upload": {
+		"message": "Ein Fehler trat beim Hochladen deiner Datei auf (Fehlercode: $error_code$).",
+		"placeholders": {
+			"error_code": {
+				"content": "$1",
+				"example": "123"
+			}
+		}
+	},
+	"api_error_upload_auth": {
+		"message": "Du musst eingeloggt sein, um eine Erweiterung hochzuladen."
+	},
+	"api_error_upload_invalid_zip": {
+		"message": "Die hochgeladene Datei ist keine gültige .zip-Datei. Bitte überprüfe sie und versuche es noch einmal."
+	},
+	"api_error_upload_missing_file": {
+		"message": "Konnte die Datei $filename$ nicht finden. Bitte stelle sicher, dass sie sich im Wurzelverzeichnis der hochgeladenen zip-Datei befindet.",
+		"placeholders": {
+			"filename": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_upload_invalid_manifest": {
+		"message": "Das JSON in deiner manifest.json-Datei ist ungültig."
+	},
+	"api_error_upload_missing_default_locale": {
+		"message": "Deine manifest.json-Datei hat keine Standard-Lokalisierung festgelegt."
+	},
+	"api_error_upload_missing_version": {
+		"message": "Die Datei manifest.json enthält die Versionsnummer der Erweiterung nicht."
+	},
+	"api_error_upload_missing_name": {
+		"message": "Die Datei manifest.json enhält den Namen der Erweiterung nicht."
+	},
+	"api_error_upload_invalid_default_locale": {
+		"message": "Ungültige Standard-Lokalisierung: $locale_code$",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1",
+				"example": "en_XX"
+			}
+		}
+	},
+	"api_error_upload_missing_locales_directory": {
+		"message": "Konnte das Verzeichnis _locales nicht finden."
+	},
+	"api_error_upload_invalid_messages": {
+		"message": "Ungültige Datei messages.json in der Lokalisierung $locale_code$.",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1",
+				"example": "fr_FR"
+			}
+		}
+	},
+	"api_error_upload_missing_default_messages": {
+		"message": "Die Datei messages.json konnte im Verzeichnis der Standard-Lokalisierung nicht gefunden werden."
+	},
+	"api_error_upload_empty_default_messages": {
+		"message": "Deine Standard-Lokalisierung enthält keine Nachrichten."
+	},
+	"api_error_upload_missing_default_locale_message": {
+		"message": "Die Nachricht '$message_key$' konnte nicht in der Standard-Lokalisierung gefunden werden.",
+		"placeholders": {
+			"message_key": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_default_locale_modification": {
+		"message": "Nur der Entwickler einer Erweiterung kann Nachrichten in der Standard-Lokalisierung ändern."
+	},
+	"api_error_message_not_in_default_locale": {
+		"message": "Diese Nachricht existiert in der Standard-Lokalisierung nicht."
+	},
+	"api_error_noauth_translate": {
+		"message": "Du musst eingeloggt sein, um zu übersetzen."
+	},
+	"api_error_invalid_parameter": {
+		"message": "Ungültiger $parameter_name$-Parameter",
+		"placeholders": {
+			"parameter_name": {
+				"content": "<em>$1<\/em>"
+			}
+		}
+	},
+	"api_error_missing_placeholder": {
+		"message": "Fehlender Platzhalter: $placeholder_name$",
+		"placeholders": {
+			"placeholder_name": {
+				"content": "<em>$1<\/em>"
+			}
+		}
+	},
+	"api_error_missing_default_locale_message": {
+		"message": "Die Nachricht $message_name$ konnte nicht in der Standardlokalisierung gefunden werden.",
+		"placeholders": {
+			"message_name": {
+				"content": "'$1'"
+			}
+		}
+	},
+	"footer_google_affiliation": {
+		"message": "Interpr.it ist nicht offiziell verbunden mit Google oder Mozilla."
+	},
+	"api": {
+		"message": "API"
+	},
+	"action_contact": {
+		"message": "Kontakt"
+	},
+	"action_signin": {
+		"message": "Mit deinem Google-Account einloggen"
+	},
+	"action_signout": {
+		"message": "Ausloggen"
+	},
+	"header_developers": {
+		"message": "Entwickler"
+	},
+	"action_signin_to_upload": {
+		"message": "Logge dich ein, um deine Erweiterung hochzuladen."
+	},
+	"header_translators": {
+		"message": "Übersetzer"
+	},
+	"header_extension_search": {
+		"message": "Suche nach Erweiterungen, die übersetzt werden sollen."
+	},
+	"header_latest_updates": {
+		"message": "Letzte Aktualisierungen"
+	},
+	"header_top_translators": {
+		"message": "Aktivste Übersetzer"
+	},
+	"header_newest_extensions": {
+		"message": "Neueste Erweiterungen"
+	},
+	"header_locale_page": {
+		"message": "Übersetzung für $locale$",
+		"placeholders": {
+			"locale": {
+				"content": "$1",
+				"example": "French"
+			}
+		}
+	},
+	"translate_error_signin": {
+		"message": "$link_start$Logge dich ein$link_end$, um bei der Übersetzung von Erweiterungen zu helfen.",
+		"placeholders": {
+			"link_start": {
+				"content": "$1"
+			},
+			"link_end": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"developer_explanation": {
+		"message": "Beschreibung des Entwicklers: '$explanation$'",
+		"placeholders": {
+			"explanation": {
+				"content": "$1"
+			}
+		}
+	},
+	"header_placeholder_examples": {
+		"message": "Platzhalter-Beispiele"
+	},
+	"hide_completed": {
+		"message": "Übersetzte Nachrichten ausblenden"
+	},
+	"show_all": {
+		"message": "Zeige alle Nachrichten"
+	},
+	"save_changes_button": {
+		"message": "Änderungen speichern"
+	},
+	"saving_notification": {
+		"message": "Speichere..."
+	},
+	"saved_notification": {
+		"message": "Gespeichert!"
+	},
+	"header_search_details": {
+		"message": "Suchdetails"
+	},
+	"header_search_results": {
+		"message": "Suchergebnisse"
+	},
+	"text_no_results_for_query": {
+		"message": "Keine Suchergebnisse für $query$.",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results_for_query_and_locale": {
+		"message": "Keine Suchergebnisse für $query$ in Erweiterungen, die nach $locale_code$ übersetzt werden müssen.",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			},
+			"locale_code": {
+				"content": "$2"
+			}
+		}
+	},
+	"text_no_results_for_locale": {
+		"message": "Keine Suchergebnisse für Erweiterungen, die nach $locale_code$ übersetzt werden müssen.",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results": {
+		"message": "Keine Ergebnisse."
+	},
+	"translate_call_to_action": {
+		"message": "Übersetze $extension$ in $locale$",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"missing_phrase_count": {
+		"message": "(Es fehlen $number$ Sätze)",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_is_complete": {
+		"message": "Die Übersetzung von $extension$ in $locale$ ist vollständig.",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2"
+			}
+		}
+	},
+	"label_your_locale": {
+		"message": "Deine Lokalisierung:"
+	},
+	"call_to_action_select": {
+		"message": "(auswählen)"
+	},
+	"label_keywords": {
+		"message": "Schlüsselwörter: (optional)"
+	},
+	"label_search": {
+		"message": "Suche"
+	},
+	"header_upload": {
+		"message": "Lade eine Erweiterung hoch (.zip oder .xpi Dateien)"
+	},
+	"upload_instructions_1": {
+		"message": "Lade eine XPI (Mozilla) oder eine ZIP Datei (Chrome) hoch von deiner Erweiterung, kein verpackte CRX Datei."
+	},
+	"upload_instructions_2": {
+		"message": "Interpr.it benutzt automatisch Übersetzungen, die bereits für eine andere Erweiterung vorgenommen wurden. Wenn zum Beispiel ein Übersetzer bereits 'Thank you' ins Französische übersetzt hat, und deine Erweiterung benutzt ebenfalls die Phrase 'Thank you', dann kann Interpr.it automatisch diese Übersetzung übernehmen."
+	},
+	"upload_instructions_3": {
+		"message": "Du kannst Erweiterungen auch $link_open$über die Kommandozeile hochladen$link_close$.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"\/api#upload\">",
+				"example": "<a href=\"\/api\">"
+			},
+			"link_close": {
+				"content": "<\/a>",
+				"example": "<\/a>"
+			}
+		}
+	},
+	"action_reset_api_key": {
+		"message": "API-Schlüssel zurücksetzen"
+	},
+	"api_error_noauth_reset_key": {
+		"message": "Du musst eingeloggt sein, um den API-Schlüssel zurückzusetzen."
+	},
+	"action_message_history": {
+		"message": "Übersetzungs-Verlauf"
+	},
+	"action_revert": {
+		"message": "Wiederherstellen"
+	},
+	"column_header_message_version": {
+		"message": "Nachricht"
+	},
+	"column_header_changed_by": {
+		"message": "Geändert von"
+	},
+	"terms_of_use": {
+		"message": "Nutzungsbedingungen"
+	},
+	"terms_of_use_developers": {
+		"message": "--Anmerkung des Jura-unkundigen Übersetzers: Dies ist die deutsche Übersetzung der englischen 'Terms of use'. Das Studium des englischen Original ist angeraten --\nIndem du deine Software bei Interpr.it hochlädst gewährst du Interpr.it dauerhaft das nicht-exklusive Recht, die Metadateb deiner Software und den zu übersetzenden Content weltweit ohne Gebühr anzuzeigen, reproduzieren, verändern, anzupassen, verteilen, bewerben, speichern, übersetzen, ganz oder in Teilen."
+	},
+	"terms_of_use_translators": {
+		"message": "--Anmerkung des Jura-unkundigen Übersetzers: Dies ist die deutsche Übersetzung der englischen 'Terms of use'. Das Studium des englischen Original ist angeraten --\nDurch die Mitwirkung an Übersetzungen durch Interpr.it gewährst du Interpr.it und dem Software-Entwickler ein weltweites, gebührenfreies, dauerhaftes, nicht-exklusives Recht und die Lizenz den übersetzten Inhalt anzuzeigen, zu vervielfältigen, anzupassen, zu veröffentlichen, zu verteilen, zu bewerben, zu speichern, zu übersetzen, ganz oder teilweise."
+	},
+	"member_page_title": {
+		"message": "Mitwirkender :: $username$",
+		"placeholders": {
+			"username": {
+				"content": "$1",
+				"example": "cfinke"
+			}
+		}
+	},
+	"link_extension_homepage": {
+		"message": "Webseite der Erweiterung"
+	},
+	"locale_name_am": {
+		"message": "Amharisch"
+	},
+	"locale_name_ar": {
+		"message": "Arabisch"
+	},
+	"locale_name_bg": {
+		"message": "Bulgarisch"
+	},
+	"locale_name_bn": {
+		"message": "Bengalisch"
+	},
+	"locale_name_ca": {
+		"message": "Katalanisch"
+	},
+	"locale_name_cs": {
+		"message": "Tschechisch"
+	},
+	"locale_name_da": {
+		"message": "Dänisch"
+	},
+	"locale_name_de": {
+		"message": "Deutsch"
+	},
+	"locale_name_el": {
+		"message": "Griechisch"
+	},
+	"locale_name_en": {
+		"message": "Englisch"
+	},
+	"locale_name_en_GB": {
+		"message": "Englisch (Großbritannien)"
+	},
+	"locale_name_en_US": {
+		"message": "Englische (Vereinigte Staaten)"
+	},
+	"locale_name_es": {
+		"message": "Spanisch"
+	},
+	"locale_name_es_419": {
+		"message": "Spanisch (Lateinamerika)"
+	},
+	"locale_name_et": {
+		"message": "Estnisch"
+	},
+	"locale_name_fi": {
+		"message": "Finnisch"
+	},
+	"locale_name_fil": {
+		"message": "Philippinisch"
+	},
+	"locale_name_fr": {
+		"message": "Französisch"
+	},
+	"locale_name_gu": {
+		"message": "Gujarati"
+	},
+	"locale_name_he": {
+		"message": "Hebräisch"
+	},
+	"locale_name_hi": {
+		"message": "Hindi"
+	},
+	"locale_name_hr": {
+		"message": "Kroatisch"
+	},
+	"locale_name_hu": {
+		"message": "Ungarisch"
+	},
+	"locale_name_id": {
+		"message": "Indonesisch"
+	},
+	"locale_name_it": {
+		"message": "Italienisch"
+	},
+	"locale_name_ja": {
+		"message": "Japanisch"
+	},
+	"locale_name_kn": {
+		"message": "Kanadisch"
+	},
+	"locale_name_ko": {
+		"message": "Koreanisch"
+	},
+	"locale_name_lt": {
+		"message": "Litauisch"
+	},
+	"locale_name_lv": {
+		"message": "Lettisch"
+	},
+	"locale_name_ml": {
+		"message": "Malayalam"
+	},
+	"locale_name_mr": {
+		"message": "Marathi"
+	},
+	"locale_name_nb": {
+		"message": "Norwegisch (Bokmål)"
+	},
+	"locale_name_nl": {
+		"message": "Niederländisch"
+	},
+	"locale_name_or": {
+		"message": "Oriya"
+	},
+	"locale_name_pl": {
+		"message": "Polnisch"
+	},
+	"locale_name_pt": {
+		"message": "Portugiesisch"
+	},
+	"locale_name_pt_BR": {
+		"message": "Portugiesisch (Brasilien)"
+	},
+	"locale_name_pt_PT": {
+		"message": "Portugiesisch (Portugal)"
+	},
+	"locale_name_ro": {
+		"message": "Rumänisch"
+	},
+	"locale_name_ru": {
+		"message": "Russisch"
+	},
+	"locale_name_sk": {
+		"message": "Slovakisch"
+	},
+	"locale_name_sl": {
+		"message": "Slovenisch"
+	},
+	"locale_name_sr": {
+		"message": "Serbisch (Kyrillisch)"
+	},
+	"locale_name_sv": {
+		"message": "Schwedisch"
+	},
+	"locale_name_sw": {
+		"message": "Suaheli"
+	},
+	"locale_name_ta": {
+		"message": "Tamilisch"
+	},
+	"locale_name_te": {
+		"message": "Telugu"
+	},
+	"locale_name_th": {
+		"message": "Thailändisch"
+	},
+	"locale_name_tr": {
+		"message": "Türkisch"
+	},
+	"locale_name_uk": {
+		"message": "Ukrainisch"
+	},
+	"locale_name_vi": {
+		"message": "Vietnamesisch"
+	},
+	"locale_name_zh": {
+		"message": "Chinesisch"
+	},
+	"locale_name_zh_CN": {
+		"message": "Chinesisch (China)"
+	},
+	"locale_name_zh_TW": {
+		"message": "Chinesisch (Taiwan)"
+	},
+	"email_preference_header": {
+		"message": "E-Mail-Benachrichtigung wenn..."
+	},
+	"email_preference_extension_updates": {
+		"message": "Eine von mir übersetzte Erweiterung aktualisiert wurde."
+	},
+	"email_preference_locale_completed": {
+		"message": "Eine Lokalisierung für eine von mir hochgeladene Erweiterung fertiggestellt wurde."
+	},
+	"email_preference_message_changed": {
+		"message": "Eine von mir übersetzte Nachricht von einem anderen Nutzer verändert wurde."
+	},
+	"email_preference_extension_created": {
+		"message": "Eine neue Erweiterung hochgeladen wurde."
+	},
+	"email_batch_description": {
+		"message": "Sie erhalten pro Tag höchstens eine E-Mail, die alle Ereignisse des vergangenen Tages enthält."
+	},
+	"email_notification_subject": {
+		"message": "Aktivität auf Interpr.it"
+	},
+	"email_notification_intro": {
+		"message": "Deine Benachrichtigungen für die letzten Aktivitäten auf Interpr.it:"
+	},
+	"email_notification_header_extension_new": {
+		"message": "Neue Erweiterungen"
+	},
+	"email_notification_header_extension_update": {
+		"message": "Aktualisierte Erweiterungen"
+	},
+	"email_notification_header_locale_complete": {
+		"message": "Fertiggestellte Lokalisierungen"
+	},
+	"email_notification_header_message_modified": {
+		"message": "Geänderte Nachrichten"
+	},
+	"email_notification_locale_complete": {
+		"message": "Der Nutzer $username$ hat die Lokalisierung auf $locale_code$ der Erweiterung $extension$ fertiggestellt.",
+		"placeholders": {
+			"username": {
+				"content": "<a href=\"$2\">$1<\/a>",
+				"example": "cfinke"
+			},
+			"locale_code": {
+				"content": "$3",
+				"example": "fr"
+			},
+			"extension": {
+				"content": "<a href=\"$5\">$4<\/a>",
+				"example": "ScribeFire"
+			}
+		}
+	},
+	"email_notification_message_changed": {
+		"message": "Der Nutzer $username$ hat eine $link_open$deiner Übersetzungen$link_close$ der Erweiterung $extension$ geändert.",
+		"placeholders": {
+			"username": {
+				"content": "<a href=\"$2\">$1<\/a>",
+				"example": "cfinke"
+			},
+			"link_open": {
+				"content": "<a href=\"$3\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			},
+			"extension": {
+				"content": "<a href=\"$5\">$4<\/a>",
+				"example": "ScribeFire"
+			}
+		}
+	},
+	"action_change_email_preferences": {
+		"message": "Ändere deine Einstellungen für E-Mail-Benachrichtigungen"
+	},
+	"action_send_feedback": {
+		"message": "Rückmeldung an die Entwickler"
+	},
+	"email_welcome_subject": {
+		"message": "Willkommen bei Interpr.it"
+	},
+	"email_welcome_text_1": {
+		"message": "Willkommen bei Interpr.it! Du bist damit einer von buchstäblich einigen, die mit Interpr.it die Übersetzungen ihrer Chrome-Erweiterungen verwalten."
+	},
+	"email_welcome_text_2": {
+		"message": "Bist du ein Entwickler? Melde dich an, um deine Erweiterungen hochzuladen oder nutze die $link_open$Interpr.it API$link_close$ zum Hochladen mithilfe der Befehlszeile.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"http:\/\/interpr.it\/api\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"email_welcome_text_3": {
+		"message": "Bist du ein Übersetzer? Suche auf $link_open$Interpr.it$link_close$ nach Erweiterungen, die noch Übersetzungen brauchen.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"http:\/\/interpr.it\/\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"email_welcome_text_4": {
+		"message": "Fragen? Anmerkungen? Bedenken? Sende dein Feedback an $email_address$ .",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	}
+}
