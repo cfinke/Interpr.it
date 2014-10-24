@@ -234,6 +234,16 @@ try {
 		case "dashboard":
 			view_dashboard();
 		break;
+		case "flush":
+			cache_flush();
+			echo "Done.";
+			die;
+		break;
+		case "email-test":
+			email(ADMIN_EMAIL, "Email Test", "This was a test.");
+			echo "Done";
+			die;
+		break;
 		default:
 			include INCLUDE_PATH . "/templates/404.php";
 			die;
