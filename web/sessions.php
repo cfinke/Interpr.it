@@ -8,6 +8,10 @@ function sess_id() {
 	return $GLOBALS["user"]->id;
 }
 
+function is_superadmin() {
+	return sess_id() === 1;
+}
+
 session_start();
 
 if ($_GET["a"] === "api" && (isset($_POST["api_key"]) || isset($_GET["api_key"]))) {
