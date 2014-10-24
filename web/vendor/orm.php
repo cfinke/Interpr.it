@@ -423,16 +423,11 @@ class Object {
 		$amount = intval($amount);
 		
 		if ($amount) {
-			$q = "UPDATE `".$this->db_table."` SET `".$field."`=";
+			$q = "UPDATE `".$this->db_table."` SET `".$field."`=`".$field."`-".$amount." WHERE `".$this->pk_column."`='".db_escape($this->_id)."' ";
 			
 			if (!is_null($floor)) {
-				$q .= " GREATEST(" . intval($floor) . ", `".$field."`-".$amount.") ";
+				$q .= "AND `".$field."` > ".intval($floor)." ";
 			}
-			else {
-				$q .= " `".$field."`-".$amount;
-			}
-			
-			$q .= " WHERE `".$this->pk_column."`='".db_escape($this->_id)."'";
 			
 			db_query($q, $this->db_api, $this->db_host); // @update
 			
