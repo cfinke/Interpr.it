@@ -53,7 +53,7 @@ CREATE TABLE `message_history` (
 CREATE TABLE `message_index` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `extension_id` int(11) unsigned NOT NULL,
-  `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(100) CHARACTER SET utf8 COLLATE utf8_bin NOT NULL,
   `description` text COLLATE utf8_unicode_ci,
   `placeholders` text COLLATE utf8_unicode_ci,
   `order` int(10) unsigned NOT NULL,
