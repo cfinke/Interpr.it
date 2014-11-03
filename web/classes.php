@@ -254,6 +254,9 @@ class Locale extends Object {
 			
 			return $this->_extension;
 		}
+		else if ( $member === "message_count" ) {
+			return count( (array) $this->messages );
+		}
 		
 		return parent::__get($member);
 	}
