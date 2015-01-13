@@ -1,0 +1,855 @@
+{
+	"description": {
+		"message": "แฟ้มภาษาที่เป็นขุมพลังให้เว็บไซต์ http:\/\/interpr.it\/"
+	},
+	"name": {
+		"message": "เว็บไซต์ http:\/\/interpr.it\/"
+	},
+	"homepage_title": {
+		"message": "การแปลส่วนขยายของเบราว์เซอร์"
+	},
+	"homepage_about": {
+		"message": "Interpr.it เป็นเครื่องมือสำหรับการร่วมงานกันระหว่างนักพัฒนาส่วนขยายของเบราว์เซอร์กับผู้ใช้งานที่พูดได้ 2 ภาษา สำหรับนักพัฒนา เชิญ$link_open$อัปโหลดส่วนขยาย$link_close$ ส่วนผู้แปล เชิญใช้ Interpr.it แปลส่วนขยายที่ชื่นชอบให้เป็นภาษาแม่ของตัวเอง",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"\/upload\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"homepage_link_label": {
+		"message": "หน้าแรก"
+	},
+	"search_results_title": {
+		"message": "ผลการค้นหา: $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "อัปโหลดส่วนขยาย"
+	},
+	"upload_page_link_label": {
+		"message": "อัปโหลด"
+	},
+	"api_docs_page_title": {
+		"message": "เอกสารประกอบ API"
+	},
+	"api_docs_page_header": {
+		"message": "API ของ Interpr.it"
+	},
+	"api_docs_page_summary": {
+		"message": "URL ของ API ทั้งหมดอยู่บนโดเมน $url$ คุณควรแนบ $api_key_link_open$API key$api_key_link_end$ เป็นพารามิเตอร์ POST หรือ GET ชื่อ $code_start$api_key$code_end$ ในทุกคำขอ",
+		"placeholders": {
+			"url": {
+				"content": "http:\/\/interpr.it\/",
+				"example": "http:\/\/interpr.it\/"
+			},
+			"api_key_link_open": {
+				"content": "<a href=\"\/dashboard#api_key\">"
+			},
+			"api_key_link_end": {
+				"content": "<\/a>"
+			},
+			"code_start": {
+				"content": "<code>"
+			},
+			"code_end": {
+				"content": "<\/code>"
+			}
+		}
+	},
+	"api_docs_page_contact": {
+		"message": "หากมีข้อเสนอแนะเมท็อด API เพิ่มเติมให้ส่งอีเมลมาที่ $email_address$",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	},
+	"api_get_parameters_header": {
+		"message": "พารามิเตอร์ GET"
+	},
+	"api_post_parameters_header": {
+		"message": "พารามิเตอร์ POST"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
+	},
+	"api_parameter_description_extension_id": {
+		"message": "หมายเลขส่วนขยายที่เห็นได้ใน URL ของหน้าลิงก์ถาวรส่วนขยาย"
+	},
+	"api_parameter_description_locale_code": {
+		"message": "รหัสภาษาของข้อความที่แปลแล้ว (รายชื่อรหัสภาษาดูได้ใน$link_start$เอกสารประกอบ i18n ของ Google$link_end$)",
+		"placeholders": {
+			"link_start": {
+				"content": "<a href=\"http:\/\/code.google.com\/chrome\/extensions\/i18n.html#locales-supported\">"
+			},
+			"link_end": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"api_parameter_description_name": {
+		"message": "ชื่อของข้อความที่กำลังจะแปล"
+	},
+	"api_parameter_description_message": {
+		"message": "ข้อความที่แปลแล้ว"
+	},
+	"api_parameter_description_history_id": {
+		"message": "หมายเลขรายการประวัติ คืนค่าโดย $history_api_url$",
+		"placeholders": {
+			"history_api_url": {
+				"content": "\/api\/history",
+				"example": "\/api\/history"
+			}
+		}
+	},
+	"api_parameter_description_package": {
+		"message": "แฟ้ม .zip ของส่วนขยาย (หรือเป็นเพียงไดเรกทอรี $locale_directory_name$ และแฟ้ม $manifest_file_name$) ซึ่งเหมือนกับที่อัปโหลดในรูป HTML วิธีทำวิธีหนึ่งคือ:\n$code_example$",
+		"placeholders": {
+			"locale_directory_name": {
+				"content": "_locales\/",
+				"example": "_locales\/"
+			},
+			"manifest_file_name": {
+				"content": "manifest.json",
+				"example": "manifest.json"
+			},
+			"code_example": {
+				"content": "<code>curl -F \"package=@myextension.zip\" -F \"api_key=ABCDEFG123\" http:\/\/interpr.it\/api\/upload<\/code>",
+				"example": "<code>curl -F \"package=@myextension.zip\" http:\/\/interpr.it\/api\/upload<\/code>"
+			}
+		}
+	},
+	"api_return_format_header": {
+		"message": "รูปแบบการคืนค่า"
+	},
+	"api_return_format_zip": {
+		"message": "แฟ้ม .zip หรือ .xpi"
+	},
+	"api_return_values_header": {
+		"message": "ตัวอย่างค่าที่คืน"
+	},
+	"api_description_upload": {
+		"message": "ประมวลผลแฟ้ม zip ของส่วนขยายและบันทึกความเปลี่ยนแปลงไปยังแฟ้มภาษา"
+	},
+	"api_description_download": {
+		"message": "คืนค่าแฟ้ม .zip ของไดเรกทอรีแฟ้มภาษาล่าสุดให้ส่วนขยายที่กำหนด"
+	},
+	"api_description_translate": {
+		"message": "บันทึกคำแปลข้อความของส่วนขยาย"
+	},
+	"api_description_history": {
+		"message": "คืนค่ารายการความเปลี่ยนแปลงทั้งหมดไปยังการแปลข้อความ"
+	},
+	"api_description_revert": {
+		"message": "ย้อนข้อความที่แปลแล้วไปเป็นการแก้ไขก่อนหน้า"
+	},
+	"dashboard_page_title": {
+		"message": "ภาพรวม"
+	},
+	"dashboard_header_extensions": {
+		"message": "ส่วนขยายที่อัปโหลด"
+	},
+	"dashboard_api_key_header": {
+		"message": "API key ของคุณ"
+	},
+	"api_documentation": {
+		"message": "เอกสารประกอบ API"
+	},
+	"action_download_locales": {
+		"message": "ดาวน์โหลดแฟ้มภาษาล่าสุด"
+	},
+	"action_upload_update": {
+		"message": "อัปโหลดรุ่นใหม่"
+	},
+	"dashboard_header_locales": {
+		"message": "ความมีส่วนร่วมในแฟ้มภาษา"
+	},
+	"extension": {
+		"message": "ส่วนขยาย"
+	},
+	"locale": {
+		"message": "แฟ้มภาษา"
+	},
+	"header_progress": {
+		"message": "ความคืบหน้าการแปล"
+	},
+	"progress": {
+		"message": "ความคืบหน้า"
+	},
+	"files": {
+		"message": "แฟ้ม"
+	},
+	"header_developer_actions": {
+		"message": "การดำเนินการสำหรับนักพัฒนา"
+	},
+	"header_translator_actions": {
+		"message": "การดำเนินการสำหรับผู้แปล"
+	},
+	"label_version": {
+		"message": "รุ่น: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_updated": {
+		"message": "อัปเดต: $date$",
+		"placeholders": {
+			"date": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_message_limit": {
+		"message": "วลีที่แปลได้: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_translation_progress": {
+		"message": "ความคืบหน้าการแปล: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_page_title": {
+		"message": "$extension_name$ :: แฟ้มภาษา$locale_name$",
+		"placeholders": {
+			"extension_name": {
+				"content": "$1",
+				"example": "ScribeFire"
+			},
+			"locale_name": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"api_error_upload": {
+		"message": "มีข้อผิดพลาดขณะกำลังอัปโหลดแฟ้ม (รหัส $error_code$)",
+		"placeholders": {
+			"error_code": {
+				"content": "$1",
+				"example": "123"
+			}
+		}
+	},
+	"api_error_upload_auth": {
+		"message": "คุณต้องลงชื่อเข้าใช้ก่อนอัปโหลดส่วนขยาย"
+	},
+	"api_error_upload_invalid_zip": {
+		"message": "แฟ้มที่คุณอัปโหลดไม่ใช่แฟ้ม zip ที่ถูกต้อง กรุณาตรวจสอบแฟ้มแล้วลองใหม่อีกครั้ง"
+	},
+	"api_error_upload_missing_file": {
+		"message": "ไม่สามารถระบุตำแหน่ง $filename$ กรุณาตรวจสอบให้แน่ใจว่าเป็นที่อยู่แฟ้ม zip ที่จะอัปโหลด",
+		"placeholders": {
+			"filename": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_upload_invalid_manifest": {
+		"message": "JSON ในแฟ้ม manifest.json ไม่ถูกต้อง"
+	},
+	"api_error_upload_missing_default_locale": {
+		"message": "manifest.json ของคุณไม่ได้ระบุรหัสภาษาตั้งต้น"
+	},
+	"api_error_upload_missing_version": {
+		"message": "manifest.json ของคุณไม่ได้ระบุหมายเลขรุ่น"
+	},
+	"api_error_upload_missing_name": {
+		"message": "manifest.json ของคุณไม่ได้ระบุชื่อส่วนขยาย"
+	},
+	"api_error_upload_invalid_default_locale": {
+		"message": "รหัสภาษาตั้งต้นไม่ถูกต้อง: $locale_code$",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1",
+				"example": "en_XX"
+			}
+		}
+	},
+	"api_error_upload_missing_locales_directory": {
+		"message": "หาไดเรกทอรี _locales ไม่พบ"
+	},
+	"api_error_upload_invalid_messages": {
+		"message": "messages.json ในแฟ้มภาษา $locale_code$ ไม่ถูกต้อง",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1",
+				"example": "fr_FR"
+			}
+		}
+	},
+	"api_error_upload_missing_default_messages": {
+		"message": "ไม่สามารถระบุตำแหน่ง messages.json ของแฟ้มภาษาตั้งต้นได้"
+	},
+	"api_error_upload_empty_default_messages": {
+		"message": "แฟ้มภาษาตั้งต้นของคุณไม่มีข้อความใดเลย"
+	},
+	"api_error_upload_missing_default_locale_message": {
+		"message": "ไม่สามารถระบุตำแหน่งข้อความ \"$message_key$\" ในแฟ้มภาษาตั้งต้นได้",
+		"placeholders": {
+			"message_key": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_default_locale_modification": {
+		"message": "เฉพาะนักพัฒนาส่วนขยายเท่านั้นที่มีสิทธิ์เปลี่ยนข้อความในแฟ้มภาษาตั้งต้น"
+	},
+	"api_error_message_not_in_default_locale": {
+		"message": "ข้อความนั้นไม่มีในแฟ้มภาษาตั้งต้น"
+	},
+	"api_error_noauth_translate": {
+		"message": "คุณต้องลงชื่อเข้าใช้ก่อนแปล"
+	},
+	"api_error_invalid_parameter": {
+		"message": "พารามิเตอร์ $parameter_name$ ไม่ถูกต้อง",
+		"placeholders": {
+			"parameter_name": {
+				"content": "<em>$1<\/em>"
+			}
+		}
+	},
+	"api_error_missing_placeholder": {
+		"message": "ไม่พบตำแหน่ง $placeholder_name$",
+		"placeholders": {
+			"placeholder_name": {
+				"content": "<em>$1<\/em>"
+			}
+		}
+	},
+	"api_error_missing_default_locale_message": {
+		"message": "ข้อความ $message_name$ ในแฟ้มภาษาตั้งต้นหายไป",
+		"placeholders": {
+			"message_name": {
+				"content": "'$1'"
+			}
+		}
+	},
+	"footer_google_affiliation": {
+		"message": "Interpr.it ไม่ใช่บริษัทในเครือ Google หรือ Mozilla อย่างเป็นทางการ"
+	},
+	"api": {
+		"message": "API"
+	},
+	"action_contact": {
+		"message": "ติดต่อ"
+	},
+	"action_signin": {
+		"message": "ลงชื่อเข้าใช้ด้วยบัญชีผู้ใช้ Google"
+	},
+	"action_signout": {
+		"message": "ออกจากระบบ"
+	},
+	"header_developers": {
+		"message": "นักพัฒนา"
+	},
+	"action_signin_to_upload": {
+		"message": "ลงชื่อเข้าใช้เพื่ออัปโหลดส่วนขยาย"
+	},
+	"header_translators": {
+		"message": "ผู้แปล"
+	},
+	"header_extension_search": {
+		"message": "ค้นหาส่วนขยายที่จะแปล"
+	},
+	"header_latest_updates": {
+		"message": "การอัปเดตล่าสุด"
+	},
+	"header_top_translators": {
+		"message": "ผู้แปลอันดับสูงสุด"
+	},
+	"header_newest_extensions": {
+		"message": "ส่วนขยายใหม่สุด"
+	},
+	"header_locale_page": {
+		"message": "การแปลภาษา$locale$",
+		"placeholders": {
+			"locale": {
+				"content": "$1",
+				"example": "French"
+			}
+		}
+	},
+	"translate_error_signin": {
+		"message": "คุณต้อง$link_start$ลงชื่อเข้าใช้$link_end$ก่อนจึงจะช่วยแปลภาษาได้",
+		"placeholders": {
+			"link_start": {
+				"content": "$1"
+			},
+			"link_end": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"developer_explanation": {
+		"message": "คำอธิบายจากนักพัฒนา: \"$explanation$\"",
+		"placeholders": {
+			"explanation": {
+				"content": "$1"
+			}
+		}
+	},
+	"header_placeholder_examples": {
+		"message": "ตัวอย่างตำแหน่ง"
+	},
+	"hide_completed": {
+		"message": "ซ่อนข้อความที่เสร็จแล้ว"
+	},
+	"show_all": {
+		"message": "แสดงข้อความทั้งหมด"
+	},
+	"save_changes_button": {
+		"message": "บันทึกการเปลี่ยนแปลง"
+	},
+	"saving_notification": {
+		"message": "กำลังบันทึก..."
+	},
+	"saved_notification": {
+		"message": "บันทึกแล้ว!"
+	},
+	"header_search_details": {
+		"message": "รายละเอียดการค้นหา"
+	},
+	"header_search_results": {
+		"message": "ผลการค้นหา"
+	},
+	"text_no_results_for_query": {
+		"message": "ไม่พบผลลัพธ์สำหรับ $query$",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results_for_query_and_locale": {
+		"message": "ไม่พบผลลัพธ์สำหรับ $query$ สำหรับส่วนขยายที่ต้องการแปลเป็น $locale_code$",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			},
+			"locale_code": {
+				"content": "$2"
+			}
+		}
+	},
+	"text_no_results_for_locale": {
+		"message": "ไม่พบผลลัพธ์สำหรับส่วนขยายที่ต้องการแปลเป็น $locale_code$",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results": {
+		"message": "ไม่พบผลลัพธ์"
+	},
+	"translate_call_to_action": {
+		"message": "แปล $extension$ เป็นภาษา$locale$",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"missing_phrase_count": {
+		"message": "(วลีหายไป $number$ วลี)",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_is_complete": {
+		"message": "แฟ้มภาษา$locale$ของ $extension$ แปลเสร็จแล้ว",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2"
+			}
+		}
+	},
+	"label_your_locale": {
+		"message": "แฟ้มภาษาของคุณ:"
+	},
+	"call_to_action_select": {
+		"message": "(เลือก)"
+	},
+	"label_keywords": {
+		"message": "คำสำคัญ: (ไม่จำเป็น)"
+	},
+	"label_search": {
+		"message": "ค้นหา"
+	},
+	"header_upload": {
+		"message": "อัปโหลดส่วนขยาย (แฟ้ม .zip หรือ .xpi)"
+	},
+	"upload_instructions_1": {
+		"message": "อัปโหลดแฟ้ม XPI (Mozilla) หรือ ZIP (Chrome) ของไดเรกทอรีของส่วนขยาย กรุณาไม่ใช้แฟ้มรวม CRX"
+	},
+	"upload_instructions_2": {
+		"message": "Interpr.it จะเติมคำแปลที่แปลแล้วในส่วนขยายอื่นโดยอัตโนมัติ ตัวอย่างเช่น ถ้าผู้แปลแปลวลี \"ขอบคุณ\" เป็นภาษาไทยในส่วนขยายอื่นแล้ว และส่วนขยายของคุณมีวลี \"ขอบคุณ\" เช่นกัน Interpr.it ก็จะเติมคำแปลนั้นให้โดยอัตโนมัติ"
+	},
+	"upload_instructions_3": {
+		"message": "คุณสามารถ$link_open$อัปโหลดส่วนขยายจากบรรทัดคำสั่ง$link_close$ได้ด้วย",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"\/api#upload\">",
+				"example": "<a href=\"\/api\">"
+			},
+			"link_close": {
+				"content": "<\/a>",
+				"example": "<\/a>"
+			}
+		}
+	},
+	"action_reset_api_key": {
+		"message": "ตั้ง API key ใหม่"
+	},
+	"api_error_noauth_reset_key": {
+		"message": "คุณต้องลงชื่อเข้าใช้ก่อนตั้ง API key ใหม่"
+	},
+	"action_message_history": {
+		"message": "ประวัติการแปล"
+	},
+	"action_revert": {
+		"message": "ย้อน"
+	},
+	"column_header_message_version": {
+		"message": "ข้อความ"
+	},
+	"column_header_changed_by": {
+		"message": "เปลี่ยนแปลงโดย"
+	},
+	"terms_of_use": {
+		"message": "เงื่อนไขการใช้งาน"
+	},
+	"terms_of_use_developers": {
+		"message": "โดยการอัปโหลดซอฟต์แวร์ของคุณไปยัง Interpr.it คุณได้ให้สิทธิทั่วโลก ไม่เสียค่าใช้ซ้ำ ตลอดชีพ และไม่ผูกขาดแก่ Interpr.it ในการแสดง ทำซ้ำ แก้ไข ดัดแปลง เผยแพร่ แจกจ่าย ส่งเสริม จัดเก็บ แปลภาษา ในทั้งหมดหรือบางส่วน ของข้อมูลกำกับของซอฟต์แวร์ของคุณและเนื้อหาที่ประสงค์ให้แปล"
+	},
+	"terms_of_use_translators": {
+		"message": "โดยการมีส่วนร่วมในการแปลภาษาขอกซอฟต์แวร์ผ่าน Interpr.it คุณได้ให้สิทธิ Interpr.it และนักพัฒนาซอฟต์แวร์ทั่วโลก ไม่เสียค่าใช้ซ้ำ ตลอดชีพ และไม่ผูกขาดแก่ Interpr.it ในการแสดง ทำซ้ำ แก้ไข ดัดแปลง เผยแพร่ แจกจ่าย ส่งเสริม จัดเก็บ แปลภาษา ในทั้งหมดหรือบางส่วน ของเนื้อหาที่แปล"
+	},
+	"member_page_title": {
+		"message": "ผู้สนับสนุน :: $username$",
+		"placeholders": {
+			"username": {
+				"content": "$1",
+				"example": "cfinke"
+			}
+		}
+	},
+	"link_extension_homepage": {
+		"message": "หน้าแรก"
+	},
+	"locale_name_am": {
+		"message": "อัมฮาริก"
+	},
+	"locale_name_ar": {
+		"message": "อาหรับ"
+	},
+	"locale_name_bg": {
+		"message": "บัลแกเรีย"
+	},
+	"locale_name_bn": {
+		"message": "เบงกาลี"
+	},
+	"locale_name_ca": {
+		"message": "คาตาลัน"
+	},
+	"locale_name_cs": {
+		"message": "เช็ก"
+	},
+	"locale_name_da": {
+		"message": "เดนมาร์ก"
+	},
+	"locale_name_de": {
+		"message": "เยอรมัน"
+	},
+	"locale_name_el": {
+		"message": "กรีก"
+	},
+	"locale_name_en": {
+		"message": "อังกฤษ"
+	},
+	"locale_name_en_GB": {
+		"message": "อังกฤษ (บริเตนใหญ่)"
+	},
+	"locale_name_en_US": {
+		"message": "อังกฤษ (สหรัฐอเมริกา)"
+	},
+	"locale_name_es": {
+		"message": "สเปน"
+	},
+	"locale_name_es_419": {
+		"message": "สเปน (ลาตินอเมริกา)"
+	},
+	"locale_name_et": {
+		"message": "เอสโตเนีย"
+	},
+	"locale_name_fi": {
+		"message": "ฟินแลนด์"
+	},
+	"locale_name_fil": {
+		"message": "ฟิลิปีโน"
+	},
+	"locale_name_fr": {
+		"message": "ฝรั่งเศส"
+	},
+	"locale_name_gu": {
+		"message": "คุชราต"
+	},
+	"locale_name_he": {
+		"message": "ฮิบรู"
+	},
+	"locale_name_hi": {
+		"message": "ฮินดี"
+	},
+	"locale_name_hr": {
+		"message": "โครเอเชีย"
+	},
+	"locale_name_hu": {
+		"message": "ฮังการี"
+	},
+	"locale_name_id": {
+		"message": "อินโดนีเซีย"
+	},
+	"locale_name_it": {
+		"message": "อิตาลี"
+	},
+	"locale_name_ja": {
+		"message": "ญี่ปุ่น"
+	},
+	"locale_name_kn": {
+		"message": "กันนาดา"
+	},
+	"locale_name_ko": {
+		"message": "เกาหลี"
+	},
+	"locale_name_lt": {
+		"message": "ลิทัวเนีย"
+	},
+	"locale_name_lv": {
+		"message": "ลัตเวีย"
+	},
+	"locale_name_ml": {
+		"message": "มาลายาลัม"
+	},
+	"locale_name_mr": {
+		"message": "มราฐี"
+	},
+	"locale_name_nb": {
+		"message": "นอร์เวย์ (บุ๊กมอล)"
+	},
+	"locale_name_nl": {
+		"message": "ดัตช์"
+	},
+	"locale_name_or": {
+		"message": "โอริยา"
+	},
+	"locale_name_pl": {
+		"message": "โปแลนด์"
+	},
+	"locale_name_pt": {
+		"message": "โปรตุเกส"
+	},
+	"locale_name_pt_BR": {
+		"message": "โปรตุเกส (บราซิล)"
+	},
+	"locale_name_pt_PT": {
+		"message": "โปรตุเกส (โปรตุเกส)"
+	},
+	"locale_name_ro": {
+		"message": "โรมาเนีย"
+	},
+	"locale_name_ru": {
+		"message": "รัสเซีย"
+	},
+	"locale_name_sk": {
+		"message": "สโลวัก"
+	},
+	"locale_name_sl": {
+		"message": "สโลวีเนีย"
+	},
+	"locale_name_sr": {
+		"message": "เซอร์เบีย (ซีริลลิก)"
+	},
+	"locale_name_sv": {
+		"message": "สวีเดน"
+	},
+	"locale_name_sw": {
+		"message": "สวาฮีลี"
+	},
+	"locale_name_ta": {
+		"message": "ทมิฬ"
+	},
+	"locale_name_te": {
+		"message": "เตลูกู"
+	},
+	"locale_name_th": {
+		"message": "ไทย"
+	},
+	"locale_name_tr": {
+		"message": "ตุรกี"
+	},
+	"locale_name_uk": {
+		"message": "ยูเครน"
+	},
+	"locale_name_vi": {
+		"message": "เวียดนาม"
+	},
+	"locale_name_zh": {
+		"message": "จีน"
+	},
+	"locale_name_zh_CN": {
+		"message": "จีน (จีน)"
+	},
+	"locale_name_zh_TW": {
+		"message": "จีน (ไต้หวัน)"
+	},
+	"email_preference_header": {
+		"message": "ส่งอีเมลหาฉันเมื่อ..."
+	},
+	"email_preference_extension_updates": {
+		"message": "ส่วนขยายที่ฉันช่วยแปลมีการอัปเดต"
+	},
+	"email_preference_locale_completed": {
+		"message": "แฟ้มภาษาของส่วนขยายที่ฉันอัปโหลดแปลเสร็จสมบูรณ์"
+	},
+	"email_preference_message_changed": {
+		"message": "มีผู้อื่นแก้ไขข้อความที่ฉันแปล"
+	},
+	"email_preference_extension_created": {
+		"message": "มีส่วนขยายใหม่อัปโหลด"
+	},
+	"email_batch_description": {
+		"message": "คุณจะได้รับอีเมลไม่เกิน 1 ฉบับต่อวัน ในอีเมลจะเขียนเหตุการณ์ที่เกิดขึ้นในวันก่อนหน้า"
+	},
+	"email_notification_subject": {
+		"message": "ความเคลื่อนไหวภายใน Interpr.it"
+	},
+	"email_notification_intro": {
+		"message": "ต่อไปนี้เป็นความเคลื่อนไหวภายใน Interpr.it:"
+	},
+	"email_notification_header_extension_new": {
+		"message": "ส่วนขยายใหม่"
+	},
+	"email_notification_header_extension_update": {
+		"message": "ส่วนขยายอัปเดต"
+	},
+	"email_notification_header_locale_complete": {
+		"message": "แฟ้มภาษาเสร็จสมบูรณ์"
+	},
+	"email_notification_header_message_modified": {
+		"message": "ข้อความที่แก้ไข"
+	},
+	"email_notification_locale_complete": {
+		"message": "$username$ แปลแฟ้มภาษา $locale_code$ ของ $extension$ จนเสร็จ",
+		"placeholders": {
+			"username": {
+				"content": "<a href=\"$2\">$1<\/a>",
+				"example": "cfinke"
+			},
+			"locale_code": {
+				"content": "$3",
+				"example": "fr"
+			},
+			"extension": {
+				"content": "<a href=\"$5\">$4<\/a>",
+				"example": "ScribeFire"
+			}
+		}
+	},
+	"email_notification_message_changed": {
+		"message": "$username$ แก้ไขหนึ่งใน$link_open$คำแปล$link_close$ของคุณใน $extension$",
+		"placeholders": {
+			"username": {
+				"content": "<a href=\"$2\">$1<\/a>",
+				"example": "cfinke"
+			},
+			"link_open": {
+				"content": "<a href=\"$3\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			},
+			"extension": {
+				"content": "<a href=\"$5\">$4<\/a>",
+				"example": "ScribeFire"
+			}
+		}
+	},
+	"action_change_email_preferences": {
+		"message": "เปลี่ยนการตั้งค่าการแจ้งข่าวสารทางอีเมล"
+	},
+	"action_send_feedback": {
+		"message": "ส่งคำติชม"
+	},
+	"email_welcome_subject": {
+		"message": "ยินดัต้อนรับสู่ Interpr.it"
+	},
+	"email_welcome_text_1": {
+		"message": "ยินดัต้อนรับสู่ Interpr.it! คุณได้เข้าร่วมเป็นหนึ่งในกลุ่มคนที่ใช้ Interpr.it จัดการงานแปลภาษาส่วนขยาย Chrome"
+	},
+	"email_welcome_text_2": {
+		"message": "คุณเป็นนักพัฒนาหรือไม่? ลงชื่อเข้าใช้เพื่ออัปโหลดส่วนขยาย หรืออัปโหลดส่วนขยายจากบรรทังคำสั่งโดยใช้ $link_open$API ของ Interpr.it$link_close$",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"http:\/\/interpr.it\/api\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"email_welcome_text_3": {
+		"message": "คุณเป็นผู้แปลหรือไม่? เยี่ยมชม $link_open$Interpr.it$link_close$ เพื่อค้นหาส่วนขยายที่ต้องการคนแปล",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"http:\/\/interpr.it\/\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"email_welcome_text_4": {
+		"message": "หากมีคำถาม ความคิดเห็น หรือข้อสงสัย ส่งอีเมลคำติชมมาได้ทาง $email_address$",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	},
+	"blog": {
+		"message": "บล็อก"
+	}
+}

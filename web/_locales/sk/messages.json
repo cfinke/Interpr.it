@@ -1,0 +1,61 @@
+{
+	"description": {
+		"message": "Miestne súbory, ktoré poháňajú stránku http:\/\/interpr.it\/."
+	},
+	"name": {
+		"message": "Stránka Interpr.it"
+	},
+	"homepage_about": {
+		"message": "Interpr.it je nástroj na spoluprácu pre vývojárov doplnkov prehliadacov a používateľov viacerých jazykov. Vývojári, $link_open$nahrajte váš doplnok$link_close$; prekladači, použite Interpr.it pre preklad Vašich obľúbených doplnkov do Vášho rodného jazyka.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"\/upload\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"homepage_link_label": {
+		"message": "Na úvodnú stránku"
+	},
+	"search_results_title": {
+		"message": "$query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "Nahraj Tvoj doplnok"
+	},
+	"upload_page_link_label": {
+		"message": "Upload"
+	},
+	"api_docs_page_title": {
+		"message": "API dokumentácia"
+	},
+	"api_docs_page_header": {
+		"message": "Interpr.it API"
+	},
+	"api_docs_page_summary": {
+		"message": "Všetky API URL adresy sú na $url$ doméne. Mal by si priložiť $api_key_link_open$Tvoj API kľúč$api_key_link_end$ ako POST alebo GET parameter pomenovaný $code_start$api_key_$code_end$ pri každej požiadavke.",
+		"placeholders": {
+			"url": {
+				"content": "http:\/\/interpr.it\/",
+				"example": "http:\/\/interpr.it\/"
+			},
+			"api_key_link_open": {
+				"content": "<a href=\"\/dashboard#api_key\">"
+			},
+			"api_key_link_end": {
+				"content": "<\/a>"
+			},
+			"code_start": {
+				"content": "<code>"
+			},
+			"code_end": {
+				"content": "<\/code>"
+			}
+		}
+	}
+}

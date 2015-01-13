@@ -1,4 +1,306 @@
 {
+	"name": {
+		"message": "Interpr.it ওয়েবসাইট"
+	},
+	"homepage_title": {
+		"message": "ব্রাউজার এক্সটেনশন অনুবাদ"
+	},
+	"homepage_link_label": {
+		"message": "হোম"
+	},
+	"upload_page_title": {
+		"message": "আপনার এক্সটেনশন আপলোড করুন"
+	},
+	"upload_page_link_label": {
+		"message": "আপলোড"
+	},
+	"api_docs_page_title": {
+		"message": "API ডকুমেন্টেশন"
+	},
+	"api_docs_page_header": {
+		"message": "Interpr.it API"
+	},
+	"api_get_parameters_header": {
+		"message": "GET প্যারামিটারসমূহ"
+	},
+	"api_post_parameters_header": {
+		"message": "POST প্যারামিটারসমূহ"
+	},
+	"api_parameter_description_message": {
+		"message": "অনুবাদিত বার্তাটি।"
+	},
+	"api_return_format_zip": {
+		"message": ".zip অথবা .xpi ফাইল"
+	},
+	"dashboard_page_title": {
+		"message": "ড্যাশবোর্ড"
+	},
+	"dashboard_api_key_header": {
+		"message": "আপনার API চাবি"
+	},
+	"api_documentation": {
+		"message": "API ডকুমেন্টেশন"
+	},
+	"action_upload_update": {
+		"message": "নতুন ভার্সন আপলোড করুন"
+	},
+	"dashboard_header_locales": {
+		"message": "স্থানীয় অবদান"
+	},
+	"extension": {
+		"message": "এক্সটেনশন"
+	},
+	"locale": {
+		"message": "স্থানীয়"
+	},
+	"header_progress": {
+		"message": "অনুবাদের অগ্রগতি"
+	},
+	"progress": {
+		"message": "অগ্রগতি"
+	},
+	"files": {
+		"message": "ফাইলসমূহ"
+	},
+	"header_developer_actions": {
+		"message": "ডেভেলাপারের কার্যসমূহ"
+	},
+	"header_translator_actions": {
+		"message": "অনুবাদকের কার্যসমূহ"
+	},
+	"label_version": {
+		"message": "ভার্সন: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_translation_progress": {
+		"message": "অনুবাদের অগ্রগতি: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_page_title": {
+		"message": "$extension_name$ :: $locale_name$ স্থানীয়",
+		"placeholders": {
+			"extension_name": {
+				"content": "$1",
+				"example": "ScribeFire"
+			},
+			"locale_name": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"api_error_upload_auth": {
+		"message": "এক্সটেনশন আপলোডের জন্য আপনাকে অবশ্যই সাইন ইন করতে হবে।"
+	},
+	"api_error_noauth_translate": {
+		"message": "অনুবাদ করার জন্য আপনাকে অবশ্যই লগ ইন করতে হবে।"
+	},
+	"api": {
+		"message": "এপিআই"
+	},
+	"action_contact": {
+		"message": "যোগাযোগ"
+	},
+	"action_signin": {
+		"message": "গুগল একাউন্ট দিয়ে সাইন ইন  করুন"
+	},
+	"action_signout": {
+		"message": "সাইন আউট"
+	},
+	"header_developers": {
+		"message": "ডেভেলাপারগণ"
+	},
+	"action_signin_to_upload": {
+		"message": "আপনার এক্সটেনশন আপলোড করতে সাইন ইন করুন।"
+	},
+	"header_translators": {
+		"message": "অনুবাদক"
+	},
+	"header_extension_search": {
+		"message": "এক্সটেনশন অনুবাদ করতে খুঁজুন।"
+	},
+	"saving_notification": {
+		"message": "সংরক্ষণ হচ্ছে..."
+	},
+	"saved_notification": {
+		"message": "সংরক্ষিত!"
+	},
+	"label_your_locale": {
+		"message": "আপনার স্খানীয়:"
+	},
+	"call_to_action_select": {
+		"message": "(নির্বাচন)"
+	},
+	"label_search": {
+		"message": "খোঁজ"
+	},
+	"action_message_history": {
+		"message": "অনুবাদের ইতিহাস"
+	},
+	"column_header_message_version": {
+		"message": "বার্তা"
+	},
+	"column_header_changed_by": {
+		"message": "পরিবর্তন করেছেন"
+	},
+	"member_page_title": {
+		"message": "অবদানকারী :: $username$",
+		"placeholders": {
+			"username": {
+				"content": "$1",
+				"example": "cfinke"
+			}
+		}
+	},
+	"locale_name_am": {
+		"message": "আমহারিক"
+	},
+	"locale_name_ar": {
+		"message": "আরবী"
+	},
+	"locale_name_bg": {
+		"message": "বুলগেরীয়"
+	},
+	"locale_name_bn": {
+		"message": "বাংলা"
+	},
+	"locale_name_ca": {
+		"message": "ক্যাটালন"
+	},
+	"locale_name_cs": {
+		"message": "চেক"
+	},
+	"locale_name_da": {
+		"message": "ডেনিশ"
+	},
+	"locale_name_de": {
+		"message": "জার্মান"
+	},
+	"locale_name_el": {
+		"message": "গ্রীক"
+	},
+	"locale_name_en": {
+		"message": "ইংরেজি"
+	},
+	"locale_name_en_GB": {
+		"message": "ইংরেজি (গ্রেট ব্রিটেন)"
+	},
+	"locale_name_en_US": {
+		"message": "ইংরেজি (মার্কিন যুক্তরাষ্ট্র)"
+	},
+	"locale_name_es": {
+		"message": "স্পেনিস"
+	},
+	"locale_name_es_419": {
+		"message": "স্পেনিস (লাতিন আমেরিকা)"
+	},
+	"locale_name_et": {
+		"message": "এস্তোনিয়ান"
+	},
+	"locale_name_fi": {
+		"message": "ফিনিস"
+	},
+	"locale_name_fil": {
+		"message": "ফিলিপিনো"
+	},
+	"locale_name_fr": {
+		"message": "ফরাসী"
+	},
+	"locale_name_gu": {
+		"message": "গুজরাটি"
+	},
+	"locale_name_he": {
+		"message": "হীব্রূ"
+	},
+	"locale_name_hi": {
+		"message": "হিন্দি"
+	},
+	"locale_name_hr": {
+		"message": "ক্রোয়েশিয়ান"
+	},
+	"locale_name_hu": {
+		"message": "হাঙ্গেরীয়"
+	},
+	"locale_name_id": {
+		"message": "ইন্দোনেশীয়"
+	},
+	"locale_name_it": {
+		"message": "ইতালিয়"
+	},
+	"locale_name_ja": {
+		"message": "জাপানি"
+	},
+	"locale_name_kn": {
+		"message": "কন্নড"
+	},
+	"locale_name_ko": {
+		"message": "কোরিয়ান"
+	},
+	"locale_name_lt": {
+		"message": "লিথুনিয়ান"
+	},
+	"locale_name_lv": {
+		"message": "লাত্ভীয়"
+	},
+	"locale_name_ml": {
+		"message": "মালায়ালম"
+	},
+	"locale_name_mr": {
+		"message": "মারাঠি"
+	},
+	"locale_name_nl": {
+		"message": "ওলন্দাজি"
+	},
+	"locale_name_or": {
+		"message": "ওড়িয়া"
+	},
+	"locale_name_pl": {
+		"message": "পালিশ"
+	},
+	"locale_name_pt": {
+		"message": "পর্তৃগিজ"
+	},
+	"locale_name_pt_BR": {
+		"message": "পর্তৃগিজ (ব্রাজিল)"
+	},
+	"locale_name_pt_PT": {
+		"message": "পর্তৃগিজ (পর্তুগাল)"
+	},
+	"locale_name_ro": {
+		"message": "রোমানিয়ান"
+	},
+	"locale_name_ru": {
+		"message": "রাশিয়ান"
+	},
+	"locale_name_sk": {
+		"message": "স্লোভাক"
+	},
+	"locale_name_sl": {
+		"message": "স্লোভেনিয়ান"
+	},
+	"locale_name_sr": {
+		"message": "সার্বীয় (সিরিলিক)"
+	},
+	"locale_name_sv": {
+		"message": "সুইডিশ"
+	},
+	"locale_name_sw": {
+		"message": "সোয়াহিলি"
+	},
+	"locale_name_ta": {
+		"message": "তামিল"
+	},
+	"locale_name_te": {
+		"message": "তেলেগু"
+	},
 	"locale_name_th": {
 		"message": "থাই"
 	},
@@ -23,8 +325,14 @@
 	"email_preference_header": {
 		"message": "আমাকে ইমেইল করুন যখন.."
 	},
+	"email_preference_extension_created": {
+		"message": "একটি নতুন এক্সটেনশন আপলোড হয়েছে।"
+	},
 	"email_notification_subject": {
 		"message": "Interpr.it সক্রিয়তা"
+	},
+	"email_notification_header_extension_new": {
+		"message": "নতুন এক্সটেনশন সমূহ"
 	},
 	"action_send_feedback": {
 		"message": "আপনার প্রতিক্রিয়া পাঠান"
@@ -39,5 +347,8 @@
 				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
 			}
 		}
+	},
+	"blog": {
+		"message": "ব্লগ"
 	}
 }

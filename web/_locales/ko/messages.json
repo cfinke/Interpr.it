@@ -1,0 +1,855 @@
+{
+	"description": {
+		"message": "Interpr.it를 보강해줄 로케일 파일."
+	},
+	"name": {
+		"message": "Interpr.it 웹사이트"
+	},
+	"homepage_title": {
+		"message": "웹 브라우저 확장 프로그램 번역"
+	},
+	"homepage_about": {
+		"message": "Interpr.it는 개발자 및 다국어 이용자의 웹 브라우저 확장 프로그램을 위한 협동 번역 도구입니다. 개발자는 $link_open$확장 프로그램을 업로드$link_close$하고, 번역자는 Interpr.it를 이용해 원하는 확장 프로그램을 다른 언어(모국어)로 번역할 수 있습니다. \n(이 사이트도 다른 사람이 번역했으니까요)",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"\/upload\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"homepage_link_label": {
+		"message": "홈"
+	},
+	"search_results_title": {
+		"message": "검색 결과: $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "확장 프로그램 업로드"
+	},
+	"upload_page_link_label": {
+		"message": "업로드"
+	},
+	"api_docs_page_title": {
+		"message": "API 문서"
+	},
+	"api_docs_page_header": {
+		"message": "Interpr.it API"
+	},
+	"api_docs_page_summary": {
+		"message": "모든 API URL은 $url$ 도메인에 있습니다. 모든 요청마다 $api_key_link_open$API 키$api_key_link_end$를 $code_start$api_key$code_end$의 POST 또는 GET 파라미터로 첨부해야 합니다.",
+		"placeholders": {
+			"url": {
+				"content": "http:\/\/interpr.it\/",
+				"example": "http:\/\/interpr.it\/"
+			},
+			"api_key_link_open": {
+				"content": "<a href=\"\/dashboard#api_key\">"
+			},
+			"api_key_link_end": {
+				"content": "<\/a>"
+			},
+			"code_start": {
+				"content": "<code>"
+			},
+			"code_end": {
+				"content": "<\/code>"
+			}
+		}
+	},
+	"api_docs_page_contact": {
+		"message": "더 많은 API 메소드가 있게 하려면 $email_address$로 e메일을 보내주세요.",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	},
+	"api_get_parameters_header": {
+		"message": "GET 파라미터"
+	},
+	"api_post_parameters_header": {
+		"message": "POST 파라미터"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
+	},
+	"api_parameter_description_extension_id": {
+		"message": "확장 프로그램의 영구 링크에 보일 확장 프로그램의 ID"
+	},
+	"api_parameter_description_locale_code": {
+		"message": "번역된 메시지의 로케일 코드 (로케일 코드는 $link_start$Google's i18n documentation$link_end$에 있습니다.)",
+		"placeholders": {
+			"link_start": {
+				"content": "<a href=\"http:\/\/code.google.com\/chrome\/extensions\/i18n.html#locales-supported\">"
+			},
+			"link_end": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"api_parameter_description_name": {
+		"message": "메시지 이름이 번역되고 있습니다."
+	},
+	"api_parameter_description_message": {
+		"message": "번역된 메시지"
+	},
+	"api_parameter_description_history_id": {
+		"message": "$history_api_url$로 반환되는 히스토리 엔트리 ID",
+		"placeholders": {
+			"history_api_url": {
+				"content": "\/api\/history",
+				"example": "\/api\/history"
+			}
+		}
+	},
+	"api_parameter_description_package": {
+		"message": "HTML 형식에 맞춰 업로드된 확장 프로그램의 .zip 파일 또는 확장 프로그램의 $locale_directory_name$ 디렉토리와 $manifest_file_name$ 파일. 예시:\n$code_example$",
+		"placeholders": {
+			"locale_directory_name": {
+				"content": "_locales\/",
+				"example": "_locales\/"
+			},
+			"manifest_file_name": {
+				"content": "manifest.json",
+				"example": "manifest.json"
+			},
+			"code_example": {
+				"content": "<code>curl -F \"package=@myextension.zip\" -F \"api_key=ABCDEFG123\" http:\/\/interpr.it\/api\/upload<\/code>",
+				"example": "<code>curl -F \"package=@myextension.zip\" http:\/\/interpr.it\/api\/upload<\/code>"
+			}
+		}
+	},
+	"api_return_format_header": {
+		"message": "포맷 반환"
+	},
+	"api_return_format_zip": {
+		"message": ".zip 또는 .xpi 파일"
+	},
+	"api_return_values_header": {
+		"message": "반사값 예시"
+	},
+	"api_description_upload": {
+		"message": "확장 프로그램을 압축하고 해당 로케일에 대한 모든 변경 사항을 저장합니다."
+	},
+	"api_description_download": {
+		"message": "주어진 확장 프로그램의 최근 로케일 디렉토리를 .zip 파일로 반환합니다."
+	},
+	"api_description_translate": {
+		"message": "확장 프로그램 메시지의 번역을 저장합니다."
+	},
+	"api_description_history": {
+		"message": "메시지 번역의 모든 변경사항을 반환합니다."
+	},
+	"api_description_revert": {
+		"message": "번역된 문구를 이전 버전으로 되돌립니다."
+	},
+	"dashboard_page_title": {
+		"message": "대시보드"
+	},
+	"dashboard_header_extensions": {
+		"message": "업로드된 확장 프로그램"
+	},
+	"dashboard_api_key_header": {
+		"message": "당신의 API 키"
+	},
+	"api_documentation": {
+		"message": "API 문서"
+	},
+	"action_download_locales": {
+		"message": "최신 로케일 다운로드"
+	},
+	"action_upload_update": {
+		"message": "새로운 버전 업로드"
+	},
+	"dashboard_header_locales": {
+		"message": "로케일 기여"
+	},
+	"extension": {
+		"message": "확장 프로그램"
+	},
+	"locale": {
+		"message": "로케일"
+	},
+	"header_progress": {
+		"message": "번역 진도"
+	},
+	"progress": {
+		"message": "진도"
+	},
+	"files": {
+		"message": "파일"
+	},
+	"header_developer_actions": {
+		"message": "개발자 활동"
+	},
+	"header_translator_actions": {
+		"message": "번역자 활동"
+	},
+	"label_version": {
+		"message": "버전: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_updated": {
+		"message": "업데이트 날짜: $date$",
+		"placeholders": {
+			"date": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_message_limit": {
+		"message": "번역 가능한 문구 수: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_translation_progress": {
+		"message": "번역 진도: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_page_title": {
+		"message": "$extension_name$ :: $locale_name$",
+		"placeholders": {
+			"extension_name": {
+				"content": "$1",
+				"example": "ScribeFire"
+			},
+			"locale_name": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"api_error_upload": {
+		"message": "파일을 업로드하는 중 오류가 발생하였습니다. (코드 $error_code$)",
+		"placeholders": {
+			"error_code": {
+				"content": "$1",
+				"example": "123"
+			}
+		}
+	},
+	"api_error_upload_auth": {
+		"message": "확장 프로그램을 업로드하기 위해서는 로그인해야 합니다."
+	},
+	"api_error_upload_invalid_zip": {
+		"message": "업로드한 파일은 올바른 압축 파일이 아닙니다. 파일을 확인한 후 다시 시도하십시오."
+	},
+	"api_error_upload_missing_file": {
+		"message": "$filename$을 찾을 수 없습니다. 압축 파일의 루트에 있는지 확인한 후 다시 시도하십시오.",
+		"placeholders": {
+			"filename": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_upload_invalid_manifest": {
+		"message": "manifest.json 파일의 JSON이 올바르지 않습니다."
+	},
+	"api_error_upload_missing_default_locale": {
+		"message": "manifest.json 파일이 기본 로케일을 지정하지 않았습니다."
+	},
+	"api_error_upload_missing_version": {
+		"message": "manifest.json 파일이 버전을 포함하지 않았습니다."
+	},
+	"api_error_upload_missing_name": {
+		"message": "manifest.json 파일이 확장 프로그램의 이름을 포함하지 않았습니다."
+	},
+	"api_error_upload_invalid_default_locale": {
+		"message": "기본 로케일이 올바르지 않음: $locale_code$",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1",
+				"example": "en_XX"
+			}
+		}
+	},
+	"api_error_upload_missing_locales_directory": {
+		"message": "_locales 디렉토리를 찾을 수 없습니다."
+	},
+	"api_error_upload_invalid_messages": {
+		"message": "$locale_code$ 로케일의 messages.json 이 올바르지 않습니다.",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1",
+				"example": "fr_FR"
+			}
+		}
+	},
+	"api_error_upload_missing_default_messages": {
+		"message": "기본 로케일의 messages.json 을 찾을 수 없습니다."
+	},
+	"api_error_upload_empty_default_messages": {
+		"message": "설정된 기본 로케일은 아무 메시지도 내장하고 있지 않습니다."
+	},
+	"api_error_upload_missing_default_locale_message": {
+		"message": "기본 로케일의 '$message_key$' 메시지를 찾을 수 없습니다.",
+		"placeholders": {
+			"message_key": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_default_locale_modification": {
+		"message": "확장 프로그램 개발자만 기본 로케일의 메시지를 변경할 수 있습니다."
+	},
+	"api_error_message_not_in_default_locale": {
+		"message": "그 메시지는 기본 로케일에 존재하지 않습니다."
+	},
+	"api_error_noauth_translate": {
+		"message": "번역하기 위해서는 로그인해야 합니다."
+	},
+	"api_error_invalid_parameter": {
+		"message": "잘못된 파라미터 ($parameter_name$) 입니다.",
+		"placeholders": {
+			"parameter_name": {
+				"content": "<em>$1<\/em>"
+			}
+		}
+	},
+	"api_error_missing_placeholder": {
+		"message": "$placeholder_name$ 플레이스홀더가 없습니다.",
+		"placeholders": {
+			"placeholder_name": {
+				"content": "<em>$1<\/em>"
+			}
+		}
+	},
+	"api_error_missing_default_locale_message": {
+		"message": "기본 로케일이 $message_name$ 메시지를 가지고 있지 않습니다.",
+		"placeholders": {
+			"message_name": {
+				"content": "'$1'"
+			}
+		}
+	},
+	"footer_google_affiliation": {
+		"message": "Interpr.it은 Google 및 Mozilla와 관계 없습니다."
+	},
+	"api": {
+		"message": "API"
+	},
+	"action_contact": {
+		"message": "연락"
+	},
+	"action_signin": {
+		"message": "Google 계정으로 로그인"
+	},
+	"action_signout": {
+		"message": "로그아웃"
+	},
+	"header_developers": {
+		"message": "개발자"
+	},
+	"action_signin_to_upload": {
+		"message": "확장 프로그램을 업로드하기 위해서는 로그인하십시오."
+	},
+	"header_translators": {
+		"message": "번역자"
+	},
+	"header_extension_search": {
+		"message": "번역할 확장 프로그램을 검색합니다."
+	},
+	"header_latest_updates": {
+		"message": "최신 업데이트"
+	},
+	"header_top_translators": {
+		"message": "제일 활발한 번역자"
+	},
+	"header_newest_extensions": {
+		"message": "최신 확장 프로그램"
+	},
+	"header_locale_page": {
+		"message": "$locale$ 번역",
+		"placeholders": {
+			"locale": {
+				"content": "$1",
+				"example": "French"
+			}
+		}
+	},
+	"translate_error_signin": {
+		"message": "확장 프로그램 번역을 돕기 위해서는 $link_start$로그인$link_end$해야 합니다.",
+		"placeholders": {
+			"link_start": {
+				"content": "$1"
+			},
+			"link_end": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"developer_explanation": {
+		"message": "개발자 설명: '$explanation$'",
+		"placeholders": {
+			"explanation": {
+				"content": "$1"
+			}
+		}
+	},
+	"header_placeholder_examples": {
+		"message": "플레이스홀더 예시"
+	},
+	"hide_completed": {
+		"message": "완료된 메시지 숨기기"
+	},
+	"show_all": {
+		"message": "모든 메시지 보이기"
+	},
+	"save_changes_button": {
+		"message": "변경 사항 저장"
+	},
+	"saving_notification": {
+		"message": "저장중..."
+	},
+	"saved_notification": {
+		"message": "저장 완료!"
+	},
+	"header_search_details": {
+		"message": "검색 조건"
+	},
+	"header_search_results": {
+		"message": "검색 결과"
+	},
+	"text_no_results_for_query": {
+		"message": "$query$에 대한 검색 결과가 없습니다.",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results_for_query_and_locale": {
+		"message": "$locale_code$로의 번역이 필요한 $query$의 확장 프로그램에 대한 검색 결과가 없습니다.",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			},
+			"locale_code": {
+				"content": "$2"
+			}
+		}
+	},
+	"text_no_results_for_locale": {
+		"message": "$locale_code$로의 번역이 필요한 검색 결과가 없습니다. (그럴리가!)",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results": {
+		"message": "결과 없음"
+	},
+	"translate_call_to_action": {
+		"message": "$extension$을 $locale$로 번역",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"missing_phrase_count": {
+		"message": "($number$개의 문구가 번역되지 않음)",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_is_complete": {
+		"message": "$extension$의 $locale$ 번역이 완료되었습니다.",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2"
+			}
+		}
+	},
+	"label_your_locale": {
+		"message": "설정 로케일:"
+	},
+	"call_to_action_select": {
+		"message": "(선택)"
+	},
+	"label_keywords": {
+		"message": "키워드 (선택사항):"
+	},
+	"label_search": {
+		"message": "검색"
+	},
+	"header_upload": {
+		"message": "확장 프로그램 업로드 (.zip 또는 .xpi 파일)"
+	},
+	"upload_instructions_1": {
+		"message": "CRX 패키지 파일을 업로드하지 마십시오. 확장 프로그램 디렉토리의 XPI (Mozilla) 또는 ZIP (Chrome) 파일을 업로드하십시오."
+	},
+	"upload_instructions_2": {
+		"message": "Interpr.it은 이용자가 이전에 완료한 다른 확장 프로그램의 번역을 자동으로 기입합니다. 예를 들어, 번역자가 이전에 다른 확장 프로그램에서 '감사합니다' 라는 문구를 프랑스어로 번역하였고, 이번 번역에서 '감사합니다' 라는 문구를 번역한다면, Interpr.it는 자동으로 그 번역을 전송합니다."
+	},
+	"upload_instructions_3": {
+		"message": "또한 $link_open$CLI를 통해 확장 프로그램을 업로드$link_close$할 수 있습니다.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"\/api#upload\">",
+				"example": "<a href=\"\/api\">"
+			},
+			"link_close": {
+				"content": "<\/a>",
+				"example": "<\/a>"
+			}
+		}
+	},
+	"action_reset_api_key": {
+		"message": "API 키 리셋"
+	},
+	"api_error_noauth_reset_key": {
+		"message": "API 키를 리셋하려면 로그인해야 합니다."
+	},
+	"action_message_history": {
+		"message": "번역 역사"
+	},
+	"action_revert": {
+		"message": "되돌리기"
+	},
+	"column_header_message_version": {
+		"message": "메시지"
+	},
+	"column_header_changed_by": {
+		"message": "바꾼이:"
+	},
+	"terms_of_use": {
+		"message": "이용약관"
+	},
+	"terms_of_use_developers": {
+		"message": "Interpr.it에 소프트웨어를 업로드함으로써, 귀하는 Interpr.it가 전세계적·무사용료·종속적·포괄적 권리를 가지고, 소프트웨어의 메타 데이터와 번역될 컨텐츠의 전체 또는 부분을 표시·재생산·수정·채택·출판·복제·판촉·저장·번역할 권한을 부여받음을 이해한 것으로 간주합니다."
+	},
+	"terms_of_use_translators": {
+		"message": "Interpr.it를 통해 소프트웨어 번역에 기여함으로써, 귀하는 Interpr.it 및 소프트웨어 개발자가 전세계적·무사용료·종속적·포괄적 권리를 가지고, 번역된 컨텐츠의 전체 또는 부분을 표시·재생산·수정·채택·출판·복제·판촉·저장·번역할 권한을 부여받음을 이해한 것으로 간주합니다."
+	},
+	"member_page_title": {
+		"message": "기여자 :: $username$",
+		"placeholders": {
+			"username": {
+				"content": "$1",
+				"example": "cfinke"
+			}
+		}
+	},
+	"link_extension_homepage": {
+		"message": "홈페이지"
+	},
+	"locale_name_am": {
+		"message": "암하라어"
+	},
+	"locale_name_ar": {
+		"message": "아랍어"
+	},
+	"locale_name_bg": {
+		"message": "불가리아어"
+	},
+	"locale_name_bn": {
+		"message": "벵골어"
+	},
+	"locale_name_ca": {
+		"message": "카탈루냐어"
+	},
+	"locale_name_cs": {
+		"message": "체코어"
+	},
+	"locale_name_da": {
+		"message": "덴마크어"
+	},
+	"locale_name_de": {
+		"message": "독일어"
+	},
+	"locale_name_el": {
+		"message": "그리스어"
+	},
+	"locale_name_en": {
+		"message": "영어"
+	},
+	"locale_name_en_GB": {
+		"message": "영어 (영국)"
+	},
+	"locale_name_en_US": {
+		"message": "영어 (미국)"
+	},
+	"locale_name_es": {
+		"message": "에스파냐어"
+	},
+	"locale_name_es_419": {
+		"message": "에스파냐어 (라틴아메리카)"
+	},
+	"locale_name_et": {
+		"message": "에스토니아어"
+	},
+	"locale_name_fi": {
+		"message": "핀란드어"
+	},
+	"locale_name_fil": {
+		"message": "필리핀어"
+	},
+	"locale_name_fr": {
+		"message": "프랑스어"
+	},
+	"locale_name_gu": {
+		"message": "구자라트어"
+	},
+	"locale_name_he": {
+		"message": "히브리어"
+	},
+	"locale_name_hi": {
+		"message": "힌두어"
+	},
+	"locale_name_hr": {
+		"message": "크로아티아어"
+	},
+	"locale_name_hu": {
+		"message": "헝가리어"
+	},
+	"locale_name_id": {
+		"message": "인도네시아어"
+	},
+	"locale_name_it": {
+		"message": "이탈리아어"
+	},
+	"locale_name_ja": {
+		"message": "일본어"
+	},
+	"locale_name_kn": {
+		"message": "칸나다어"
+	},
+	"locale_name_ko": {
+		"message": "한국어 \n(조선말이 아님)"
+	},
+	"locale_name_lt": {
+		"message": "리투아니아어"
+	},
+	"locale_name_lv": {
+		"message": "라트비아어"
+	},
+	"locale_name_ml": {
+		"message": "말라얄람어"
+	},
+	"locale_name_mr": {
+		"message": "마라티어"
+	},
+	"locale_name_nb": {
+		"message": "노르웨이어"
+	},
+	"locale_name_nl": {
+		"message": "네덜란드어"
+	},
+	"locale_name_or": {
+		"message": "오리야어"
+	},
+	"locale_name_pl": {
+		"message": "폴란드어"
+	},
+	"locale_name_pt": {
+		"message": "포르투갈어"
+	},
+	"locale_name_pt_BR": {
+		"message": "포르투갈어 (브라질)"
+	},
+	"locale_name_pt_PT": {
+		"message": "포르투갈어 (포르투갈)"
+	},
+	"locale_name_ro": {
+		"message": "루마니아어"
+	},
+	"locale_name_ru": {
+		"message": "러시아어"
+	},
+	"locale_name_sk": {
+		"message": "슬로바키아어"
+	},
+	"locale_name_sl": {
+		"message": "슬로베니아어"
+	},
+	"locale_name_sr": {
+		"message": "세르비아어 (키릴 자모)"
+	},
+	"locale_name_sv": {
+		"message": "스웨덴어"
+	},
+	"locale_name_sw": {
+		"message": "스와힐리어"
+	},
+	"locale_name_ta": {
+		"message": "타밀어"
+	},
+	"locale_name_te": {
+		"message": "텔루구"
+	},
+	"locale_name_th": {
+		"message": "태국어"
+	},
+	"locale_name_tr": {
+		"message": "터키어"
+	},
+	"locale_name_uk": {
+		"message": "우크라이나어"
+	},
+	"locale_name_vi": {
+		"message": "베트남어"
+	},
+	"locale_name_zh": {
+		"message": "중국어"
+	},
+	"locale_name_zh_CN": {
+		"message": "중국어 (간체)"
+	},
+	"locale_name_zh_TW": {
+		"message": "중국어 (번체)"
+	},
+	"email_preference_header": {
+		"message": "...할 때 e메일 전송"
+	},
+	"email_preference_extension_updates": {
+		"message": "내가 번역한 확장 프로그램이 업데이트될 때"
+	},
+	"email_preference_locale_completed": {
+		"message": "내가 업로드한 확장 프로그램의 로케일이 완료될 때"
+	},
+	"email_preference_message_changed": {
+		"message": "내가 번역한 메시지가 다른 사용자에 의해 변경될 때"
+	},
+	"email_preference_extension_created": {
+		"message": "새 확장 프로그램이 업로드될 때"
+	},
+	"email_batch_description": {
+		"message": "최대 하루 한 번 이전 이벤트가 포함된 e메일을 받을 것입니다."
+	},
+	"email_notification_subject": {
+		"message": "Interpr.it 활동"
+	},
+	"email_notification_intro": {
+		"message": "최근 Interpr.it 활동 알림:"
+	},
+	"email_notification_header_extension_new": {
+		"message": "새 확장 프로그램"
+	},
+	"email_notification_header_extension_update": {
+		"message": "업데이트된 확장 프로그램"
+	},
+	"email_notification_header_locale_complete": {
+		"message": "완료된 로케일"
+	},
+	"email_notification_header_message_modified": {
+		"message": "변경된 메시지"
+	},
+	"email_notification_locale_complete": {
+		"message": "$username$님이 $extension$의 $locale_code$ 로케일 번역을 완료했습니다.",
+		"placeholders": {
+			"username": {
+				"content": "<a href=\"$2\">$1<\/a>",
+				"example": "cfinke"
+			},
+			"locale_code": {
+				"content": "$3",
+				"example": "fr"
+			},
+			"extension": {
+				"content": "<a href=\"$5\">$4<\/a>",
+				"example": "ScribeFire"
+			}
+		}
+	},
+	"email_notification_message_changed": {
+		"message": "$username$님이 $extension$의 $link_open$번역$link_close$을 수정하였습니다.",
+		"placeholders": {
+			"username": {
+				"content": "<a href=\"$2\">$1<\/a>",
+				"example": "cfinke"
+			},
+			"link_open": {
+				"content": "<a href=\"$3\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			},
+			"extension": {
+				"content": "<a href=\"$5\">$4<\/a>",
+				"example": "ScribeFire"
+			}
+		}
+	},
+	"action_change_email_preferences": {
+		"message": "e메일 알림 설정 변경"
+	},
+	"action_send_feedback": {
+		"message": "피드백"
+	},
+	"email_welcome_subject": {
+		"message": "Interpr.it에 오신 것을 환영합니다!"
+	},
+	"email_welcome_text_1": {
+		"message": "Interpr.it에 오신 것을 환영합니다! 귀하는 Chrome 확장 프로그램 번역을 관리하기 위해 Interpr.it를 사용하는 많은 사람들의 대열에 합류하셨습니다."
+	},
+	"email_welcome_text_2": {
+		"message": "개발자이십니까? 로그인하여 확장 프로그램을 업로드하거나, $link_open$Interpr.it API$link_close$를 이용해 CLI로 업로드하세요.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"http:\/\/interpr.it\/api\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"email_welcome_text_3": {
+		"message": "번역자이십니까? $link_open$Interpr.it$link_close$를 방문하여 번역이 필요한 확장 프로그램을 검색해 보세요.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"http:\/\/interpr.it\/\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"email_welcome_text_4": {
+		"message": "문의사항이 있으십니까? $email_address$로 피드백을 주시기 바랍니다.",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	},
+	"blog": {
+		"message": "블로그"
+	}
+}

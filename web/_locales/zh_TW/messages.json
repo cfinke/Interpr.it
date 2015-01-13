@@ -1,0 +1,29 @@
+{
+	"name": {
+		"message": "Interpr.it 網站"
+	},
+	"homepage_title": {
+		"message": "瀏覽器擴充功能翻譯"
+	},
+	"homepage_link_label": {
+		"message": "首頁"
+	},
+	"search_results_title": {
+		"message": "搜尋結果：$query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "上傳你的擴充功能"
+	},
+	"upload_page_link_label": {
+		"message": "上傳"
+	},
+	"api_docs_page_title": {
+		"message": "API（應用程式界面）文件"
+	},
+	"api_docs_page_header": {
+		"message": "Interpr.it API（應用程式界面）"
+	}
+}

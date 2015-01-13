@@ -1,0 +1,790 @@
+{
+	"description": {
+		"message": "Файли мови, які уможливлюють роботу веб-сайту http:\/\/interpr.it\/."
+	},
+	"name": {
+		"message": "Іnterpr.it - Веб-сайт"
+	},
+	"homepage_title": {
+		"message": "Переклад розширень браузера"
+	},
+	"homepage_about": {
+		"message": "Interpr.it - це спільний інструмент для розробників розширень браузерів та двомовних користувачів розширень. Розробники, $link_open$upload your extension$link_close$; перекладачі використовують Interpr.it  для того, щоб зробити розширення доступними вашою рідною мовою.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"\/upload\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"homepage_link_label": {
+		"message": "Домашня сторінка"
+	},
+	"search_results_title": {
+		"message": "Результати пошуку: $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "Завантажте ваше розширення"
+	},
+	"upload_page_link_label": {
+		"message": "Завантажити"
+	},
+	"api_docs_page_title": {
+		"message": "Документація API"
+	},
+	"api_docs_page_header": {
+		"message": "Інтерфейс програмування додатків Interpr.it (API)"
+	},
+	"api_docs_page_summary": {
+		"message": "Всі API URL знаходяться на домені $url$. Вам необхідно включити $api_key_link_open$your API key$api_key_link_end$ як параметр POST або GET, який називається $code_start$api_key$code_end$ при кожному запиті.",
+		"placeholders": {
+			"url": {
+				"content": "http:\/\/interpr.it\/",
+				"example": "http:\/\/interpr.it\/"
+			},
+			"api_key_link_open": {
+				"content": "<a href=\"\/dashboard#api_key\">"
+			},
+			"api_key_link_end": {
+				"content": "<\/a>"
+			},
+			"code_start": {
+				"content": "<code>"
+			},
+			"code_end": {
+				"content": "<\/code>"
+			}
+		}
+	},
+	"api_docs_page_contact": {
+		"message": "Якщо ви б хотіли побачити більше доступних методів API, надішліть електронного листа $email_address$.",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	},
+	"api_get_parameters_header": {
+		"message": "Параметр GET"
+	},
+	"api_post_parameters_header": {
+		"message": "Параметр POST"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
+	},
+	"api_parameter_description_extension_id": {
+		"message": "Вигляд ID розширення в URL адресі постійного посилання(permalink) сторінки розширення."
+	},
+	"api_parameter_description_locale_code": {
+		"message": "Код мови перекладеного повыдомлення. (Список діючих мовних кодів доступних в $link_start$Google's i18n documentation$link_end$.)",
+		"placeholders": {
+			"link_start": {
+				"content": "<a href=\"http:\/\/code.google.com\/chrome\/extensions\/i18n.html#locales-supported\">"
+			},
+			"link_end": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"api_parameter_description_name": {
+		"message": "Назва повідомлення, що перекладається."
+	},
+	"api_parameter_description_message": {
+		"message": "Перекладене повідомлення"
+	},
+	"api_parameter_description_package": {
+		"message": "Ваше розширення у форматі .zip (або його $locale_directory_name$ каталог(directory) та $manifest_file_name$), таким як воно було завантажене через форму HTML. Один із варіантів досягнути цього:\n$code_example$",
+		"placeholders": {
+			"locale_directory_name": {
+				"content": "_locales\/",
+				"example": "_locales\/"
+			},
+			"manifest_file_name": {
+				"content": "manifest.json",
+				"example": "manifest.json"
+			},
+			"code_example": {
+				"content": "<code>curl -F \"package=@myextension.zip\" -F \"api_key=ABCDEFG123\" http:\/\/interpr.it\/api\/upload<\/code>",
+				"example": "<code>curl -F \"package=@myextension.zip\" http:\/\/interpr.it\/api\/upload<\/code>"
+			}
+		}
+	},
+	"api_return_format_zip": {
+		"message": "у форматі .zip або .xpi"
+	},
+	"api_return_values_header": {
+		"message": "Приклади значень повернення"
+	},
+	"api_description_upload": {
+		"message": "Переправляє zip файл вашого розширення і зберігає зміни до обраних мов."
+	},
+	"api_description_translate": {
+		"message": "Зберігає переклад повідомлення із розширення"
+	},
+	"api_description_history": {
+		"message": "Повертає список всіх внесених до перекладу повідомлення змін."
+	},
+	"api_description_revert": {
+		"message": "Повертає перекладений ряд до попереднього перегляду."
+	},
+	"dashboard_page_title": {
+		"message": "Панель дій"
+	},
+	"dashboard_header_extensions": {
+		"message": "Завантажені розширення"
+	},
+	"dashboard_api_key_header": {
+		"message": "Ваш API ключ"
+	},
+	"api_documentation": {
+		"message": "API документація"
+	},
+	"action_download_locales": {
+		"message": "Завантажити останні мови"
+	},
+	"action_upload_update": {
+		"message": "Завантажити новішу версію"
+	},
+	"extension": {
+		"message": "Розширення"
+	},
+	"locale": {
+		"message": "Локалізація (мова)"
+	},
+	"header_progress": {
+		"message": "Просування перекладу"
+	},
+	"progress": {
+		"message": "Прогрес"
+	},
+	"files": {
+		"message": "Файли"
+	},
+	"header_developer_actions": {
+		"message": "Дії розробника"
+	},
+	"header_translator_actions": {
+		"message": "Дії перекладача"
+	},
+	"label_version": {
+		"message": "Версія: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_updated": {
+		"message": "Завантажено на сервер: $date$",
+		"placeholders": {
+			"date": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_message_limit": {
+		"message": "Перекласти речення: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_translation_progress": {
+		"message": "Просування перекладу: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_page_title": {
+		"message": "$extension_name$ :: $locale_name$ Мова",
+		"placeholders": {
+			"extension_name": {
+				"content": "$1",
+				"example": "ScribeFire"
+			},
+			"locale_name": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"api_error_upload": {
+		"message": "Під завантаження вашого файлу виникла помилка (код помилки $error_code$)",
+		"placeholders": {
+			"error_code": {
+				"content": "$1",
+				"example": "123"
+			}
+		}
+	},
+	"api_error_upload_auth": {
+		"message": "Вам спочатку потрібно увійти на сайт, щоб завантажити ваше розширення."
+	},
+	"api_error_upload_invalid_zip": {
+		"message": "Файл, який ви завантажили не є дійсним zip файлом. Просимо перевірити файл і спробувати знову."
+	},
+	"api_error_upload_missing_file": {
+		"message": "Неможливо знайти $filename$. Упевніться, що він є у кореневому каталозі zip файлу,який ви завантажуєте.",
+		"placeholders": {
+			"filename": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_upload_missing_default_locale": {
+		"message": "Ваш маніфест.json не містить мови за замовчуванням."
+	},
+	"api_error_upload_missing_version": {
+		"message": "Ваш маніфест.json не містить номеру версії."
+	},
+	"api_error_upload_missing_name": {
+		"message": "Ваш маніфест.json не містить ім'я розширення."
+	},
+	"api_error_upload_invalid_default_locale": {
+		"message": "Недійсна назва мови за замовчуванням: $locale_code$",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1",
+				"example": "en_XX"
+			}
+		}
+	},
+	"api_error_upload_missing_locales_directory": {
+		"message": "Неможливо знайти каталог мов"
+	},
+	"api_error_upload_empty_default_messages": {
+		"message": "Ваша мова за замовчуванням не містить повідомлень."
+	},
+	"api_error_upload_missing_default_locale_message": {
+		"message": "Неможливо знайти повідомлення '$message_key$' у вашій мові за замовчуванням.",
+		"placeholders": {
+			"message_key": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_default_locale_modification": {
+		"message": "Тільки розробник розширення може внести зміни у мову за замовчуванням."
+	},
+	"api_error_message_not_in_default_locale": {
+		"message": "Повідомлення не існує у мові за замовчуванням."
+	},
+	"api_error_noauth_translate": {
+		"message": "Вам потрібно увійти на сайт, щоб мати змогу перекладати."
+	},
+	"api_error_invalid_parameter": {
+		"message": "Недійсний параметр $parameter_name$.",
+		"placeholders": {
+			"parameter_name": {
+				"content": "<em>$1<\/em>"
+			}
+		}
+	},
+	"api_error_missing_default_locale_message": {
+		"message": "Мова за замовчуванням не містить повідомлення $message_name$.",
+		"placeholders": {
+			"message_name": {
+				"content": "'$1'"
+			}
+		}
+	},
+	"footer_google_affiliation": {
+		"message": "Interpr.it офіційно не є частиною Google або Mozilla."
+	},
+	"api": {
+		"message": "API"
+	},
+	"action_contact": {
+		"message": "Зворотній зв'язок"
+	},
+	"action_signin": {
+		"message": "Увійти через обліковий запис Google"
+	},
+	"action_signout": {
+		"message": "Вийти"
+	},
+	"header_developers": {
+		"message": "Розробники"
+	},
+	"action_signin_to_upload": {
+		"message": "Увійдіть на сайт, щоб завантажити ваше розширення."
+	},
+	"header_translators": {
+		"message": "Перекладачі"
+	},
+	"header_extension_search": {
+		"message": "Шукати розширення для перекладу."
+	},
+	"header_latest_updates": {
+		"message": "Останні оновлення"
+	},
+	"header_top_translators": {
+		"message": "Найбільш активні перекладачі"
+	},
+	"header_newest_extensions": {
+		"message": "Найновіші розширення"
+	},
+	"header_locale_page": {
+		"message": "$locale$ Переклад",
+		"placeholders": {
+			"locale": {
+				"content": "$1",
+				"example": "French"
+			}
+		}
+	},
+	"translate_error_signin": {
+		"message": "Вам необхідно $link_start$sign in$link_end$ для того, щоб допомогти перекласти розширення.",
+		"placeholders": {
+			"link_start": {
+				"content": "$1"
+			},
+			"link_end": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"developer_explanation": {
+		"message": "Опис розробника: '$explanation$'",
+		"placeholders": {
+			"explanation": {
+				"content": "$1"
+			}
+		}
+	},
+	"hide_completed": {
+		"message": "Приховати завершені переклади"
+	},
+	"show_all": {
+		"message": "Показати всі переклади"
+	},
+	"save_changes_button": {
+		"message": "Зберегти зміни"
+	},
+	"saving_notification": {
+		"message": "Зберігається..."
+	},
+	"saved_notification": {
+		"message": "Збережено!"
+	},
+	"header_search_details": {
+		"message": "Подробиці пошуку"
+	},
+	"header_search_results": {
+		"message": "Результати пошуку"
+	},
+	"text_no_results_for_query": {
+		"message": "Немає результатів для $query$.",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results_for_query_and_locale": {
+		"message": "Немає результатів по $query$ розширенням, що потребують перекладу на $locale_code$.",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			},
+			"locale_code": {
+				"content": "$2"
+			}
+		}
+	},
+	"text_no_results_for_locale": {
+		"message": "Немає результатів з пошуку розширень, що потребують перекладу на $locale_code$.",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results": {
+		"message": "Немає результатів."
+	},
+	"translate_call_to_action": {
+		"message": "Перекласти $extension$ на $locale$",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"missing_phrase_count": {
+		"message": "(Не вистачає $number$ речень)",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_is_complete": {
+		"message": "Переклад $extension$ на $locale$ мову is завершений.",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2"
+			}
+		}
+	},
+	"label_your_locale": {
+		"message": "Ваша мова:"
+	},
+	"call_to_action_select": {
+		"message": "(вибрати)"
+	},
+	"label_keywords": {
+		"message": "Ключові слова: (необов'язково)"
+	},
+	"label_search": {
+		"message": "Пошук"
+	},
+	"header_upload": {
+		"message": "Завантажити розширення (файл .zip або .xpi)"
+	},
+	"upload_instructions_2": {
+		"message": "автоматично заповнить будь-які переклади, що були попередньо завершені для інших розширень. Наприклад, якщо перекладач вже переклав \"дякую вам\" французькою у іншому розширенні, і ваше розширення використовує фразу \"дякую вам\" Interpr.it автоматично перенесе для вас цей переклад."
+	},
+	"upload_instructions_3": {
+		"message": "Ви також можете $link_open$ завантажити розширення з командної строки$link_close$.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"\/api#upload\">",
+				"example": "<a href=\"\/api\">"
+			},
+			"link_close": {
+				"content": "<\/a>",
+				"example": "<\/a>"
+			}
+		}
+	},
+	"action_message_history": {
+		"message": "Історія перекладів"
+	},
+	"column_header_message_version": {
+		"message": "Повідомлення"
+	},
+	"column_header_changed_by": {
+		"message": "Змінено"
+	},
+	"terms_of_use": {
+		"message": "Умови використання"
+	},
+	"terms_of_use_developers": {
+		"message": "Завантажуючи ваше програмне забезпечення на Interpr.it, ви надаєте Interpr.it мета-данні про ваше програмне забезпечення і контент, який має бути локалізований(перекладений)."
+	},
+	"terms_of_use_translators": {
+		"message": "Надаючи переклад програмного забезпечення через Interpr.it, ви надаєте Interpr.it і розробнику програмного забезпечення всесвітнє, безоплатне, постійне і непривілейоване право та ліцензію на демонстрацію, відтворення, модифікацію, адаптацію, публікацію, розповсюдження, просування, архівацію та переклад, частково або цілісно, перекладеного контенту."
+	},
+	"link_extension_homepage": {
+		"message": "Домашня сторінка"
+	},
+	"locale_name_am": {
+		"message": "Амхарська"
+	},
+	"locale_name_ar": {
+		"message": "Арабська"
+	},
+	"locale_name_bg": {
+		"message": "Болгарська"
+	},
+	"locale_name_bn": {
+		"message": "Бенгалі"
+	},
+	"locale_name_ca": {
+		"message": "Каталонська"
+	},
+	"locale_name_cs": {
+		"message": "Чеська"
+	},
+	"locale_name_da": {
+		"message": "Данська"
+	},
+	"locale_name_de": {
+		"message": "Німецька"
+	},
+	"locale_name_el": {
+		"message": "Грецька"
+	},
+	"locale_name_en": {
+		"message": "Англійська"
+	},
+	"locale_name_en_GB": {
+		"message": "Англійська (Великобританія)"
+	},
+	"locale_name_en_US": {
+		"message": "Англійська (США)"
+	},
+	"locale_name_es": {
+		"message": "Іспанська"
+	},
+	"locale_name_es_419": {
+		"message": "Іспанська (Латинська Америка)"
+	},
+	"locale_name_et": {
+		"message": "Естонська"
+	},
+	"locale_name_fi": {
+		"message": "Фінська"
+	},
+	"locale_name_fil": {
+		"message": "Філіппінська"
+	},
+	"locale_name_fr": {
+		"message": "Французька"
+	},
+	"locale_name_gu": {
+		"message": "Гуджараті"
+	},
+	"locale_name_he": {
+		"message": "Іврит"
+	},
+	"locale_name_hi": {
+		"message": "Гінді"
+	},
+	"locale_name_hr": {
+		"message": "Хорватська"
+	},
+	"locale_name_hu": {
+		"message": "Угорська"
+	},
+	"locale_name_id": {
+		"message": "Індонезійська"
+	},
+	"locale_name_it": {
+		"message": "Італійська"
+	},
+	"locale_name_ja": {
+		"message": "Японська"
+	},
+	"locale_name_kn": {
+		"message": "Каннада"
+	},
+	"locale_name_ko": {
+		"message": "Корейська"
+	},
+	"locale_name_lt": {
+		"message": "Литовська"
+	},
+	"locale_name_lv": {
+		"message": "Латвійська"
+	},
+	"locale_name_ml": {
+		"message": "Малаялам"
+	},
+	"locale_name_mr": {
+		"message": "Маратхі"
+	},
+	"locale_name_nb": {
+		"message": "Норвезька (Букмол)"
+	},
+	"locale_name_nl": {
+		"message": "Датська"
+	},
+	"locale_name_or": {
+		"message": "Орья"
+	},
+	"locale_name_pl": {
+		"message": "Польська"
+	},
+	"locale_name_pt": {
+		"message": "Португальська"
+	},
+	"locale_name_pt_BR": {
+		"message": "Португальська (Бразилія)"
+	},
+	"locale_name_pt_PT": {
+		"message": "Португальська (Португалія)"
+	},
+	"locale_name_ro": {
+		"message": "Румунська"
+	},
+	"locale_name_ru": {
+		"message": "Російська"
+	},
+	"locale_name_sk": {
+		"message": "Словацька"
+	},
+	"locale_name_sl": {
+		"message": "Словенська"
+	},
+	"locale_name_sr": {
+		"message": "Сербська (кирилиця)"
+	},
+	"locale_name_sv": {
+		"message": "Швецька"
+	},
+	"locale_name_sw": {
+		"message": "Суахілі"
+	},
+	"locale_name_ta": {
+		"message": "Тамілська"
+	},
+	"locale_name_te": {
+		"message": "Телугу"
+	},
+	"locale_name_th": {
+		"message": "Тайська"
+	},
+	"locale_name_tr": {
+		"message": "Турецька"
+	},
+	"locale_name_uk": {
+		"message": "Українська"
+	},
+	"locale_name_vi": {
+		"message": "В'єтнамська"
+	},
+	"locale_name_zh": {
+		"message": "Китайська"
+	},
+	"locale_name_zh_CN": {
+		"message": "Китайська (Китай)"
+	},
+	"locale_name_zh_TW": {
+		"message": "Китайська (Тайвань)"
+	},
+	"email_preference_header": {
+		"message": "Сповістіть мене коли..."
+	},
+	"email_preference_extension_updates": {
+		"message": "Розширення, яке я допомагав перекласти оновлено:"
+	},
+	"email_preference_locale_completed": {
+		"message": "Локалізація (переклад) розширення, яке я завантажив завершена"
+	},
+	"email_preference_message_changed": {
+		"message": "Текст, який я переклав змінено іншим користувачем."
+	},
+	"email_preference_extension_created": {
+		"message": "Завантажено нове розширення."
+	},
+	"email_batch_description": {
+		"message": "Ви будете отримувати не більше одного електронного листа на день, що включатиме всі події,я кі сталися протягом дня."
+	},
+	"email_notification_subject": {
+		"message": "Події на Interpr.it"
+	},
+	"email_notification_intro": {
+		"message": "Ваш підбірка останніх подій на Interpr.it:"
+	},
+	"email_notification_header_extension_new": {
+		"message": "Нові розширення"
+	},
+	"email_notification_header_extension_update": {
+		"message": "Завантажені розширення"
+	},
+	"email_notification_header_locale_complete": {
+		"message": "Завершені переклади"
+	},
+	"email_notification_header_message_modified": {
+		"message": "Змінені поведомлення"
+	},
+	"email_notification_locale_complete": {
+		"message": "$username$ завершив переклад на $locale_code$ для розширення $extension$.",
+		"placeholders": {
+			"username": {
+				"content": "<a href=\"$2\">$1<\/a>",
+				"example": "cfinke"
+			},
+			"locale_code": {
+				"content": "$3",
+				"example": "fr"
+			},
+			"extension": {
+				"content": "<a href=\"$5\">$4<\/a>",
+				"example": "ScribeFire"
+			}
+		}
+	},
+	"email_notification_message_changed": {
+		"message": "$username$ змінив один із ваших  $link_open$перекладів$link_close$ для $extension$.",
+		"placeholders": {
+			"username": {
+				"content": "<a href=\"$2\">$1<\/a>",
+				"example": "cfinke"
+			},
+			"link_open": {
+				"content": "<a href=\"$3\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			},
+			"extension": {
+				"content": "<a href=\"$5\">$4<\/a>",
+				"example": "ScribeFire"
+			}
+		}
+	},
+	"action_change_email_preferences": {
+		"message": "Змінити налаштування сповіщень електронною поштою"
+	},
+	"action_send_feedback": {
+		"message": "Надіслати відгук"
+	},
+	"email_welcome_subject": {
+		"message": "Ласкаво просимо до Interpr.it"
+	},
+	"email_welcome_text_1": {
+		"message": "Ласкаво просимо до Interpr.it! Ви приєдналися до рядів, у буквальному сенсі, кількох інших людей, які використовують Interpr.it для створення і управляння перекладами своїх розширень для Chrome."
+	},
+	"email_welcome_text_2": {
+		"message": "Ви розробник? Увійдіть на сайт для того що завантажити свої розширення, або завантажте їх через командну строку використовуючи $link_open$Interpr.it API$link_close$.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"http:\/\/interpr.it\/api\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"email_welcome_text_3": {
+		"message": "Ви перекладач? Завітайте на $link_open$Interpr.it$link_close$, щоб знайти розширення, які потребують перекладу.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"http:\/\/interpr.it\/\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"email_welcome_text_4": {
+		"message": "Запитання? Коментарі? Занепокоєння? Надішліть нам свій відгук на $email_address$.",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	},
+	"blog": {
+		"message": "Блог"
+	}
+}

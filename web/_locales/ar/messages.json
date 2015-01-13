@@ -1,0 +1,525 @@
+{
+	"description": {
+		"message": "الملفات المحلية التي تعطي القوة لموقع http:\/\/interpr.it\/."
+	},
+	"name": {
+		"message": "موقع Interpr.it"
+	},
+	"homepage_title": {
+		"message": "تصفح ترجمات الإضافات"
+	},
+	"homepage_about": {
+		"message": "Interpr.it هو أداء مشاركة جماعية لمطوري الإضافات البرمجية للمتصفحات ومستخدمي الإضافات مزدوجي اللغة. للمطور $link_open$ارفع إضافاتك البرمجية$link_close$؛ وللمترجم استخدم Interpr.it لتجعل إضافاتك المفضلة متاحة بلغتك.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"\/upload\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"homepage_link_label": {
+		"message": "الرئيسية"
+	},
+	"search_results_title": {
+		"message": "نتائج البحث: $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "ارفع إضافتك البرمجية"
+	},
+	"upload_page_link_label": {
+		"message": "رفع"
+	},
+	"api_docs_page_title": {
+		"message": "مستندات API"
+	},
+	"api_docs_page_header": {
+		"message": "واجهة API في Interpr.it"
+	},
+	"api_get_parameters_header": {
+		"message": "باراميترات GET"
+	},
+	"api_post_parameters_header": {
+		"message": "باراميترات POST"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
+	},
+	"api_parameter_description_name": {
+		"message": "اسم الرسالة قيد الترجمة"
+	},
+	"api_parameter_description_message": {
+		"message": "الرسالة المترجمة"
+	},
+	"api_return_format_zip": {
+		"message": "ملف ZIP أو XPI"
+	},
+	"api_description_upload": {
+		"message": "يُعالج ملف ZIP الخاص بإضافتك ويحفظ أي تغيير في ملفاتك المحلية."
+	},
+	"api_description_translate": {
+		"message": "يحفظ ترجمة رسالة من تطبيق ما."
+	},
+	"api_description_revert": {
+		"message": "يعيد عبارة مترجمة إلى نسخة سابقة."
+	},
+	"dashboard_page_title": {
+		"message": "اللوحة الرئيسية"
+	},
+	"dashboard_header_extensions": {
+		"message": "الإضافات المرفوعة"
+	},
+	"dashboard_api_key_header": {
+		"message": "مفتاح API الخاص بك"
+	},
+	"api_documentation": {
+		"message": "مستندات API"
+	},
+	"action_download_locales": {
+		"message": "تحميل أحدث الترجمات"
+	},
+	"action_upload_update": {
+		"message": "رفع إصدار جديد"
+	},
+	"dashboard_header_locales": {
+		"message": "مساهمات الترجمة"
+	},
+	"extension": {
+		"message": "الإضافة"
+	},
+	"locale": {
+		"message": "اللغة المحلية"
+	},
+	"header_progress": {
+		"message": "تقدم الترجمة"
+	},
+	"progress": {
+		"message": "التقدم"
+	},
+	"files": {
+		"message": "الملفات"
+	},
+	"header_developer_actions": {
+		"message": "إجراءات المطور"
+	},
+	"header_translator_actions": {
+		"message": "إجراءات المترجم"
+	},
+	"label_version": {
+		"message": "الإصدار: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_updated": {
+		"message": "تم تحديثه: $date$",
+		"placeholders": {
+			"date": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_message_limit": {
+		"message": "عبارات قابلة للترجمة: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_translation_progress": {
+		"message": "تقدم الترجمة: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_page_title": {
+		"message": "$extension_name$ :: اللغة $locale_name$",
+		"placeholders": {
+			"extension_name": {
+				"content": "$1",
+				"example": "ScribeFire"
+			},
+			"locale_name": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"api_error_upload": {
+		"message": "حدث خطأ ما أثناء رفع ملفك (كود الخطأ $error_code$)",
+		"placeholders": {
+			"error_code": {
+				"content": "$1",
+				"example": "123"
+			}
+		}
+	},
+	"api_error_upload_auth": {
+		"message": "يجب أن تسجل الدخول لتتمكن من رفع الإضافة البرمجية."
+	},
+	"api_error_upload_invalid_zip": {
+		"message": "الملف الذي رفعته لم يكن ملف ZIP صالحاً. الرجاء فحص الملف والمحاولة مرة أخرى."
+	},
+	"api_error_upload_invalid_default_locale": {
+		"message": "اللغة الافتراضية غير صالحة: $locale_code$",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1",
+				"example": "en_XX"
+			}
+		}
+	},
+	"api_error_upload_missing_locales_directory": {
+		"message": "لم يمكن العثور على مجلد _locales."
+	},
+	"api_error_message_not_in_default_locale": {
+		"message": "الرسالة غير موجودة في اللغة الافتراضية."
+	},
+	"api_error_noauth_translate": {
+		"message": "يجب أن تسجل الدخول لتتمكن من الترجمة."
+	},
+	"api_error_invalid_parameter": {
+		"message": "الباراميتر $parameter_name$ غير صالح.",
+		"placeholders": {
+			"parameter_name": {
+				"content": "<em>$1<\/em>"
+			}
+		}
+	},
+	"api_error_missing_default_locale_message": {
+		"message": "اللغة الافتراضية لا تحتوي الرسالة $message_name$.",
+		"placeholders": {
+			"message_name": {
+				"content": "'$1'"
+			}
+		}
+	},
+	"footer_google_affiliation": {
+		"message": "موقع Interpr.it لا يتبع رسمياً Google أو Mozilla."
+	},
+	"api": {
+		"message": "API"
+	},
+	"action_signin": {
+		"message": "تسجيل الدخول بحساب Google"
+	},
+	"action_signout": {
+		"message": "تسجيل الخروج"
+	},
+	"header_developers": {
+		"message": "المطورون"
+	},
+	"action_signin_to_upload": {
+		"message": "سجل دخولك لترفع إضافتك البرمجية"
+	},
+	"header_translators": {
+		"message": "المترجمون"
+	},
+	"header_extension_search": {
+		"message": "البحث عن إضافات لترجمتها."
+	},
+	"header_latest_updates": {
+		"message": "آخر التحديثات"
+	},
+	"header_top_translators": {
+		"message": "أكثر المترجمون نشاطاً"
+	},
+	"header_newest_extensions": {
+		"message": "أحدث الإضافات البرمجية"
+	},
+	"header_locale_page": {
+		"message": "ترجمة $locale$",
+		"placeholders": {
+			"locale": {
+				"content": "$1",
+				"example": "French"
+			}
+		}
+	},
+	"hide_completed": {
+		"message": "إخفاء الرسائل المُترجمة"
+	},
+	"show_all": {
+		"message": "عرض كافة الرسائل"
+	},
+	"save_changes_button": {
+		"message": "حفظ التغييرات"
+	},
+	"saving_notification": {
+		"message": "جاري الحفظ..."
+	},
+	"saved_notification": {
+		"message": "تم الحفظ!"
+	},
+	"header_search_details": {
+		"message": "تفاصيل البحث"
+	},
+	"header_search_results": {
+		"message": "نتائج البحث"
+	},
+	"text_no_results_for_query": {
+		"message": "لا توجد نتائج عن $query$.",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results_for_locale": {
+		"message": "لا توجد إضافات برمجية تحتاج للترجمة إلى اللغة $locale_code$.",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results": {
+		"message": "لا توجد نتائج."
+	},
+	"translate_call_to_action": {
+		"message": "ترجمة $extension$ إلى $locale$",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"label_your_locale": {
+		"message": "لغتك الأم:"
+	},
+	"call_to_action_select": {
+		"message": "(اختر)"
+	},
+	"label_keywords": {
+		"message": "الكلمات الدلالية: (اختياري)"
+	},
+	"label_search": {
+		"message": "بحث"
+	},
+	"locale_name_ar": {
+		"message": "العربية"
+	},
+	"locale_name_bg": {
+		"message": "البلغارية"
+	},
+	"locale_name_bn": {
+		"message": "البنجالية"
+	},
+	"locale_name_ca": {
+		"message": "الكاتالونية"
+	},
+	"locale_name_cs": {
+		"message": "التشيكية"
+	},
+	"locale_name_da": {
+		"message": "الدنماركية"
+	},
+	"locale_name_de": {
+		"message": "الألمانية"
+	},
+	"locale_name_el": {
+		"message": "اليونانية"
+	},
+	"locale_name_en": {
+		"message": "الإنجليزية"
+	},
+	"locale_name_en_GB": {
+		"message": "الإنجليزية (بريطانيا)"
+	},
+	"locale_name_en_US": {
+		"message": "الإنجليزية (الولايات المتحدة)"
+	},
+	"locale_name_es": {
+		"message": "الإسبانية"
+	},
+	"locale_name_es_419": {
+		"message": "الإسبانية (أميريكا اللاتينية)"
+	},
+	"locale_name_et": {
+		"message": "الإستونية"
+	},
+	"locale_name_fi": {
+		"message": "الفنلندية"
+	},
+	"locale_name_fil": {
+		"message": "الفليبينية"
+	},
+	"locale_name_fr": {
+		"message": "الفرنسية"
+	},
+	"locale_name_gu": {
+		"message": "الغوجاراتية"
+	},
+	"locale_name_he": {
+		"message": "العبرية"
+	},
+	"locale_name_hi": {
+		"message": "الهندية"
+	},
+	"locale_name_hr": {
+		"message": "الكرواتية"
+	},
+	"locale_name_hu": {
+		"message": "الهنغارية"
+	},
+	"locale_name_id": {
+		"message": "الإندونيسية"
+	},
+	"locale_name_it": {
+		"message": "الإيطالية"
+	},
+	"locale_name_ja": {
+		"message": "اليابانية"
+	},
+	"locale_name_kn": {
+		"message": "الكنادية"
+	},
+	"locale_name_ko": {
+		"message": "الكورية"
+	},
+	"locale_name_lt": {
+		"message": "الليتوانية"
+	},
+	"locale_name_lv": {
+		"message": "اللاتفية"
+	},
+	"locale_name_ml": {
+		"message": "المالايالامية"
+	},
+	"locale_name_mr": {
+		"message": "الماراثية"
+	},
+	"locale_name_nb": {
+		"message": "النرويجية (بوكمال)"
+	},
+	"locale_name_nl": {
+		"message": "الهولندية"
+	},
+	"locale_name_or": {
+		"message": "الأورياوية"
+	},
+	"locale_name_pl": {
+		"message": "البولندية"
+	},
+	"locale_name_pt": {
+		"message": "البرتغالية"
+	},
+	"locale_name_pt_BR": {
+		"message": "البرتغالية (البرازيل)"
+	},
+	"locale_name_pt_PT": {
+		"message": "البرتغالية (البرتغال)"
+	},
+	"locale_name_ro": {
+		"message": "الرومانية"
+	},
+	"locale_name_ru": {
+		"message": "الروسية"
+	},
+	"locale_name_sk": {
+		"message": "السلوفاكية"
+	},
+	"locale_name_sl": {
+		"message": "السلوفينية"
+	},
+	"locale_name_sr": {
+		"message": "الصربية (السيريلية)"
+	},
+	"locale_name_sv": {
+		"message": "السويدية"
+	},
+	"locale_name_sw": {
+		"message": "السواحيلية"
+	},
+	"locale_name_ta": {
+		"message": "التاميلية"
+	},
+	"locale_name_te": {
+		"message": "اليتلوغوية"
+	},
+	"locale_name_th": {
+		"message": "التايلاندية"
+	},
+	"locale_name_tr": {
+		"message": "التركية"
+	},
+	"locale_name_uk": {
+		"message": "الأوكرانية"
+	},
+	"locale_name_vi": {
+		"message": "الفييتنامية"
+	},
+	"locale_name_zh": {
+		"message": "الصينية"
+	},
+	"locale_name_zh_CN": {
+		"message": "الصينية (الصين)"
+	},
+	"locale_name_zh_TW": {
+		"message": "الصينية (تايوان)"
+	},
+	"email_preference_header": {
+		"message": "راسلني عندما..."
+	},
+	"email_preference_extension_updates": {
+		"message": "تحديث إضافة شاركت في ترجمتها."
+	},
+	"email_preference_locale_completed": {
+		"message": "اكتمال ترجمة لغة لإضافة قمت برفعها."
+	},
+	"email_preference_message_changed": {
+		"message": "تغيير رسالة ترجمتها بواسطة شخص آخر."
+	},
+	"email_preference_extension_created": {
+		"message": "رفع إضافة برمجية جديدة."
+	},
+	"email_batch_description": {
+		"message": "ستتلقى على الأكثر رسالة واحدة في اليوم بكافة الأحداث في اليوم السابق."
+	},
+	"email_notification_header_extension_new": {
+		"message": "الإضافات الجديدة"
+	},
+	"email_notification_header_extension_update": {
+		"message": "الإضافات المُحدثة"
+	},
+	"email_notification_header_locale_complete": {
+		"message": "الترجمات المُكتملة"
+	},
+	"email_notification_header_message_modified": {
+		"message": "الرسائل المُعدلة"
+	},
+	"email_welcome_text_4": {
+		"message": "أسئلة؟ تعليقات؟ شيء ما يشغلك؟ أخبرنا رأيك على العنوان $email_address$.",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	},
+	"blog": {
+		"message": "المدونة"
+	}
+}

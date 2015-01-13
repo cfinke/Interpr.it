@@ -123,6 +123,9 @@
 	"api_return_format_header": {
 		"message": "Formato de Retorno"
 	},
+	"api_return_format_zip": {
+		"message": "Fichero .zip o .xpi"
+	},
 	"api_return_values_header": {
 		"message": "Ejemplo de Valores de Retorno"
 	},
@@ -170,6 +173,9 @@
 	},
 	"progress": {
 		"message": "Progreso"
+	},
+	"files": {
+		"message": "Ficheros"
 	},
 	"header_developer_actions": {
 		"message": "Acciones del Desarrollador"
@@ -324,6 +330,9 @@
 				"content": "'$1'"
 			}
 		}
+	},
+	"footer_google_affiliation": {
+		"message": "Interpr.it no está  afiliado oficialmentecon Google o Mozilla."
 	},
 	"api": {
 		"message": "API"

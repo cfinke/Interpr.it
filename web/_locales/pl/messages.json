@@ -19,5 +19,229 @@
 	},
 	"upload_page_link_label": {
 		"message": "Aktualizuj"
+	},
+	"api_docs_page_title": {
+		"message": "Dokumentacja API"
+	},
+	"api_docs_page_header": {
+		"message": "API Interpr.it"
+	},
+	"api_get_parameters_header": {
+		"message": "Parametry GET"
+	},
+	"api_post_parameters_header": {
+		"message": "Parametry POST"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
+	},
+	"api_parameter_description_name": {
+		"message": "Nazwa tłumaczonej wiadomości."
+	},
+	"api_parameter_description_message": {
+		"message": "Przetłumaczona wiadomość."
+	},
+	"api_return_format_zip": {
+		"message": "plik .zip lub .xpi"
+	},
+	"api_description_history": {
+		"message": "Zwraca listę wszystkich zmian w tłumaczeniu danego tekstu."
+	},
+	"dashboard_api_key_header": {
+		"message": "Twój klucz API"
+	},
+	"api_documentation": {
+		"message": "Dokumentacja API"
+	},
+	"extension": {
+		"message": "Rozszerzenie"
+	},
+	"header_progress": {
+		"message": "Postęp tłumaczenia"
+	},
+	"progress": {
+		"message": "Postęp"
+	},
+	"files": {
+		"message": "Pliki"
+	},
+	"label_version": {
+		"message": "Wersja: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_updated": {
+		"message": "Zaktualizowano: $date$",
+		"placeholders": {
+			"date": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_search": {
+		"message": "Szukaj"
+	},
+	"upload_instructions_2": {
+		"message": "Interpr.it automatycznie przetłumaczy wyrażenia, które zostały już przetłumaczone dla innych rozszerzeń. Na przykład jeśli jeden z tłumaczy przetłumaczył już \"Dziękuję\" na język francuski, a Twoje rozszerzenie używa wyrażenia Dziękuję\", Interpr.it automatycznie dopasuje do niego tamto tłumaczenie."
+	},
+	"action_reset_api_key": {
+		"message": "Zresetuj klucz API"
+	},
+	"api_error_noauth_reset_key": {
+		"message": "Musisz być zalogowany aby zresetować swój klucz API."
+	},
+	"action_message_history": {
+		"message": "Historia tłumaczeń"
+	},
+	"action_revert": {
+		"message": "Przywróć"
+	},
+	"locale_name_cs": {
+		"message": "Czeski"
+	},
+	"locale_name_da": {
+		"message": "Duński"
+	},
+	"locale_name_de": {
+		"message": "Niemiecki"
+	},
+	"locale_name_el": {
+		"message": "Grecki"
+	},
+	"locale_name_en": {
+		"message": "Angielski"
+	},
+	"locale_name_en_GB": {
+		"message": "Angielski (Wielka Brytania)"
+	},
+	"locale_name_en_US": {
+		"message": "Angielski (Stany Zjednoczone)"
+	},
+	"locale_name_es": {
+		"message": "Hiszpański"
+	},
+	"locale_name_es_419": {
+		"message": "Hiszpański (Ameryka Łacińska)"
+	},
+	"locale_name_et": {
+		"message": "Estoński"
+	},
+	"locale_name_fi": {
+		"message": "Fiński"
+	},
+	"locale_name_fr": {
+		"message": "Francuski"
+	},
+	"locale_name_hr": {
+		"message": "Chorwacki"
+	},
+	"locale_name_hu": {
+		"message": "Węgierski"
+	},
+	"locale_name_id": {
+		"message": "Indonezyjski"
+	},
+	"locale_name_it": {
+		"message": "Włoski"
+	},
+	"locale_name_ja": {
+		"message": "Japoński"
+	},
+	"locale_name_ko": {
+		"message": "Koreański"
+	},
+	"locale_name_lt": {
+		"message": "Litewski"
+	},
+	"locale_name_lv": {
+		"message": "Łotewski"
+	},
+	"locale_name_nl": {
+		"message": "Holenderski"
+	},
+	"locale_name_pl": {
+		"message": "Polski"
+	},
+	"locale_name_pt": {
+		"message": "Portugalski"
+	},
+	"locale_name_pt_BR": {
+		"message": "Portugalski (Brazylia)"
+	},
+	"locale_name_pt_PT": {
+		"message": "Portugalski (Portugalia)"
+	},
+	"locale_name_ro": {
+		"message": "Rumuński"
+	},
+	"locale_name_ru": {
+		"message": "Rosyjski"
+	},
+	"locale_name_sk": {
+		"message": "Słowacki"
+	},
+	"locale_name_sl": {
+		"message": "Słoweński"
+	},
+	"locale_name_sr": {
+		"message": "Serbski (Cyrylica)"
+	},
+	"locale_name_sv": {
+		"message": "Szwedzki"
+	},
+	"locale_name_sw": {
+		"message": "Suahili"
+	},
+	"locale_name_tr": {
+		"message": "Turecki"
+	},
+	"locale_name_uk": {
+		"message": "Ukraiński"
+	},
+	"locale_name_vi": {
+		"message": "Wietnamski"
+	},
+	"locale_name_zh": {
+		"message": "Chiński"
+	},
+	"locale_name_zh_CN": {
+		"message": "Chiński (Chiny)"
+	},
+	"locale_name_zh_TW": {
+		"message": "Chiński (Tajwan)"
+	},
+	"email_preference_header": {
+		"message": "Powiadom mnie kiedy..."
+	},
+	"email_preference_extension_updates": {
+		"message": "rozszerzenie, które pomogłem przetłumaczyć zostanie zaktualizowane"
+	},
+	"email_preference_message_changed": {
+		"message": "tekst, który przetłumaczyłem zostanie zmieniony przez innego tłumacza"
+	},
+	"email_preference_extension_created": {
+		"message": "nowe rozszerzenie zostanie dodane"
+	},
+	"email_batch_description": {
+		"message": "Otrzymasz co najwyżej jednego maila dziennie."
+	},
+	"email_notification_header_extension_new": {
+		"message": "Nowe rozszerzenia"
+	},
+	"email_notification_header_extension_update": {
+		"message": "Zaktualizowane rozszerzenia"
 	}
 }

@@ -1,0 +1,172 @@
+{
+	"name": {
+		"message": "Сайт Interpr.it"
+	},
+	"homepage_title": {
+		"message": "Переводы расширений для браузера"
+	},
+	"homepage_link_label": {
+		"message": "Главная"
+	},
+	"search_results_title": {
+		"message": "Результаты Поиска : $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "Загрузите Ваше Расширение"
+	},
+	"upload_page_link_label": {
+		"message": "Загрузить"
+	},
+	"api_docs_page_title": {
+		"message": "Документация API"
+	},
+	"api_docs_page_header": {
+		"message": "Interpr.it API"
+	},
+	"api_get_parameters_header": {
+		"message": "Параметры GET"
+	},
+	"api_post_parameters_header": {
+		"message": "Параметры POST"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
+	},
+	"api_parameter_description_message": {
+		"message": "Переведенное сообщение."
+	},
+	"api_return_format_zip": {
+		"message": ".zip или .xpi файл"
+	},
+	"dashboard_page_title": {
+		"message": "Панель управления"
+	},
+	"dashboard_api_key_header": {
+		"message": "Ваш API Key"
+	},
+	"api_documentation": {
+		"message": "Документация API"
+	},
+	"action_download_locales": {
+		"message": "Скачать последние локали"
+	},
+	"action_upload_update": {
+		"message": "Загрузить новую версию"
+	},
+	"dashboard_header_locales": {
+		"message": "Публикации локализаций"
+	},
+	"extension": {
+		"message": "Расширение"
+	},
+	"locale": {
+		"message": "Локализация"
+	},
+	"header_progress": {
+		"message": "Прогресс перевода"
+	},
+	"progress": {
+		"message": "Прогресс"
+	},
+	"files": {
+		"message": "Файлы"
+	},
+	"header_developer_actions": {
+		"message": "Действия разработчика"
+	},
+	"header_translator_actions": {
+		"message": "Действия переводчика"
+	},
+	"label_version": {
+		"message": "Версия: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_updated": {
+		"message": "Обновлено: $date$",
+		"placeholders": {
+			"date": {
+				"content": "$1"
+			}
+		}
+	},
+	"api": {
+		"message": "API"
+	},
+	"action_signout": {
+		"message": "Выйти"
+	},
+	"header_developers": {
+		"message": "Разработчики"
+	},
+	"header_translators": {
+		"message": "Переводчики"
+	},
+	"header_latest_updates": {
+		"message": "Последние изменения"
+	},
+	"header_top_translators": {
+		"message": "Самые активные переводчики"
+	},
+	"header_newest_extensions": {
+		"message": "Самые новые расширения"
+	},
+	"save_changes_button": {
+		"message": "Сохранить изменения"
+	},
+	"saving_notification": {
+		"message": "Сохранения..."
+	},
+	"saved_notification": {
+		"message": "Сохранено!"
+	},
+	"call_to_action_select": {
+		"message": "русский"
+	},
+	"label_search": {
+		"message": "что бы меня увидеть надо умереть"
+	},
+	"email_preference_extension_created": {
+		"message": "Новое расширение загружено."
+	},
+	"email_notification_header_extension_new": {
+		"message": "Новое расширение"
+	},
+	"email_notification_header_extension_update": {
+		"message": "Обновленные расширения"
+	},
+	"email_notification_header_locale_complete": {
+		"message": "Законченные переводы"
+	},
+	"email_notification_header_message_modified": {
+		"message": "Измененные сообщения"
+	},
+	"action_change_email_preferences": {
+		"message": "Измените настройки email-уведомлений"
+	},
+	"action_send_feedback": {
+		"message": "Отправить отзыв"
+	},
+	"email_welcome_subject": {
+		"message": "Добро пожаловать на Interpr.it"
+	},
+	"blog": {
+		"message": "Блог"
+	}
+}

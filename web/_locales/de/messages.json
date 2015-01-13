@@ -8,6 +8,17 @@
 	"homepage_title": {
 		"message": "Browser Erweiterungen Übersetzer"
 	},
+	"homepage_about": {
+		"message": "Interpr.it ist ein Werkzeug zur Zusammenarbeit von Browsererweiterungsentwicklern und mehrsprachigen Erweiterungsnutzern. Entwickler, $link_open$upload  $link_close$; Übersetzer nutzen Interpr.it um Deine bevorzugten Erweiterung in Deiner Muttersprache verfügbar zu machen.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"\/upload\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
 	"homepage_link_label": {
 		"message": "Home"
 	},
@@ -18,7 +29,7 @@
 		}
 	},
 	"upload_page_title": {
-		"message": "Lade deine Erweiterung hoch"
+		"message": "Lade Deine Erweiterung hoch"
 	},
 	"upload_page_link_label": {
 		"message": "Upload"
@@ -135,6 +146,9 @@
 	"api_description_upload": {
 		"message": "Verarbeitet eine .zip-Datei mit deiner Erweiterung und nimmt die notwendigen Änderungen an den Lokalisierungen vor."
 	},
+	"api_description_download": {
+		"message": "Liefert eine .zip Datei mit den aktuellsten Übersetzungen für eine festgelegte Erweiterung zurück."
+	},
 	"api_description_translate": {
 		"message": "Speichert die Übersetzung einer Nachricht aus einer Erweiterung."
 	},
@@ -176,6 +190,9 @@
 	},
 	"progress": {
 		"message": "Fortschritt"
+	},
+	"files": {
+		"message": "Dateien"
 	},
 	"header_developer_actions": {
 		"message": "Entwickleraktionen"
@@ -831,5 +848,8 @@
 				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
 			}
 		}
+	},
+	"blog": {
+		"message": "Blog"
 	}
 }

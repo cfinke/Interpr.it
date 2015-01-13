@@ -1,0 +1,32 @@
+{
+	"homepage_link_label": {
+		"message": "Αρχική"
+	},
+	"upload_page_title": {
+		"message": "Ανεβάστε μια Επέκταση σας"
+	},
+	"upload_page_link_label": {
+		"message": "Ανέβασε"
+	},
+	"api_post_parameters_header": {
+		"message": "Παράμετροι POST"
+	},
+	"action_download_locales": {
+		"message": "Λήψη των τελευταίων Locales"
+	},
+	"action_upload_update": {
+		"message": "Ανεβάστε νέα Έκδοση"
+	},
+	"extension": {
+		"message": "Επέκταση"
+	},
+	"locale": {
+		"message": "Γλώσσα"
+	},
+	"header_progress": {
+		"message": "Πρόοδος Μετάφρασης"
+	},
+	"progress": {
+		"message": "Πρόοδος"
+	}
+}

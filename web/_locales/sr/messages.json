@@ -1,6 +1,12 @@
 {
+	"name": {
+		"message": "Веб-сајт Interpr.it"
+	},
+	"homepage_title": {
+		"message": "Превод додатака за прегледаче"
+	},
 	"homepage_link_label": {
-		"message": "Почетна страница"
+		"message": "Почетна"
 	},
 	"search_results_title": {
 		"message": "Резултати претраге: $query$",
@@ -9,13 +15,35 @@
 		}
 	},
 	"upload_page_title": {
-		"message": "Пребаците додатак"
+		"message": "Отпремите додатак"
 	},
 	"upload_page_link_label": {
-		"message": "Пребаци"
+		"message": "Отпреми"
 	},
 	"api_docs_page_title": {
-		"message": "Документација програмског интерфејса"
+		"message": "Документација API-ја"
+	},
+	"api_docs_page_header": {
+		"message": "API сајта Interpr.it"
+	},
+	"api_get_parameters_header": {
+		"message": "GET параметри"
+	},
+	"api_post_parameters_header": {
+		"message": "POST параметри"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
 	},
 	"api_parameter_description_extension_id": {
 		"message": "Идентификација додатка, као што се види на страници додатка у галерији."
@@ -26,16 +54,462 @@
 	"api_parameter_description_message": {
 		"message": "Преведена порука."
 	},
+	"api_return_format_zip": {
+		"message": ".zip или .xpi датотека"
+	},
 	"api_return_values_header": {
 		"message": "Примери враћених резултата"
 	},
+	"dashboard_page_title": {
+		"message": "Контролна табла"
+	},
+	"dashboard_header_extensions": {
+		"message": "Отпремљени додаци"
+	},
+	"dashboard_api_key_header": {
+		"message": "Ваш API кључ"
+	},
 	"api_documentation": {
-		"message": "Документација програмског интерфејса"
+		"message": "Документација API-ја"
 	},
 	"extension": {
 		"message": "Додатак"
 	},
+	"locale": {
+		"message": "Локализација"
+	},
+	"header_progress": {
+		"message": "Напредак превода"
+	},
+	"progress": {
+		"message": "Напредак"
+	},
+	"files": {
+		"message": "Датотеке"
+	},
+	"header_developer_actions": {
+		"message": "Радње програмера"
+	},
+	"header_translator_actions": {
+		"message": "Радње преводиоца"
+	},
+	"label_version": {
+		"message": "Верзија: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_updated": {
+		"message": "Ажурирано: $date$",
+		"placeholders": {
+			"date": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_message_limit": {
+		"message": "Преводиве фразе: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_translation_progress": {
+		"message": "Напредак превода: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_page_title": {
+		"message": "$extension_name$ :: $locale_name$",
+		"placeholders": {
+			"extension_name": {
+				"content": "$1",
+				"example": "ScribeFire"
+			},
+			"locale_name": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"api_error_upload": {
+		"message": "Дошло је до грешке при отпремању датотеке (кôд $error_code$)",
+		"placeholders": {
+			"error_code": {
+				"content": "$1",
+				"example": "123"
+			}
+		}
+	},
+	"api_error_upload_auth": {
+		"message": "Морате бити пријављени да бисте отпремили додатак."
+	},
+	"api": {
+		"message": "API"
+	},
+	"action_contact": {
+		"message": "Контакт"
+	},
+	"action_signin": {
+		"message": "Пријавите се Google налогом"
+	},
+	"action_signout": {
+		"message": "Одјави ме"
+	},
+	"header_developers": {
+		"message": "Програмери"
+	},
+	"action_signin_to_upload": {
+		"message": "Пријавите се да бисте отпремили додатак."
+	},
+	"header_translators": {
+		"message": "Преводиоци"
+	},
+	"header_extension_search": {
+		"message": "Потражите додатак који желите да преведете."
+	},
+	"header_latest_updates": {
+		"message": "Последња ажурирања"
+	},
+	"header_top_translators": {
+		"message": "Најактивнији преводиоци"
+	},
+	"header_newest_extensions": {
+		"message": "Најновији додаци"
+	},
+	"header_locale_page": {
+		"message": "$locale$ превод",
+		"placeholders": {
+			"locale": {
+				"content": "$1",
+				"example": "French"
+			}
+		}
+	},
+	"developer_explanation": {
+		"message": "Опис програмера: „$explanation$“",
+		"placeholders": {
+			"explanation": {
+				"content": "$1"
+			}
+		}
+	},
+	"show_all": {
+		"message": "Прикажи све поруке"
+	},
+	"save_changes_button": {
+		"message": "Сачувај измене"
+	},
+	"saving_notification": {
+		"message": "Чувам…"
+	},
+	"saved_notification": {
+		"message": "Сачувано."
+	},
+	"header_search_details": {
+		"message": "Детаљи претраге"
+	},
+	"header_search_results": {
+		"message": "Резултати претраге"
+	},
+	"text_no_results_for_query": {
+		"message": "Нема резултата за $query$.",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results": {
+		"message": "Нема резултата."
+	},
+	"translate_call_to_action": {
+		"message": "Преведите $extension$ на $locale$",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
 	"call_to_action_select": {
-		"message": "(означи)"
+		"message": "(изаберите)"
+	},
+	"label_keywords": {
+		"message": "Кључне речи (необавезно):"
+	},
+	"label_search": {
+		"message": "Претражи"
+	},
+	"header_upload": {
+		"message": "Отпремите додатак (у виду .zip или .xpi датотеке)"
+	},
+	"action_reset_api_key": {
+		"message": "Поништи API кључ"
+	},
+	"api_error_noauth_reset_key": {
+		"message": "Морате бити пријављени да бисте поништили API кључ."
+	},
+	"action_message_history": {
+		"message": "Историја превода"
+	},
+	"action_revert": {
+		"message": "Врати"
+	},
+	"column_header_message_version": {
+		"message": "Порука"
+	},
+	"column_header_changed_by": {
+		"message": "Променио"
+	},
+	"terms_of_use": {
+		"message": "Услови коришћења"
+	},
+	"member_page_title": {
+		"message": "Допринео :: $username$",
+		"placeholders": {
+			"username": {
+				"content": "$1",
+				"example": "cfinke"
+			}
+		}
+	},
+	"link_extension_homepage": {
+		"message": "Почетна"
+	},
+	"locale_name_am": {
+		"message": "амхарски"
+	},
+	"locale_name_ar": {
+		"message": "арапски"
+	},
+	"locale_name_bg": {
+		"message": "бугарски"
+	},
+	"locale_name_bn": {
+		"message": "бенгалски"
+	},
+	"locale_name_ca": {
+		"message": "каталонски"
+	},
+	"locale_name_cs": {
+		"message": "чешки"
+	},
+	"locale_name_da": {
+		"message": "дански"
+	},
+	"locale_name_de": {
+		"message": "немачки"
+	},
+	"locale_name_el": {
+		"message": "грчки"
+	},
+	"locale_name_en": {
+		"message": "енглески"
+	},
+	"locale_name_en_GB": {
+		"message": "енглески (Велика Британија)"
+	},
+	"locale_name_en_US": {
+		"message": "енглески (САД)"
+	},
+	"locale_name_es": {
+		"message": "шпански"
+	},
+	"locale_name_es_419": {
+		"message": "шпански (Латинска Америка)"
+	},
+	"locale_name_et": {
+		"message": "естонски"
+	},
+	"locale_name_fi": {
+		"message": "фински"
+	},
+	"locale_name_fil": {
+		"message": "филипински"
+	},
+	"locale_name_fr": {
+		"message": "француски"
+	},
+	"locale_name_gu": {
+		"message": "гуџарати"
+	},
+	"locale_name_he": {
+		"message": "хебрејски"
+	},
+	"locale_name_hi": {
+		"message": "хинди"
+	},
+	"locale_name_hr": {
+		"message": "хрватски"
+	},
+	"locale_name_hu": {
+		"message": "мађарски"
+	},
+	"locale_name_id": {
+		"message": "индонезијски"
+	},
+	"locale_name_it": {
+		"message": "италијански"
+	},
+	"locale_name_ja": {
+		"message": "јапански"
+	},
+	"locale_name_kn": {
+		"message": "канада"
+	},
+	"locale_name_ko": {
+		"message": "корејски"
+	},
+	"locale_name_lt": {
+		"message": "литвански"
+	},
+	"locale_name_lv": {
+		"message": "летонски"
+	},
+	"locale_name_ml": {
+		"message": "малајалам"
+	},
+	"locale_name_mr": {
+		"message": "маратхи"
+	},
+	"locale_name_nb": {
+		"message": "норвешки"
+	},
+	"locale_name_nl": {
+		"message": "холандски"
+	},
+	"locale_name_or": {
+		"message": "орија"
+	},
+	"locale_name_pl": {
+		"message": "пољски"
+	},
+	"locale_name_pt": {
+		"message": "португалски"
+	},
+	"locale_name_pt_BR": {
+		"message": "португалски (Бразил)"
+	},
+	"locale_name_pt_PT": {
+		"message": "португалски (Португалија)"
+	},
+	"locale_name_ro": {
+		"message": "румунски"
+	},
+	"locale_name_ru": {
+		"message": "руски"
+	},
+	"locale_name_sk": {
+		"message": "словачки"
+	},
+	"locale_name_sl": {
+		"message": "словеначки"
+	},
+	"locale_name_sr": {
+		"message": "српски (ћирилица)"
+	},
+	"locale_name_sv": {
+		"message": "шведски"
+	},
+	"locale_name_sw": {
+		"message": "свахили"
+	},
+	"locale_name_ta": {
+		"message": "тамилски"
+	},
+	"locale_name_te": {
+		"message": "телугу"
+	},
+	"locale_name_th": {
+		"message": "тајландски"
+	},
+	"locale_name_tr": {
+		"message": "турски"
+	},
+	"locale_name_uk": {
+		"message": "украјински"
+	},
+	"locale_name_vi": {
+		"message": "вијетнамски"
+	},
+	"locale_name_zh": {
+		"message": "кинески"
+	},
+	"locale_name_zh_CN": {
+		"message": "кинески (Кина)"
+	},
+	"locale_name_zh_TW": {
+		"message": "кинески (Тајван)"
+	},
+	"email_preference_header": {
+		"message": "Пошаљите ми е-поруку када је…"
+	},
+	"email_preference_extension_updates": {
+		"message": "Додатак на ком сам радио ажуриран."
+	},
+	"email_preference_locale_completed": {
+		"message": "Локализација мог додатка завршена."
+	},
+	"email_preference_message_changed": {
+		"message": "Моју поруку променио други члан."
+	},
+	"email_preference_extension_created": {
+		"message": "Отпремљен нови додатак."
+	},
+	"email_notification_subject": {
+		"message": "Активност на сајту Interpr.it"
+	},
+	"email_notification_header_extension_new": {
+		"message": "Нови додаци"
+	},
+	"email_notification_header_extension_update": {
+		"message": "Ажурирани додаци"
+	},
+	"email_notification_header_locale_complete": {
+		"message": "Завршене локализације"
+	},
+	"email_notification_header_message_modified": {
+		"message": "Измењене поруке"
+	},
+	"action_change_email_preferences": {
+		"message": "Промените поставке обавештавања путем е-поште"
+	},
+	"action_send_feedback": {
+		"message": "Пошаљите повратне информације"
+	},
+	"email_welcome_subject": {
+		"message": "Добро дошли у Interpr.it"
+	},
+	"email_welcome_text_3": {
+		"message": "Јесте ли преводилац? Посетите $link_open$Interpr.it$link_close$ и претражите додатке којима треба превод.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"http:\/\/interpr.it\/\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"email_welcome_text_4": {
+		"message": "Имате питања или коментаре? Обратите нам се на адресу $email_address$.",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	},
+	"blog": {
+		"message": "Блог"
 	}
 }

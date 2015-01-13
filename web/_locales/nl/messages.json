@@ -1,9 +1,23 @@
 {
+	"description": {
+		"message": "De taalbestanden voor de http:\/\/interpr.it\/ website."
+	},
 	"name": {
 		"message": "Interpr.it Website"
 	},
 	"homepage_title": {
 		"message": "Browserextensie Vertaling"
+	},
+	"homepage_about": {
+		"message": "Interpr.it is een samenwerkingstool voor ontwikkelaars van browser extensies en meertalige gebruikers van extensies. Ontwikkelaars, $link_open$upload je extensies$link_close$; vertalers, gebruik Interpr.it om je favoriete extensies in je eigen taal beschikbaar te maken.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"\/upload\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
 	},
 	"homepage_link_label": {
 		"message": "Home"
@@ -27,7 +41,7 @@
 		"message": "Interpr.it API"
 	},
 	"api_docs_page_contact": {
-		"message": "Als je meer API-mogelijkheden toegankelijk wilt zien, email je $email_address$.",
+		"message": "Als je meer API-mogelijkheden beschikbaar wilt hebben, email je naar $email_address$.",
 		"placeholders": {
 			"email_address": {
 				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
@@ -35,10 +49,10 @@
 		}
 	},
 	"api_get_parameters_header": {
-		"message": "GET Parameters"
+		"message": "GET parameters"
 	},
 	"api_post_parameters_header": {
-		"message": "POST Parameters"
+		"message": "POST parameters"
 	},
 	"api_parameter_description": {
 		"message": "$parameter_name$: $parameter_description$",
@@ -53,17 +67,35 @@
 			}
 		}
 	},
+	"api_parameter_description_extension_id": {
+		"message": "Het ID van de extensie, zoals weergegeven in de URL van de pagina van een extensie."
+	},
 	"api_parameter_description_message": {
 		"message": "Het vertaalde bericht"
+	},
+	"api_return_format_header": {
+		"message": "Respons formaat"
 	},
 	"api_return_format_zip": {
 		"message": ".zip of .xpi bestand"
 	},
+	"api_return_values_header": {
+		"message": "Voorbeeld van respons waarden"
+	},
+	"api_description_download": {
+		"message": "Geeft een .zip bestand van de laatste versie van de map met vertaling voor de opgegeven extensie."
+	},
 	"api_description_translate": {
 		"message": "Slaat een vertaling van een bericht van een extensie op."
 	},
+	"api_description_revert": {
+		"message": "Zet een oudere versie van een vertaling terug."
+	},
 	"dashboard_page_title": {
 		"message": "Dashboard"
+	},
+	"dashboard_header_extensions": {
+		"message": "Geüploade extensies"
 	},
 	"dashboard_api_key_header": {
 		"message": "Jouw API-sleutel"
@@ -72,22 +104,31 @@
 		"message": "API documentatie"
 	},
 	"action_download_locales": {
-		"message": "Download Laatste Localebestanden"
+		"message": "Download laatste versie van vertalingbestanden"
 	},
 	"action_upload_update": {
-		"message": "Upload Nieuwe Versie"
+		"message": "Upload nieuwe versie"
+	},
+	"dashboard_header_locales": {
+		"message": "Bijdragen aan vertalingen"
 	},
 	"extension": {
 		"message": "Extensie"
 	},
 	"locale": {
-		"message": "Locale"
+		"message": "Vertaling"
 	},
 	"header_progress": {
-		"message": "Vertaalvoortgang"
+		"message": "Voortgang van vertaling"
 	},
 	"progress": {
 		"message": "Voortgang"
+	},
+	"files": {
+		"message": "Bestanden"
+	},
+	"header_developer_actions": {
+		"message": "Ontwikkelaar acties"
 	},
 	"header_translator_actions": {
 		"message": "Vertaleracties"
@@ -143,6 +184,9 @@
 	},
 	"api_error_upload_invalid_zip": {
 		"message": "Het bestand dat je hebt geüpload was geen geldig zipbestand. Controleer het bestand en probeer het opnieuw."
+	},
+	"api_error_upload_invalid_manifest": {
+		"message": "De JSON in uw manifest.json bestand was ongeldig."
 	},
 	"api_error_upload_invalid_default_locale": {
 		"message": "Ongeldige standaardlocale: $locale_code$",
@@ -384,6 +428,21 @@
 	"link_extension_homepage": {
 		"message": "Homepagina"
 	},
+	"locale_name_ar": {
+		"message": "Arabisch"
+	},
+	"locale_name_bg": {
+		"message": "Bulgaars"
+	},
+	"locale_name_bn": {
+		"message": "Bengaals"
+	},
+	"locale_name_ca": {
+		"message": "Catalaans"
+	},
+	"locale_name_cs": {
+		"message": "Tsjechisch"
+	},
 	"locale_name_da": {
 		"message": "Deens"
 	},
@@ -413,6 +472,15 @@
 	},
 	"locale_name_fr": {
 		"message": "Frans"
+	},
+	"locale_name_he": {
+		"message": "Hebreews"
+	},
+	"locale_name_hr": {
+		"message": "Kroatisch"
+	},
+	"locale_name_hu": {
+		"message": "Hongaars"
 	},
 	"locale_name_id": {
 		"message": "Indonesisch"
@@ -444,14 +512,29 @@
 	"locale_name_pt_PT": {
 		"message": "Portugees (Portugal)"
 	},
+	"locale_name_ro": {
+		"message": "Roemeens"
+	},
 	"locale_name_ru": {
 		"message": "Russisch"
+	},
+	"locale_name_sk": {
+		"message": "Slowaaks"
+	},
+	"locale_name_sl": {
+		"message": "Sloveens"
 	},
 	"locale_name_sv": {
 		"message": "Zweeds"
 	},
+	"locale_name_th": {
+		"message": "Thais"
+	},
 	"locale_name_tr": {
 		"message": "Turks"
+	},
+	"locale_name_uk": {
+		"message": "Oekraïens"
 	},
 	"locale_name_vi": {
 		"message": "Vietnamees"
@@ -468,6 +551,21 @@
 	"email_preference_header": {
 		"message": "Email mij wanneer..."
 	},
+	"email_notification_subject": {
+		"message": "Interpr.it activiteit"
+	},
+	"email_notification_header_extension_new": {
+		"message": "Nieuwe extensies"
+	},
+	"email_notification_header_locale_complete": {
+		"message": "Voltooide vertalingen"
+	},
+	"action_send_feedback": {
+		"message": "Verstuur feedback"
+	},
+	"email_welcome_subject": {
+		"message": "Welkom bij Interpr.it"
+	},
 	"email_welcome_text_4": {
 		"message": "Vragen? Commentaar? Zorgen? Email $email_address$ met jouw reacties.",
 		"placeholders": {
@@ -475,5 +573,8 @@
 				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
 			}
 		}
+	},
+	"blog": {
+		"message": "Blog"
 	}
 }

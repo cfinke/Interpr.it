@@ -81,6 +81,9 @@
 	"progress": {
 		"message": "ప్రగతి"
 	},
+	"files": {
+		"message": "దస్త్రాలు"
+	},
 	"header_developer_actions": {
 		"message": "వికాసకుల చర్యలు"
 	},
@@ -457,5 +460,8 @@
 				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
 			}
 		}
+	},
+	"blog": {
+		"message": "బ్లాగు"
 	}
 }

@@ -26,6 +26,12 @@
 	"api_docs_page_header": {
 		"message": "Interpr.it API"
 	},
+	"api_get_parameters_header": {
+		"message": "GETパラメータ"
+	},
+	"api_post_parameters_header": {
+		"message": "POSTパラメータ"
+	},
 	"api_parameter_description": {
 		"message": "$parameter_name$: $parameter_description$",
 		"placeholders": {

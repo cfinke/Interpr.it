@@ -1,5 +1,855 @@
 {
+	"description": {
+		"message": "Översättningsfilerna som supportar webbsidan http:\/\/interpr.it\/"
+	},
+	"name": {
+		"message": "Webbsidan Interpr.it"
+	},
+	"homepage_title": {
+		"message": "Översättningar av Webbläsartillägg"
+	},
+	"homepage_about": {
+		"message": "Interpr.it är ett samarbetsverktyg tillägnat både utvecklare och mångspråkiga användare av olika webbläsartillägg. Utvecklare är välkomna att $link_open$ladda upp sina appar$link_close$ och som översättare så får du gärna hjälpa till att göra dina favorittillägg tillgängliga på ditt eget modersspråk.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"\/upload\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"homepage_link_label": {
+		"message": "Hem"
+	},
+	"search_results_title": {
+		"message": "Sökresultat: $query$",
+		"placeholders": {
+			"query": "$1"
+		}
+	},
+	"upload_page_title": {
+		"message": "Ladda upp din app"
+	},
+	"upload_page_link_label": {
+		"message": "Ladda upp"
+	},
+	"api_docs_page_title": {
+		"message": "API-dokumentation"
+	},
+	"api_docs_page_header": {
+		"message": "API för Interpr.it"
+	},
+	"api_docs_page_summary": {
+		"message": "Alla URLer för APIer finns på domänen $url$. Du måste inkludera $api_key_link_open$din API-nyckel $api_key_link_end$ som antingen POST eller GET-parameter namngivet som $code_start$api_key$code_end$ vid varje förfrågan.",
+		"placeholders": {
+			"url": {
+				"content": "http:\/\/interpr.it\/",
+				"example": "http:\/\/interpr.it\/"
+			},
+			"api_key_link_open": {
+				"content": "<a href=\"\/dashboard#api_key\">"
+			},
+			"api_key_link_end": {
+				"content": "<\/a>"
+			},
+			"code_start": {
+				"content": "<code>"
+			},
+			"code_end": {
+				"content": "<\/code>"
+			}
+		}
+	},
+	"api_docs_page_contact": {
+		"message": "Skicka ett mail till $email_address$ om du har önskemål rörande andra tillgängliga API-metoder.",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	},
+	"api_get_parameters_header": {
+		"message": "Parametrar för GET"
+	},
+	"api_post_parameters_header": {
+		"message": "Parametrar för POST"
+	},
+	"api_parameter_description": {
+		"message": "$parameter_name$: $parameter_description$",
+		"placeholders": {
+			"parameter_name": {
+				"content": "$1",
+				"example": "extension_id"
+			},
+			"parameter_description": {
+				"content": "$2",
+				"example": "The ID of your extension."
+			}
+		}
+	},
+	"api_parameter_description_extension_id": {
+		"message": "ID för appen som återfinns i URLen tillhörande en apps egna permalink-sida."
+	},
+	"api_parameter_description_locale_code": {
+		"message": "Språkkod för det översatta meddelandet. (en lista med giltiga språkkoder kan hittas på $link_start$Googles i18n-documentation$link_end$)",
+		"placeholders": {
+			"link_start": {
+				"content": "<a href=\"http:\/\/code.google.com\/chrome\/extensions\/i18n.html#locales-supported\">"
+			},
+			"link_end": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"api_parameter_description_name": {
+		"message": "Namn på meddelandet som ska översättas."
+	},
+	"api_parameter_description_message": {
+		"message": "Översatt meddelande."
+	},
+	"api_parameter_description_history_id": {
+		"message": "ID tillhörande tidigare inlägg som getts av $history_api_url$.",
+		"placeholders": {
+			"history_api_url": {
+				"content": "\/api\/history",
+				"example": "\/api\/history"
+			}
+		}
+	},
+	"api_parameter_description_package": {
+		"message": "En ZIP-fil innehållandes ditt webbläsartillägg (eller endast dess $locale_directory_name$ samt $manifest_file_name$ som enskilda filer) precis som en uppladdning via HTML-form. Ett sätt att åstadkomma detta är $code_example$",
+		"placeholders": {
+			"locale_directory_name": {
+				"content": "_locales\/",
+				"example": "_locales\/"
+			},
+			"manifest_file_name": {
+				"content": "manifest.json",
+				"example": "manifest.json"
+			},
+			"code_example": {
+				"content": "<code>curl -F \"package=@myextension.zip\" -F \"api_key=ABCDEFG123\" http:\/\/interpr.it\/api\/upload<\/code>",
+				"example": "<code>curl -F \"package=@myextension.zip\" http:\/\/interpr.it\/api\/upload<\/code>"
+			}
+		}
+	},
+	"api_return_format_header": {
+		"message": "Returformat"
+	},
+	"api_return_format_zip": {
+		"message": "ZIP eller XPI-fil"
+	},
+	"api_return_values_header": {
+		"message": "Exempel på returvärden"
+	},
+	"api_description_upload": {
+		"message": "Sparar alla översättningsändringar för din app som en ZIP-fil."
+	},
+	"api_description_download": {
+		"message": "Ger en ZIP-fil med dom senaste översättningsändringarna för en specifik app."
+	},
+	"api_description_translate": {
+		"message": "Sparar en översättning av ett meddelande från ett webbläsartillägg."
+	},
+	"api_description_history": {
+		"message": "Visar en lista med alla ändringar av ett översatt meddelande."
+	},
+	"api_description_revert": {
+		"message": "Ångrar en översatt textremsa till en tidigare version."
+	},
+	"dashboard_page_title": {
+		"message": "Landningssida"
+	},
+	"dashboard_header_extensions": {
+		"message": "Uppladdade appar"
+	},
+	"dashboard_api_key_header": {
+		"message": "Din API-nyckel"
+	},
+	"api_documentation": {
+		"message": "API-dokumentation"
+	},
+	"action_download_locales": {
+		"message": "Hämta språkuppdateringar"
+	},
+	"action_upload_update": {
+		"message": "Ladda upp ny version"
+	},
+	"dashboard_header_locales": {
+		"message": "Översättningsmedhjälp"
+	},
+	"extension": {
+		"message": "Webbläsartillägg"
+	},
+	"locale": {
+		"message": "Språk"
+	},
+	"header_progress": {
+		"message": "Översättningsförbättring"
+	},
+	"progress": {
+		"message": "Framåtskridande"
+	},
+	"files": {
+		"message": "Filer"
+	},
+	"header_developer_actions": {
+		"message": "Val för utvecklare"
+	},
+	"header_translator_actions": {
+		"message": "Val för översättare"
+	},
+	"label_version": {
+		"message": "Version: $version$",
+		"placeholders": {
+			"version": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_updated": {
+		"message": "Uppdaterad: $date$",
+		"placeholders": {
+			"date": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_message_limit": {
+		"message": "Översättningsbara meddelanden: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"label_translation_progress": {
+		"message": "Översättningsavancemang: $number$",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_page_title": {
+		"message": "$extension_name$ :: $locale_name$ Locale",
+		"placeholders": {
+			"extension_name": {
+				"content": "$1",
+				"example": "ScribeFire"
+			},
+			"locale_name": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"api_error_upload": {
+		"message": "Ett fel inträffade när filen laddades upp (felkod $error_code$)",
+		"placeholders": {
+			"error_code": {
+				"content": "$1",
+				"example": "123"
+			}
+		}
+	},
+	"api_error_upload_auth": {
+		"message": "Du måste vara inloggad för att ladda upp en app."
+	},
+	"api_error_upload_invalid_zip": {
+		"message": "Filen som du laddade upp är inte en giltig ZIP-fil. Var god kontrollera filen och prova igen."
+	},
+	"api_error_upload_missing_file": {
+		"message": "Oförmögen att hitta $filename$. Kontrollera så att denna fil finns i den uppladdade ZIP-filens huvudmapp.",
+		"placeholders": {
+			"filename": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_upload_invalid_manifest": {
+		"message": "Den tillhörande JSON i din manifest.json-fil var inte giltig."
+	},
+	"api_error_upload_missing_default_locale": {
+		"message": "Din mainfest.json specificerade inte ett förvalt språk."
+	},
+	"api_error_upload_missing_version": {
+		"message": "Din manifest.json inkluderade inte ett versionsnummer."
+	},
+	"api_error_upload_missing_name": {
+		"message": "Din manifest.json inkluderade inte ett extensionsnamn."
+	},
+	"api_error_upload_invalid_default_locale": {
+		"message": "Ogiltig fördefinierad locale: $locale_code$",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1",
+				"example": "en_XX"
+			}
+		}
+	},
+	"api_error_upload_missing_locales_directory": {
+		"message": "Kan inte lokalisera _locales directory"
+	},
+	"api_error_upload_invalid_messages": {
+		"message": "Ogiltigt messages.json i språk $locale_code$",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1",
+				"example": "fr_FR"
+			}
+		}
+	},
+	"api_error_upload_missing_default_messages": {
+		"message": "Kan inte hitta ditt föranpassade språks egna message.json"
+	},
+	"api_error_upload_empty_default_messages": {
+		"message": "Ditt föranpassade språk innehöll inga meddelanden."
+	},
+	"api_error_upload_missing_default_locale_message": {
+		"message": "Oförmögen att hitta meddelandet '$message_key$'' i det förinställda språket.",
+		"placeholders": {
+			"message_key": {
+				"content": "$1"
+			}
+		}
+	},
+	"api_error_default_locale_modification": {
+		"message": "Endast utvecklaren av en app kan ändra ett meddelande tillhörande det förbestämda språket."
+	},
+	"api_error_message_not_in_default_locale": {
+		"message": "Det meddelandet återfinns inte i det förbestämda språket."
+	},
+	"api_error_noauth_translate": {
+		"message": "Du måste vara inloggad för att översätta."
+	},
+	"api_error_invalid_parameter": {
+		"message": "Ogiltig $parameter_name$ -parameter.",
+		"placeholders": {
+			"parameter_name": {
+				"content": "<em>$1<\/em>"
+			}
+		}
+	},
+	"api_error_missing_placeholder": {
+		"message": "Saknar platshållare för $placeholder_name$.",
+		"placeholders": {
+			"placeholder_name": {
+				"content": "<em>$1<\/em>"
+			}
+		}
+	},
+	"api_error_missing_default_locale_message": {
+		"message": "Det ursprungliga språket saknar meddelandet $message_name$.",
+		"placeholders": {
+			"message_name": {
+				"content": "'$1'"
+			}
+		}
+	},
+	"footer_google_affiliation": {
+		"message": "Interpr.it är inte officiellt affilierad med vare sig Google eller Mozilla."
+	},
+	"api": {
+		"message": "API"
+	},
+	"action_contact": {
+		"message": "Kontakta oss"
+	},
+	"action_signin": {
+		"message": "Logga in med ditt Google-konto"
+	},
+	"action_signout": {
+		"message": "Logga ut"
+	},
+	"header_developers": {
+		"message": "Utvecklare"
+	},
+	"action_signin_to_upload": {
+		"message": "Logga in för att ladda upp din app."
+	},
+	"header_translators": {
+		"message": "Översättare"
+	},
+	"header_extension_search": {
+		"message": "Sök efter appar för att översätta."
+	},
+	"header_latest_updates": {
+		"message": "Senaste uppdateringar"
+	},
+	"header_top_translators": {
+		"message": "Mest aktiva översättare"
+	},
+	"header_newest_extensions": {
+		"message": "Nyaste appar"
+	},
+	"header_locale_page": {
+		"message": "$locale$ översättning",
+		"placeholders": {
+			"locale": {
+				"content": "$1",
+				"example": "French"
+			}
+		}
+	},
+	"translate_error_signin": {
+		"message": "Du måste $link_start$logga in$link_end$ för att hjälpa till att översätta en app.",
+		"placeholders": {
+			"link_start": {
+				"content": "$1"
+			},
+			"link_end": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"developer_explanation": {
+		"message": "Utvecklarens beskrivning: '$explanation$'",
+		"placeholders": {
+			"explanation": {
+				"content": "$1"
+			}
+		}
+	},
+	"header_placeholder_examples": {
+		"message": "Exempel rörande platshållare"
+	},
+	"hide_completed": {
+		"message": "Göm översatta meddelanden"
+	},
+	"show_all": {
+		"message": "Visa alla meddelanden"
+	},
+	"save_changes_button": {
+		"message": "Spara ändringar"
+	},
+	"saving_notification": {
+		"message": "Sparar..."
+	},
+	"saved_notification": {
+		"message": "Sparat!"
+	},
+	"header_search_details": {
+		"message": "Sökdetaljer"
+	},
+	"header_search_results": {
+		"message": "Sökresultat"
+	},
+	"text_no_results_for_query": {
+		"message": "Inget hittades gällande $query$.",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results_for_query_and_locale": {
+		"message": "Inget hittades för $query$ gällande appar som behöver översättning till $locale_code$.",
+		"placeholders": {
+			"query": {
+				"content": "$1"
+			},
+			"locale_code": {
+				"content": "$2"
+			}
+		}
+	},
+	"text_no_results_for_locale": {
+		"message": "Inget hittades för appar som behöver översättning till $locale_code$.",
+		"placeholders": {
+			"locale_code": {
+				"content": "$1"
+			}
+		}
+	},
+	"text_no_results": {
+		"message": "Inga resultat."
+	},
+	"translate_call_to_action": {
+		"message": "Översätt $extension$ till $locale$",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2",
+				"example": "French"
+			}
+		}
+	},
+	"missing_phrase_count": {
+		"message": "(Saknar $number$ meddelanden)",
+		"placeholders": {
+			"number": {
+				"content": "$1"
+			}
+		}
+	},
+	"locale_is_complete": {
+		"message": "Översättning för $extension$ till $locale$ är fullständig.",
+		"placeholders": {
+			"extension": {
+				"content": "$1"
+			},
+			"locale": {
+				"content": "$2"
+			}
+		}
+	},
+	"label_your_locale": {
+		"message": "Ditt språk:"
+	},
 	"call_to_action_select": {
 		"message": "(välj)"
+	},
+	"label_keywords": {
+		"message": "Nyckelord: (valfritt)"
+	},
+	"label_search": {
+		"message": "Sök"
+	},
+	"header_upload": {
+		"message": "Ladda upp en app (antingen .ZIP eller .XPI-fil)"
+	},
+	"upload_instructions_1": {
+		"message": "Ladda upp en fil av typen .XPI (Mozilla) eller en .ZIP (Chrome) innehållandes ditt webbläsartillägg, dock ingen packad .CRX-fil."
+	},
+	"upload_instructions_2": {
+		"message": "Interpr.it kommer automatiskt fylla i samtliga översättningar som har gjorts för andra appar. Exempelvis om en översättare för en annan app redan översatt \"Tack så mycket\" till franska och din egen app innehåller samma meddelande så kommer Interpr.it föra över denna översättning åt dig automatiskt."
+	},
+	"upload_instructions_3": {
+		"message": "Du kan även $link_open$ladda upp en app via kommandorad$link_close$.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"\/api#upload\">",
+				"example": "<a href=\"\/api\">"
+			},
+			"link_close": {
+				"content": "<\/a>",
+				"example": "<\/a>"
+			}
+		}
+	},
+	"action_reset_api_key": {
+		"message": "Nollställ API-nyckel"
+	},
+	"api_error_noauth_reset_key": {
+		"message": "Du måste vara inloggad för att nollställa din API-nyckel."
+	},
+	"action_message_history": {
+		"message": "Översättningshistorik"
+	},
+	"action_revert": {
+		"message": "Återgå"
+	},
+	"column_header_message_version": {
+		"message": "Meddelande"
+	},
+	"column_header_changed_by": {
+		"message": "Ändrad av"
+	},
+	"terms_of_use": {
+		"message": "Användarvillkor"
+	},
+	"terms_of_use_developers": {
+		"message": "Genom att ladda upp din mjukvara till Interpr.it så godkänner du Interpr.it ett globalt och en tillsvidare icke-exklusiv samt en gentemot dig ersättningslös rättighet samt licens att tillhandahålla meta-data som antingen helt eller delvis kommer användas för visning, duplicering, modifiering, anpassning, publicering, distribution, spridning, arkivering och översättning av din mjukvara samt det innehåll som syftar till att bli anpassat lokalt."
+	},
+	"terms_of_use_translators": {
+		"message": "Genom att bidra med översättningar av mjukvara via Interpr.it så godkänner du Interpr.it samt utvecklaren för den översatta mjukvaran ett globalt och en tillsvidare icke-exklusiv samt en gentemot dig ersättningslös rättighet samt licens att antingen helt eller delvis visa, duplicera, modifiera, anpassa, publicera, distribuera, sprida, arkivera och fortsatt översätta det översatta innehållet."
+	},
+	"member_page_title": {
+		"message": "Bidragare :: $username$",
+		"placeholders": {
+			"username": {
+				"content": "$1",
+				"example": "cfinke"
+			}
+		}
+	},
+	"link_extension_homepage": {
+		"message": "Hemsida"
+	},
+	"locale_name_am": {
+		"message": "Amhariska"
+	},
+	"locale_name_ar": {
+		"message": "Arabiska"
+	},
+	"locale_name_bg": {
+		"message": "Bulgariska"
+	},
+	"locale_name_bn": {
+		"message": "Bengali"
+	},
+	"locale_name_ca": {
+		"message": "Katalanska"
+	},
+	"locale_name_cs": {
+		"message": "Tjeckiska"
+	},
+	"locale_name_da": {
+		"message": "Danska"
+	},
+	"locale_name_de": {
+		"message": "Tyska"
+	},
+	"locale_name_el": {
+		"message": "Grekiska"
+	},
+	"locale_name_en": {
+		"message": "Engelska"
+	},
+	"locale_name_en_GB": {
+		"message": "Engelska (Brittisk)"
+	},
+	"locale_name_en_US": {
+		"message": "Engelska (Amerikansk)"
+	},
+	"locale_name_es": {
+		"message": "Spanska"
+	},
+	"locale_name_es_419": {
+		"message": "Spanska (Latinamerika)"
+	},
+	"locale_name_et": {
+		"message": "Estniska"
+	},
+	"locale_name_fi": {
+		"message": "Finska"
+	},
+	"locale_name_fil": {
+		"message": "Filippinska"
+	},
+	"locale_name_fr": {
+		"message": "Franska"
+	},
+	"locale_name_gu": {
+		"message": "Gujarati"
+	},
+	"locale_name_he": {
+		"message": "Hebreiska"
+	},
+	"locale_name_hi": {
+		"message": "Hindi"
+	},
+	"locale_name_hr": {
+		"message": "Kroatiska"
+	},
+	"locale_name_hu": {
+		"message": "Ungerska"
+	},
+	"locale_name_id": {
+		"message": "Indonesiska"
+	},
+	"locale_name_it": {
+		"message": "Italienska"
+	},
+	"locale_name_ja": {
+		"message": "Japanska"
+	},
+	"locale_name_kn": {
+		"message": "Kannada"
+	},
+	"locale_name_ko": {
+		"message": "Koreanska"
+	},
+	"locale_name_lt": {
+		"message": "Litauiska"
+	},
+	"locale_name_lv": {
+		"message": "Lettiska"
+	},
+	"locale_name_ml": {
+		"message": "Malayalam"
+	},
+	"locale_name_mr": {
+		"message": "Marathi"
+	},
+	"locale_name_nb": {
+		"message": "Norska (bokmål)"
+	},
+	"locale_name_nl": {
+		"message": "Nederländska"
+	},
+	"locale_name_or": {
+		"message": "Oriya"
+	},
+	"locale_name_pl": {
+		"message": "Polska"
+	},
+	"locale_name_pt": {
+		"message": "Portugisiska"
+	},
+	"locale_name_pt_BR": {
+		"message": "Portugisiska (Brasilien)"
+	},
+	"locale_name_pt_PT": {
+		"message": "Portugisiska (Portugal)"
+	},
+	"locale_name_ro": {
+		"message": "Rumänska"
+	},
+	"locale_name_ru": {
+		"message": "Ryska"
+	},
+	"locale_name_sk": {
+		"message": "Slovakiska"
+	},
+	"locale_name_sl": {
+		"message": "Slovenska"
+	},
+	"locale_name_sr": {
+		"message": "Serbiska (kyrillisk)"
+	},
+	"locale_name_sv": {
+		"message": "Svenska"
+	},
+	"locale_name_sw": {
+		"message": "Swahili"
+	},
+	"locale_name_ta": {
+		"message": "Tamil"
+	},
+	"locale_name_te": {
+		"message": "Telugu"
+	},
+	"locale_name_th": {
+		"message": "Thai"
+	},
+	"locale_name_tr": {
+		"message": "Turkiska"
+	},
+	"locale_name_uk": {
+		"message": "Ukrainska"
+	},
+	"locale_name_vi": {
+		"message": "Vietnamesiska"
+	},
+	"locale_name_zh": {
+		"message": "Kinesiska"
+	},
+	"locale_name_zh_CN": {
+		"message": "Kinesiska (Kina)"
+	},
+	"locale_name_zh_TW": {
+		"message": "Kinesiska (Taiwan)"
+	},
+	"email_preference_header": {
+		"message": "Skicka ett mail när..."
+	},
+	"email_preference_extension_updates": {
+		"message": "En app som jag hjälpt till att översätta har uppdaterats."
+	},
+	"email_preference_locale_completed": {
+		"message": "När en språköversättning slutförts för en app som jag laddat upp."
+	},
+	"email_preference_message_changed": {
+		"message": "När en annan användare ändrat en översättning som jag gjort."
+	},
+	"email_preference_extension_created": {
+		"message": "När ett nytt webbläsartillägg har laddats upp."
+	},
+	"email_batch_description": {
+		"message": "Du kommer som mest få ett mail per dag innehållandes det senaste dygnets händelser."
+	},
+	"email_notification_subject": {
+		"message": "Aktiviteter på Interpr.it"
+	},
+	"email_notification_intro": {
+		"message": "Här är dina notifieringar för senaste aktiviteter på Interpr.it."
+	},
+	"email_notification_header_extension_new": {
+		"message": "Nya appar"
+	},
+	"email_notification_header_extension_update": {
+		"message": "Uppdaterade appar"
+	},
+	"email_notification_header_locale_complete": {
+		"message": "Fullständiga översättningar"
+	},
+	"email_notification_header_message_modified": {
+		"message": "Ändrade meddelanden"
+	},
+	"email_notification_locale_complete": {
+		"message": "$username$ kompletterade översättning $locale_code$ för $extension$.",
+		"placeholders": {
+			"username": {
+				"content": "<a href=\"$2\">$1<\/a>",
+				"example": "cfinke"
+			},
+			"locale_code": {
+				"content": "$3",
+				"example": "fr"
+			},
+			"extension": {
+				"content": "<a href=\"$5\">$4<\/a>",
+				"example": "ScribeFire"
+			}
+		}
+	},
+	"email_notification_message_changed": {
+		"message": "$username$ ändrade en av dina $link_open$översättningar$link_close$ för $extension$.",
+		"placeholders": {
+			"username": {
+				"content": "<a href=\"$2\">$1<\/a>",
+				"example": "cfinke"
+			},
+			"link_open": {
+				"content": "<a href=\"$3\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			},
+			"extension": {
+				"content": "<a href=\"$5\">$4<\/a>",
+				"example": "ScribeFire"
+			}
+		}
+	},
+	"action_change_email_preferences": {
+		"message": "Ändra val för mailnotifieringar"
+	},
+	"action_send_feedback": {
+		"message": "Skicka synpunkter"
+	},
+	"email_welcome_subject": {
+		"message": "Välkommen till Interpr.it"
+	},
+	"email_welcome_text_1": {
+		"message": "Välkommen till Interpr.it. Du har nu sällat dig till skaran av många andra personer som samtliga använder Interpr.it för att sköta om översättningar för sina Chrome-appar."
+	},
+	"email_welcome_text_2": {
+		"message": "Är du en utvecklare? Logga in för att ladda upp dina appar eller ladda upp dom via terminalkommando genom att använda $link_open$Interpr.it-APIet$link_close$.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"http:\/\/interpr.it\/api\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"email_welcome_text_3": {
+		"message": "Är du en översättare? Besök $link_open$Interpr.it$link_close$ för att söka upp appar som är i behov av översättning.",
+		"placeholders": {
+			"link_open": {
+				"content": "<a href=\"http:\/\/interpr.it\/\">"
+			},
+			"link_close": {
+				"content": "<\/a>"
+			}
+		}
+	},
+	"email_welcome_text_4": {
+		"message": "Frågor? Kommentarer? Funderingar? Skicka ett mail till $email_address$ med dina synpunkter.",
+		"placeholders": {
+			"email_address": {
+				"content": "<a href=\"mailto:chris@interpr.it\">chris@interpr.it<\/a>"
+			}
+		}
+	},
+	"blog": {
+		"message": "Blogg"
 	}
 }
