@@ -104,7 +104,7 @@ if (!get_locale()) {
 }
 
 // Enable a set of non-empty locales for the website.
-$GLOBALS["website_locales"] = array("ar", "bn", "de", "en_GB", "en_US", "es", "es_419", "fr", "it", "ja", "ko", "nl", "pt_BR", "sr", "sv", "th", "te", "uk");
+$GLOBALS["website_locales"] = array("de", "en_US", "es", "ja", "nl", "te");
 
 // Save the user's locale preference.
 if (!sess_anonymous() && $_GET["a"] != "api" && get_locale() != $GLOBALS["user"]->preferred_locale) {
