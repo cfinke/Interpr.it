@@ -362,7 +362,7 @@ table.header {
 }
 
 .locale-complete {
-	background-color: #FFFFBB;
+	background-color: rgba(0, 128, 0, .2);
 }
 
 .extension-stub {
