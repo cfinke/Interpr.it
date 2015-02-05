@@ -913,7 +913,7 @@
 		"description": "The subject of the welcome email sent to new users."
 	},
 	"email_welcome_text_1": {
-		"message": "Welcome to Interpr.it! You've joined the ranks of literally several other people who all use Interpr.it to manage their Chrome extension translations.",
+		"message": "Welcome to Interpr.it! You've joined the ranks of literally several other people who all use Interpr.it to manage their browser extension translations.",
 		"description": "Text in the welcome email sent to new users."
 	},
 	"email_welcome_text_2": {
