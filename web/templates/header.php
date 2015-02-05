@@ -2,6 +2,7 @@
 <html lang="<?=str_replace("_", "-", get_locale())?>">
 	<head>
 		<title><?=$meta["title"]?> :: Interpr.it</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 		
 		<? if (isset($meta["index"]) && !$meta["index"]) { ?>
 			<meta name="robots" content="noindex" />
@@ -15,9 +16,10 @@
 		<? /* <link rel="shortcut icon" type="image/png" href="/content/images/favicon.png" /> */ ?>
 		<script type="text/javascript">
 			var SESS_ANONYMOUS = <?=json_encode(sess_anonymous())?>;
+			var SESS_EMAIL = <?php echo sess_anonymous() ? "null" : json_encode( $GLOBALS['user']->email ); ?>;
 		</script>
-		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-		<script src="/content/js/util.js"></script>
+		<script src="/content/js/jquery.js"></script>
+		<script src="/content/js/util.js?v=20150204230100"></script>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', 'UA-20386361-1']);
@@ -43,7 +45,7 @@
 					</td>
 					<td class="signin">
 						<? if (sess_anonymous()) { ?>
-							<a href="/signin?next=<?=urlencode($_SERVER["REQUEST_URI"])?>"><?=__("action_signin")?></a>
+							<a class="signin" href="#signin"><?php echo __("action_signin_signup"); ?></a>
 						<? } else { ?>
 							<span><?=san($GLOBALS["user"]->email)?></span>
 							<a href="/dashboard"><?=__("dashboard_page_title")?></a>

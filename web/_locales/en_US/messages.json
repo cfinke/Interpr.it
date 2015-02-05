@@ -376,8 +376,8 @@
 	"action_contact": {
 		"message": "Contact"
 	},
-	"action_signin": {
-		"message": "Sign in with your Google Account"
+	"action_signin_signup": {
+		"message": "Sign in/Sign Up"
 	},
 	"action_signout": {
 		"message": "Sign Out"

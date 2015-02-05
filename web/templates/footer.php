@@ -5,6 +5,8 @@
 			</div>
 		</div>
 		<div id="notification"></div>
+		<script src="https://login.persona.org/include.js"></script>
+		<script src="/content/js/persona.js"></script>
 	</body>
 </html><? /*
 

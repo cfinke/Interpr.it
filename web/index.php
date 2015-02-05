@@ -22,7 +22,6 @@ $_GET = array_map('trim_deep', $_GET);
 $_COOKIE = array_map('trim_deep', $_COOKIE);
 $_REQUEST = array_map('trim_deep', $_REQUEST);
 
-require_once "./vendor/google.openid.php";
 require_once "./vendor/orm.php";
 
 require_once "./config.php";
@@ -60,6 +59,64 @@ try {
 		break;
 		case "terms":
 			view_terms();
+		break;
+		case "auth":
+			switch ( $_GET["sa"] ) {
+				case "login":
+					$ch = curl_init();
+
+					curl_setopt( $ch, CURLOPT_URL, "https://verifier.login.persona.org/verify" );
+					curl_setopt( $ch, CURLOPT_POST, 1 );
+					curl_setopt( $ch, CURLOPT_POSTFIELDS, http_build_query( array(
+						'assertion' => $_POST['assertion'],
+						'audience' => HOST
+					) ) );
+					curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
+
+					$server_output = curl_exec( $ch );
+					
+					$response_json = json_decode( $server_output );
+					
+					if ( $response_json->status == "okay" ) {
+						try {
+							$user = new User($response_json->email, "email");
+						} catch (Exception $e) {
+							$user = new User();
+							$user->email = $response_json->email;
+							$user->save(); // @cache-safe
+					
+							try {
+								// Email the user a welcome email.
+								$email_object = array();
+								$email_object["to"] = $user->email;
+								$email_object["subject"] = __("email_welcome_subject");
+					
+								ob_start();
+								include INCLUDE_PATH . "/templates/email/welcome.php";
+								$html = ob_get_clean();
+								ob_end_clean();
+					
+								$email_object["body"] = $html;
+					
+								$headers = array();
+								$headers["From"] = 'welcome@interpr.it';
+						
+								email($email_object["to"], $email_object["subject"], $email_object["body"], $headers);
+							} catch (Exception $e) {
+								error_email($e, __FILE__, __LINE__);
+							}
+						}
+				
+						$_SESSION["id"] = $user->email;
+					}
+					else {
+						error_email( "Not-okay assertion.\n\n" . print_r( $_POST, true ), __FILE__, __LINE__);
+						
+						header($_SERVER["SERVER_PROTOCOL"]." 403 Forbidden", true, 403);
+						exit;
+					}
+				break;
+			}
 		break;
 		case "api":
 			$rv = null;
@@ -153,76 +210,6 @@ try {
 		break;
 		case "search":
 			view_search();
-		break;
-		case "signin":
-			$cache_key = "google_association_handle";
-			
-			$association_handle = cache_get($cache_key);
-			
-			if (!$association_handle) {
-				$association_handle = GoogleOpenID::getAssociationHandle();
-				cache_set($cache_key, $association_handle, 60 * 60 * 24 * 7);
-			}
-			
-			$return_url = "/signin-return";
-			
-			if (isset($_GET["next"])) {
-				$return_url .= "?next=" . urlencode($_GET["next"]);
-			}
-			
-			$googleLogin = GoogleOpenID::createRequest($return_url, $association_handle, true);
-			$googleLogin->redirect();
-		break;
-		case "signin-return":
-			$googleLogin = GoogleOpenID::getResponse();
-			
-			if ($googleLogin->success()) {
-				try {
-					$user = new User($googleLogin->email(), "email");
-				} catch (Exception $e) {
-					$user = new User();
-					$user->email = $googleLogin->email();
-					$user->save(); // @cache-safe
-					
-					try {
-						// Email the user a welcome email.
-						$email_object = array();
-						$email_object["to"] = $user->email;
-						$email_object["subject"] = __("email_welcome_subject");
-					
-						ob_start();
-						include INCLUDE_PATH . "/templates/email/welcome.php";
-						$html = ob_get_clean();
-						ob_end_clean();
-					
-						$email_object["body"] = $html;
-					
-						$headers = array();
-						$headers["From"] = 'welcome@interpr.it';
-						
-						email($email_object["to"], $email_object["subject"], $email_object["body"], $headers);
-					} catch (Exception $e) {
-						error_email($e, __FILE__, __LINE__);
-					}
-				}
-				
-				$_SESSION["id"] = $user->email;
-				
-				if (isset($_GET["next"])) {
-					$next = preg_replace("%/+%", "/", $_GET["next"]);
-					
-					header("Location: " . $next);
-					exit;
-				}
-				else {
-					header("Location: /");
-					exit;
-				}
-			}
-			else {
-				header("Location: /");
-				exit;
-			}
 		break;
 		case "signout":
 			unset($_SESSION["id"]);

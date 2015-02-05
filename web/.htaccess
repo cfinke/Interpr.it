@@ -46,3 +46,6 @@ RewriteRule ^api/download$ /index.php?a=api&sa=download&format=zip [QSA,NC,L]
 
 # All-encompassing API rule.
 RewriteRule ^api/([^\.]+)(\.json)?$ /index.php?a=api&sa=$1&format=json [QSA,NC,L]
+
+# All-encompassing API rule.
+RewriteRule ^auth/([^\.]+)(\.json)?$ /index.php?a=auth&sa=$1&format=json [QSA,NC,L]
